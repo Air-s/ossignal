@@ -1,0 +1,6 @@
+repos:
+  - vllm-project/vllm
+  - ollama/ollama
+  - langchain-ai/langchain
+  - huggingface/transformers
+  - modelscope/modelscope

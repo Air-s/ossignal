@@ -1,0 +1,11 @@
+llm:
+  provider: auto            # auto | github-models | gemini | none
+  github_models:
+    model: openai/gpt-4o-mini
+  gemini:
+    model: gemini-2.0-flash
+analysis:
+  max_items_per_run: 30     # 单次最多分析的事件数，控制 LLM 成本
+notifier:
+  enabled: false            # 配置 WEBHOOK_URL secret 后改为 true
+  type: feishu              # feishu | serverchan
