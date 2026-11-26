@@ -1,0 +1,45 @@
+name: weekly-discover
+
+on:
+  schedule:
+    - cron: '0 22 * * 0'   # UTC 周日 22:00 = 北京时间周一 06:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  models: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Discover candidates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.main --discover
+
+      - name: Create PR with candidates
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "oss-radar-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          branch="discover/$(date -u +%F)"
+          git checkout -b "$branch"
+          git add config/
+          git diff --cached --quiet && echo "无候选变更" && exit 0
+          git commit -m "chore: 监控列表候选 $(date -u +%F)"
+          git push -u origin "$branch"
+          gh pr create --title "chore: 监控列表候选更新 $(date -u +%F)" \
+            --body "自动发现的候选组织/仓库（已经 LLM 初筛），请人工审核后合并；不合适的条目直接从 config 中删除再合。" \
+            --base main
