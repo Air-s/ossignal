@@ -16,16 +16,29 @@ _SECRET_PREFIXES = ("AIza", "GOCSPX", "ya29.", "ghp_", "gho_", "ghu_", "github_p
 
 
 def _redact(text: str) -> str:
-    """把形似密钥的长串打码，防止 GitHub 推送保护误报阻断日报提交。"""
-    # 先处理已知前缀：从前缀开始到空白/标点结束的整段打码
-    for p in _SECRET_PREFIXES:
-        text = re.sub(
-            rf"{re.escape(p)}[A-Za-z0-9_.\-]+",
-            lambda m: m.group(0)[:4] + "…[已脱敏]",
-            text,
-        )
-    # 再处理一般长串
-    return _SECRETISH_RE.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", text)
+    """把形似密钥的长串打码，防止 GitHub 推送保护误报阻断日报提交。
+
+    注意：跳过 URL（http/https）与 Markdown 链接，避免破坏仓库链接。
+    """
+    def _redact_one(segment: str) -> str:
+        # 保护 URL：把 http(s)://... 拆出来，不脱敏
+        parts = re.split(r"(https?://[^\s\)\]\"']+)", segment)
+        out = []
+        for p in parts:
+            if p.startswith(("http://", "https://")):
+                out.append(p)  # URL 原样保留
+                continue
+            for prefix in _SECRET_PREFIXES:
+                p = re.sub(
+                    rf"{re.escape(prefix)}[A-Za-z0-9_.\-]+",
+                    lambda m: m.group(0)[:4] + "…[已脱敏]",
+                    p,
+                )
+            p = _SECRETISH_RE.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", p)
+            out.append(p)
+        return "".join(out)
+
+    return _redact_one(text)
 
 
 def _category_sort_key(category: str) -> int:

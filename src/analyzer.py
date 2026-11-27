@@ -161,6 +161,13 @@ def _backoff(attempt: int) -> None:
         time.sleep(2 ** attempt)
 
 
+def _sanitize_request_error(e: requests.RequestException) -> Exception:
+    """去掉异常信息中的 key 参数（如 ?key=AQ.xxx），避免密钥泄漏到日报/日志。"""
+    msg = str(e)
+    msg = re.sub(r"(\?|&)key=[^&\s\)\]\"']+", r"\1key=***", msg)
+    return type(e)(msg)
+
+
 class GitHubModelsAnalyzer(BaseAnalyzer):
     """GitHub Models 推理 API，使用 Actions 内置 GITHUB_TOKEN。"""
 
@@ -221,7 +228,8 @@ class GeminiAnalyzer(BaseAnalyzer):
                 except ValueError as e:
                     return _BatchResult(errors=[f"解析失败（原始返回前 200 字: {content[:200]!r}）: {e}"])
             except requests.RequestException as e:
-                last_exc = e
+                # 去掉 URL 中的 key 参数，避免密钥泄漏到日报/日志
+                last_exc = _sanitize_request_error(e)
                 _backoff(attempt)
         return _BatchResult(errors=[f"LLM 请求失败（重试 {MAX_RETRIES} 次后）: {last_exc}"])
 

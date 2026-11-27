@@ -1,7 +1,7 @@
 llm:
   provider: auto            # auto | gemini | openai | none  （github-models 已于 2026-07 退役）
   gemini:
-    model: gemini-2.0-flash
+    model: gemini-3.8-flash
   openai:
     model: openai/gpt-4o-mini   # 作为 OpenAI 兼容端点的默认模型名（可用 OPENAI_MODEL 覆盖）
 analysis:

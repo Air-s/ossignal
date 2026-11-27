@@ -48,7 +48,7 @@ def load_settings(config_dir: Path = CONFIG_DIR) -> Settings:
     return Settings(
         llm_provider=llm.get("provider", "auto"),
         github_models_model=llm.get("openai", {}).get("model", "openai/gpt-4o-mini"),
-        gemini_model=llm.get("gemini", {}).get("model", "gemini-2.0-flash"),
+        gemini_model=llm.get("gemini", {}).get("model", "gemini-3.8-flash"),
         max_items_per_run=raw.get("analysis", {}).get("max_items_per_run", 30),
         trending_days=raw.get("analysis", {}).get("trending_days", 1),
         trending_min_stars=raw.get("analysis", {}).get("trending_min_stars", 100),

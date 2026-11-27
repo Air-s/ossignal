@@ -16,9 +16,20 @@ _LONG_TOKEN = re.compile(r"[A-Za-z0-9+/_.\-]{20,}")
 
 
 def redact_text(text: str) -> str:
-    for p in _SECRET_PREFIXES:
-        text = re.sub(rf"{re.escape(p)}[A-Za-z0-9_.\-]+", lambda m: m.group(0)[:4] + "…[已脱敏]", text)
-    return _LONG_TOKEN.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", text)
+    def _redact_one(segment: str) -> str:
+        parts = re.split(r"(https?://[^\s\)\]\"']+)", segment)
+        out = []
+        for p in parts:
+            if p.startswith(("http://", "https://")):
+                out.append(p)
+                continue
+            for prefix in _SECRET_PREFIXES:
+                p = re.sub(rf"{re.escape(prefix)}[A-Za-z0-9_.\-]+", lambda m: m.group(0)[:4] + "…[已脱敏]", p)
+            p = _LONG_TOKEN.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", p)
+            out.append(p)
+        return "".join(out)
+
+    return _redact_one(text)
 
 
 def main() -> None:

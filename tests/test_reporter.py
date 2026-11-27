@@ -89,3 +89,18 @@ def test_render_redacts_secret_like_text():
     md = render_daily_report(DAY, [a], [])
     assert "AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ" not in md
     assert "已脱敏" in md
+
+
+def test_redact_preserves_urls():
+    from src.reporter import _redact
+    text = "链接 https://github.com/storytold/craft-anything 请查看"
+    assert "https://github.com/storytold/craft-anything" in _redact(text)
+
+
+def test_redact_still_masks_secrets_alongside_urls():
+    from src.reporter import _redact
+    text = "链接 https://github.com/a/b 密钥 AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    out = _redact(text)
+    assert "https://github.com/a/b" in out
+    assert "AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ" not in out
+    assert "已脱敏" in out
