@@ -6,7 +6,7 @@
       "readme_sha": "d01261427d0535d9e8f2494f1fc6704e6488bbf4"
     },
     "ollama/ollama": {
-      "stars": 188288,
+      "stars": 188292,
       "last_release": "v0.40.18",
       "readme_sha": "2a7dd787dc04fad1536797c7a64f9c3d85fa0782"
     },
@@ -16,7 +16,7 @@
       "readme_sha": "aeea8c38765f4a33c777e8755ac2f439132ffbb0"
     },
     "huggingface/transformers": {
-      "stars": 169399,
+      "stars": 169401,
       "last_release": "v5.24.1",
       "readme_sha": "e00f070c625cf2effd2d48b6535e42107ec1c52d"
     },
@@ -26,11 +26,35 @@
       "readme_sha": "d230b6c0ad3a26b49b68b93737c2d652a1e56828"
     }
   },
-  "seen_new_repos": [],
-  "seen_since": {},
+  "seen_new_repos": [
+    "Arekejoker/sprite-turntable",
+    "TheFoxGames/xeno-rbx-babemar",
+    "ali1814alali-coder/fl-studio-installer-ralelor",
+    "dazacode/vilauncher",
+    "gomakhalid92-bot/robrun-money-dupe-undetect",
+    "gsmkhulna/cinema-4d-saralen",
+    "mobilelegendsak47-sketch/rob-run-cheat",
+    "ndamase107/robrun-mod-trainer",
+    "niteshnandan790/robrun-cheat",
+    "shahroz-0/robrun-cheat-undetect",
+    "ziosatya/rob-run-aim"
+  ],
+  "seen_since": {
+    "shahroz-0/robrun-cheat-undetect": "2026-11-27T11:28:18.657778+00:00",
+    "TheFoxGames/xeno-rbx-babemar": "2026-11-27T11:28:18.657843+00:00",
+    "ndamase107/robrun-mod-trainer": "2026-11-27T11:28:18.657850+00:00",
+    "ziosatya/rob-run-aim": "2026-11-27T11:28:18.657804+00:00",
+    "gsmkhulna/cinema-4d-saralen": "2026-11-27T11:28:18.657829+00:00",
+    "Arekejoker/sprite-turntable": "2026-11-27T11:28:18.657854+00:00",
+    "gomakhalid92-bot/robrun-money-dupe-undetect": "2026-11-27T11:28:18.657812+00:00",
+    "dazacode/vilauncher": "2026-11-27T11:28:18.657861+00:00",
+    "niteshnandan790/robrun-cheat": "2026-11-27T11:28:18.657818+00:00",
+    "ali1814alali-coder/fl-studio-installer-ralelor": "2026-11-27T11:28:18.657822+00:00",
+    "mobilelegendsak47-sketch/rob-run-cheat": "2026-11-27T11:28:18.657827+00:00"
+  },
   "http_cache": {
     "/repos/vllm-project/vllm?": {
-      "etag": "W/\"6df8d7e32464ef9b78eb78b292422b500093872ac752f6b660096fdedd3729e4\"",
+      "etag": "W/\"cf3bd3dcee5ec664f987521250b517abea4c19b83cddc27323d4dbe78cb4e9f2\"",
       "json": {
         "id": 599547518,
         "node_id": "R_kgDOI7xefg",
@@ -99,8 +123,8 @@
         "releases_url": "https://api.github.com/repos/vllm-project/vllm/releases{/id}",
         "deployments_url": "https://api.github.com/repos/vllm-project/vllm/deployments",
         "created_at": "2023-02-09T11:23:20Z",
-        "updated_at": "2026-11-27T10:59:13Z",
-        "pushed_at": "2026-11-27T10:54:38Z",
+        "updated_at": "2026-11-27T11:19:51Z",
+        "pushed_at": "2026-11-27T11:14:37Z",
         "git_url": "git://github.com/vllm-project/vllm.git",
         "ssh_url": "git@github.com:vllm-project/vllm.git",
         "clone_url": "https://github.com/vllm-project/vllm.git",
@@ -116,11 +140,11 @@
         "has_wiki": false,
         "has_pages": false,
         "has_discussions": true,
-        "forks_count": 25363,
+        "forks_count": 25365,
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 11229,
+        "open_issues_count": 11233,
         "license": {
           "key": "apache-2.0",
           "name": "Apache License 2.0",
@@ -156,8 +180,8 @@
           "transformer"
         ],
         "visibility": "public",
-        "forks": 25363,
-        "open_issues": 11229,
+        "forks": 25365,
+        "open_issues": 11233,
         "watchers": 97686,
         "default_branch": "main",
         "permissions": {
@@ -190,12 +214,12 @@
           "user_view_type": "public",
           "site_admin": false
         },
-        "network_count": 25363,
+        "network_count": 25365,
         "subscribers_count": 609
       }
     },
     "/repos/vllm-project/vllm/releases/latest?": {
-      "etag": "W/\"c23cabddea63934f96d9444e1f733e249b17ab24a5dcdeae27a12b3830df9d08\"",
+      "etag": "W/\"d7c3703676849aaa5acf5847e25308f48c5692a48045a41f5fb74561ace695d7\"",
       "json": {
         "url": "https://api.github.com/repos/vllm-project/vllm/releases/447739190",
         "assets_url": "https://api.github.com/repos/vllm-project/vllm/releases/447739190/assets",
@@ -265,7 +289,7 @@
             "state": "uploaded",
             "size": 34281752,
             "digest": "sha256:cd0abe2a9d698bc0bef36ac9aa38da34307c53572ddee60ca35faef280af99d2",
-            "download_count": 2238,
+            "download_count": 2244,
             "created_at": "2026-11-16T23:49:58Z",
             "updated_at": "2026-11-16T23:50:01Z",
             "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0%2Bcpu-cp38-abi3-macosx_11_0_arm64.whl"
@@ -301,7 +325,7 @@
             "state": "uploaded",
             "size": 78561625,
             "digest": "sha256:2621c0e1f231b09bd225f316447ad87ad9a857e582c08ed7f5cf735a3084225d",
-            "download_count": 662,
+            "download_count": 665,
             "created_at": "2026-11-16T23:49:58Z",
             "updated_at": "2026-11-16T23:50:04Z",
             "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0%2Bcpu-cp38-abi3-manylinux_2_39_aarch64.whl"
@@ -337,7 +361,7 @@
             "state": "uploaded",
             "size": 163849325,
             "digest": "sha256:47fc0adfbbb00168d5a755b08a4b5fbde7e180c91c0a065221e7a253b8bbb5ff",
-            "download_count": 2639,
+            "download_count": 2645,
             "created_at": "2026-11-16T23:49:58Z",
             "updated_at": "2026-11-16T23:50:09Z",
             "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0%2Bcpu-cp38-abi3-manylinux_2_39_x86_64.whl"
@@ -409,7 +433,7 @@
             "state": "uploaded",
             "size": 238960498,
             "digest": "sha256:7d96231fc141ad4b3a441292b77362b285b335ca7d1b0e2ab441d4ebde82f405",
-            "download_count": 8631,
+            "download_count": 8665,
             "created_at": "2026-11-16T23:49:58Z",
             "updated_at": "2026-11-16T23:50:13Z",
             "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0-cp38-abi3-manylinux_2_28_aarch64.whl"
@@ -445,7 +469,7 @@
             "state": "uploaded",
             "size": 239039932,
             "digest": "sha256:79ca4b3cd74aec08c4bf476bdf0cb15735b605ae5368526a2faae1e30f044ca2",
-            "download_count": 9228,
+            "download_count": 9262,
             "created_at": "2026-11-16T23:50:02Z",
             "updated_at": "2026-11-16T23:50:15Z",
             "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0-cp38-abi3-manylinux_2_28_x86_64.whl"
@@ -527,7 +551,7 @@
       }
     },
     "/repos/ollama/ollama?": {
-      "etag": "W/\"5a4c69a5e373ddeba7d3dd2d8cab1c36c88fd52222a72b1c481993b28c71dce7\"",
+      "etag": "W/\"1139829462f4232e028fc17d0844c62e3c79f5fdbfd06875ab38d8b2d2f1b134\"",
       "json": {
         "id": 658928958,
         "node_id": "R_kgDOJ0Z1Pg",
@@ -596,16 +620,16 @@
         "releases_url": "https://api.github.com/repos/ollama/ollama/releases{/id}",
         "deployments_url": "https://api.github.com/repos/ollama/ollama/deployments",
         "created_at": "2023-06-26T19:39:32Z",
-        "updated_at": "2026-11-27T11:04:39Z",
+        "updated_at": "2026-11-27T11:27:53Z",
         "pushed_at": "2026-11-27T10:05:28Z",
         "git_url": "git://github.com/ollama/ollama.git",
         "ssh_url": "git@github.com:ollama/ollama.git",
         "clone_url": "https://github.com/ollama/ollama.git",
         "svn_url": "https://github.com/ollama/ollama",
         "homepage": "https://ollama.com",
-        "size": 98213,
-        "stargazers_count": 188288,
-        "watchers_count": 188288,
+        "size": 98254,
+        "stargazers_count": 188292,
+        "watchers_count": 188292,
         "language": "Go",
         "has_issues": true,
         "has_projects": false,
@@ -617,7 +641,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 4792,
+        "open_issues_count": 4794,
         "license": {
           "key": "mit",
           "name": "MIT License",
@@ -648,8 +672,8 @@
         ],
         "visibility": "public",
         "forks": 19226,
-        "open_issues": 4792,
-        "watchers": 188288,
+        "open_issues": 4794,
+        "watchers": 188292,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -686,7 +710,7 @@
       }
     },
     "/repos/ollama/ollama/releases/latest?": {
-      "etag": "W/\"e182a42d171b5412decc733fa1d77a79c086f9af08b7c3ec702c3fe7dfc6687c\"",
+      "etag": "W/\"6b9ad1268dbdaca79ae586fcb363b1429f7d5685fbebd7d430d05f08470aa9fb\"",
       "json": {
         "url": "https://api.github.com/repos/ollama/ollama/releases/456227993",
         "assets_url": "https://api.github.com/repos/ollama/ollama/releases/456227993/assets",
@@ -756,7 +780,7 @@
             "state": "uploaded",
             "size": 23242,
             "digest": "sha256:e8e97ae06e24271af839fec41f3f28e279b1b7044de3a4347d23bda2a16f77fd",
-            "download_count": 51517,
+            "download_count": 51754,
             "created_at": "2026-11-24T08:08:44Z",
             "updated_at": "2026-11-24T08:08:44Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/install.ps1"
@@ -792,7 +816,7 @@
             "state": "uploaded",
             "size": 15993,
             "digest": "sha256:17659c2456c9e65a3b11056b76da51774911cb822f47bf44f7f3ecc0c40528a8",
-            "download_count": 97320,
+            "download_count": 97761,
             "created_at": "2026-11-24T08:08:45Z",
             "updated_at": "2026-11-24T08:08:45Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/install.sh"
@@ -828,7 +852,7 @@
             "state": "uploaded",
             "size": 188838885,
             "digest": "sha256:015261f434d31d7f0781f8ba6b59cc8e1f70ecb562a4e6db44dfdd5e02f7e562",
-            "download_count": 7640,
+            "download_count": 7662,
             "created_at": "2026-11-24T08:08:36Z",
             "updated_at": "2026-11-24T08:08:42Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-darwin.tgz"
@@ -864,7 +888,7 @@
             "state": "uploaded",
             "size": 231986751,
             "digest": "sha256:1d990f4a8a76985c9defaa9a6ddd007556d117fd8ed586d7e9cbf25a6e9a4a23",
-            "download_count": 540183,
+            "download_count": 542500,
             "created_at": "2026-11-24T08:08:31Z",
             "updated_at": "2026-11-24T08:08:37Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/Ollama-darwin.zip"
@@ -900,7 +924,7 @@
             "state": "uploaded",
             "size": 1135284582,
             "digest": "sha256:6c99df4416bd7b60379bc46efdcf6d580a3de489d5f4928af99156cfc1886b65",
-            "download_count": 309,
+            "download_count": 310,
             "created_at": "2026-11-24T08:08:37Z",
             "updated_at": "2026-11-24T08:09:04Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-amd64-mlx.tar.zst"
@@ -936,7 +960,7 @@
             "state": "uploaded",
             "size": 1059212502,
             "digest": "sha256:d404a0f936a69ecf7904f228f68cf65021fdf45e4b66db3fb9c8603abd206447",
-            "download_count": 6862,
+            "download_count": 6882,
             "created_at": "2026-11-24T08:08:38Z",
             "updated_at": "2026-11-24T08:09:08Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-amd64-rocm.tar.zst"
@@ -972,7 +996,7 @@
             "state": "uploaded",
             "size": 1648243083,
             "digest": "sha256:b82649006cb5b54ed1237fa2d1a26a7f939a4fd03150033759acbff7ff315adf",
-            "download_count": 99960,
+            "download_count": 100402,
             "created_at": "2026-11-24T08:08:39Z",
             "updated_at": "2026-11-24T08:09:18Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-amd64.tar.zst"
@@ -1008,7 +1032,7 @@
             "state": "uploaded",
             "size": 288173430,
             "digest": "sha256:2bcfc41978e6fcd7970a2ea65893816bf736e7e386181b259dc95f1e1e853c33",
-            "download_count": 454,
+            "download_count": 455,
             "created_at": "2026-11-24T08:08:40Z",
             "updated_at": "2026-11-24T08:08:48Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-arm64-jetpack6.tar.zst"
@@ -1044,7 +1068,7 @@
             "state": "uploaded",
             "size": 1704011634,
             "digest": "sha256:63f01dae3b65641866991e75e2aecb7aed8a4041f4c2c3c7d92862c5a47ebed6",
-            "download_count": 10374,
+            "download_count": 10422,
             "created_at": "2026-11-24T08:08:41Z",
             "updated_at": "2026-11-24T08:09:20Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-arm64.tar.zst"
@@ -1080,7 +1104,7 @@
             "state": "uploaded",
             "size": 924789598,
             "digest": "sha256:8645a70d9a08eb3c02f17e873400a909408b3dfdcde294acb49d6ad50da6acf7",
-            "download_count": 988,
+            "download_count": 989,
             "created_at": "2026-11-24T08:08:32Z",
             "updated_at": "2026-11-24T08:09:02Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-windows-amd64-mlx.zip"
@@ -1116,7 +1140,7 @@
             "state": "uploaded",
             "size": 266311486,
             "digest": "sha256:ff309b427e81f6364178a6b5ba6a50697b7ee7e81f5f8c4f801752f4fdb060b6",
-            "download_count": 1965,
+            "download_count": 1969,
             "created_at": "2026-11-24T08:08:33Z",
             "updated_at": "2026-11-24T08:08:41Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-windows-amd64-rocm.zip"
@@ -1152,7 +1176,7 @@
             "state": "uploaded",
             "size": 1717307988,
             "digest": "sha256:ca97292ac1e9acc77fcf473bb2741fa6acd12e3798f261b419680068b7cc4c16",
-            "download_count": 48475,
+            "download_count": 48706,
             "created_at": "2026-11-24T08:08:34Z",
             "updated_at": "2026-11-24T08:09:09Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-windows-amd64.zip"
@@ -1188,7 +1212,7 @@
             "state": "uploaded",
             "size": 404629582,
             "digest": "sha256:671d27e9f93e14662f3941d705e4b3626fc05bd120055f160489c80c9c552912",
-            "download_count": 1309,
+            "download_count": 1311,
             "created_at": "2026-11-24T08:08:35Z",
             "updated_at": "2026-11-24T08:08:52Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-windows-arm64.zip"
@@ -1224,7 +1248,7 @@
             "state": "uploaded",
             "size": 232758599,
             "digest": "sha256:78880366c6ecc18891bf32eb6dd7d132938aaf55fa8bc9007503701ad6d7d1ed",
-            "download_count": 20710,
+            "download_count": 20798,
             "created_at": "2026-11-24T08:08:43Z",
             "updated_at": "2026-11-24T08:08:50Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/Ollama.dmg"
@@ -1260,7 +1284,7 @@
             "state": "uploaded",
             "size": 1953587080,
             "digest": "sha256:ad2bb47aa969b21cf8dd81b2d9f9a6d5030270ed242ef55087118c37c510acc2",
-            "download_count": 641729,
+            "download_count": 644667,
             "created_at": "2026-11-24T08:08:42Z",
             "updated_at": "2026-11-24T08:09:27Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/OllamaSetup.exe"
@@ -1296,7 +1320,7 @@
             "state": "uploaded",
             "size": 1368,
             "digest": "sha256:b176452233302ba895ec2f28a8a625614bebfb0af9464066d422b0caf4581064",
-            "download_count": 7709,
+            "download_count": 7738,
             "created_at": "2026-11-24T08:09:33Z",
             "updated_at": "2026-11-24T08:09:33Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.18/sha256sum.txt"
@@ -1342,7 +1366,7 @@
       }
     },
     "/repos/langchain-ai/langchain?": {
-      "etag": "W/\"fcfcb1dddecd6f976eb5a34d400c31042915306f6aa0b55bbfc2dbb04a1962bc\"",
+      "etag": "W/\"a3f148b22340327cb0716e7599abff59ddee3fe3b8d2c6c0d3d7905ed1224ace\"",
       "json": {
         "id": 552661142,
         "node_id": "R_kgDOIPDwlg",
@@ -1428,11 +1452,11 @@
         "has_wiki": false,
         "has_pages": false,
         "has_discussions": true,
-        "forks_count": 25181,
+        "forks_count": 25182,
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 784,
+        "open_issues_count": 785,
         "license": {
           "key": "mit",
           "name": "MIT License",
@@ -1468,8 +1492,8 @@
           "typescript"
         ],
         "visibility": "public",
-        "forks": 25181,
-        "open_issues": 784,
+        "forks": 25182,
+        "open_issues": 785,
         "watchers": 150070,
         "default_branch": "master",
         "permissions": {
@@ -1502,12 +1526,12 @@
           "user_view_type": "public",
           "site_admin": false
         },
-        "network_count": 25181,
+        "network_count": 25182,
         "subscribers_count": 926
       }
     },
     "/repos/langchain-ai/langchain/releases/latest?": {
-      "etag": "W/\"3d05fbab60f5fbc48a33ddab59a69f4a4dbd90cd44e5970522cd7ba331003910\"",
+      "etag": "W/\"99257588f62835d96c870f6f9a235e8d81536893802773d734209b88c1a85c5e\"",
       "json": {
         "url": "https://api.github.com/repos/langchain-ai/langchain/releases/458690245",
         "assets_url": "https://api.github.com/repos/langchain-ai/langchain/releases/458690245/assets",
@@ -1646,7 +1670,7 @@
       }
     },
     "/repos/huggingface/transformers?": {
-      "etag": "W/\"c6beee4c0188d9e7bd0a5e6be9a68adef23cfb7b19fbfce36d24aa9ee05615bb\"",
+      "etag": "W/\"a799d090a7fc55d238bcc13062d983b6f6cb9671bd9a91ec4730d7ffb3c8678c\"",
       "json": {
         "id": 155220641,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNTUyMjA2NDE=",
@@ -1715,16 +1739,16 @@
         "releases_url": "https://api.github.com/repos/huggingface/transformers/releases{/id}",
         "deployments_url": "https://api.github.com/repos/huggingface/transformers/deployments",
         "created_at": "2018-10-29T13:56:00Z",
-        "updated_at": "2026-11-27T11:02:36Z",
-        "pushed_at": "2026-11-27T11:00:36Z",
+        "updated_at": "2026-11-27T11:23:45Z",
+        "pushed_at": "2026-11-27T11:20:35Z",
         "git_url": "git://github.com/huggingface/transformers.git",
         "ssh_url": "git@github.com:huggingface/transformers.git",
         "clone_url": "https://github.com/huggingface/transformers.git",
         "svn_url": "https://github.com/huggingface/transformers",
         "homepage": "https://huggingface.co/transformers",
-        "size": 581634,
-        "stargazers_count": 169399,
-        "watchers_count": 169399,
+        "size": 582093,
+        "stargazers_count": 169401,
+        "watchers_count": 169401,
         "language": "Python",
         "has_issues": true,
         "has_projects": true,
@@ -1736,7 +1760,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 1174,
+        "open_issues_count": 1177,
         "license": {
           "key": "apache-2.0",
           "name": "Apache License 2.0",
@@ -1772,8 +1796,8 @@
         ],
         "visibility": "public",
         "forks": 35321,
-        "open_issues": 1174,
-        "watchers": 169399,
+        "open_issues": 1177,
+        "watchers": 169401,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -1810,7 +1834,7 @@
       }
     },
     "/repos/huggingface/transformers/releases/latest?": {
-      "etag": "W/\"9f4fa7dd2b280df20c436c08ebad49f9fec3610a6abd23c2cd16d0763c6da0f2\"",
+      "etag": "W/\"29aad0de8b5c784036a97c66e6dc7028cc9213f9c34119f475e0e42a9a11108e\"",
       "json": {
         "url": "https://api.github.com/repos/huggingface/transformers/releases/457003909",
         "assets_url": "https://api.github.com/repos/huggingface/transformers/releases/457003909/assets",
@@ -1877,7 +1901,7 @@
       }
     },
     "/repos/modelscope/modelscope?": {
-      "etag": "W/\"693c6c1d1c72b978990d26a010417230a3c91344b359b45ca1aa01475670ba03\"",
+      "etag": "W/\"5537f14039583cdf3ace12ed7cc5c972ff89f79428836b8f44618bf96a2d1a66\"",
       "json": {
         "id": 517552648,
         "node_id": "R_kgDOHtk6CA",
@@ -2030,7 +2054,7 @@
       }
     },
     "/repos/modelscope/modelscope/releases/latest?": {
-      "etag": "W/\"0e5380ed54a109b5c80511a67fe1d1a81538768b408b647967e29dfd647ba135\"",
+      "etag": "W/\"a84ed18856224ee9a1c46c72d74a20920dac6bdc8b03220a8e24888cf5382abf\"",
       "json": {
         "url": "https://api.github.com/repos/modelscope/modelscope/releases/438952240",
         "assets_url": "https://api.github.com/repos/modelscope/modelscope/releases/438952240/assets",
@@ -2097,61 +2121,61 @@
       }
     },
     "/orgs/google/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"93541c9613a771cf35c99f22369a4a07695df6929b07126d3c5dd0c46ef9eba9\"",
+      "etag": "W/\"6c930893a21cf76962464c0fec5dd1e2fbab96bd3d2c82ea917e57cd2b23ccf8\"",
       "json": []
     },
     "/orgs/google-deepmind/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"760d51dc53cbd11bfb15455cbd320c0d19e9e2c481e0fd63315b5268b53ff0ed\"",
+      "etag": "W/\"aa5b59c4ce71fd430ff3af929e2561347b45a76e687a8e6fc1c274d4a4505791\"",
       "json": []
     },
     "/orgs/microsoft/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"eddd7c2e86dde590db649d9fd2c23d7f7bcee24cd7213502b369a60c0da6f104\"",
+      "etag": "W/\"75b77801a8d6a9614a24b141b0c1fb8ee996a056527585fd82444cdb44371b13\"",
       "json": []
     },
     "/orgs/meta/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"426b76af30c339a783f2178bd736cfb63218ba8740f23c9a436c493378eb1d84\"",
+      "etag": "W/\"6ab8b9e90e87a84fa79a923f7fdc9e75a5797ecd8745ad3b62e5fe510b4e8bec\"",
       "json": []
     },
     "/orgs/openai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"0cd2ffacd665d1cead8535024a39c5ff5709455020a9899b5153bf4a1d82febc\"",
+      "etag": "W/\"e5ae97cf654f9e45a8ecd9fe1e2ee570dbee841250812b43a9bba2286344a4c8\"",
       "json": []
     },
     "/orgs/NVIDIA/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b32b62f91bc8b0d6800d65ee8922a5c20eaea4791cbb4e80e1fd73885fbdde8a\"",
+      "etag": "W/\"f77cf5f5baa9e9f1d069ff4404d0654e66b991cedf9a321350f6215b266c11df\"",
       "json": []
     },
     "/orgs/aws/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b39382933cdaa7280a55f4a8ebcc4142a1004eed5be710d68bbe298b04b89c05\"",
+      "etag": "W/\"0d39c257060c070121ff618b181b968af09784ac4fa54961e30a615aa7265d84\"",
       "json": []
     },
     "/orgs/alibaba/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"79e53fcf94712a95103dd87650e55c301feeba4d66204eef938858de5f125eb2\"",
+      "etag": "W/\"503387d8d9106e4b8a9b6623434ceff5478efa94badb2f602aafecb965b4c56f\"",
       "json": []
     },
     "/orgs/tencent/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"2013b35586aaab65bac4c1c8bb1b2545ea2d6bf7a69fe95b5ce36cc154992c01\"",
+      "etag": "W/\"dbfa0579d6a1fdb0ec4b5c74ec86c621c376798896af6855962506fd0330a034\"",
       "json": []
     },
     "/orgs/bytedance/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"6491a3b4c6d5f6bdc524cc92e8edfb87a04ffec59485b2816365ba03bbe46ca8\"",
+      "etag": "W/\"511ccb299b48037321ffbde68544d27ab01680e9872ec1b637d56dbfdba31430\"",
       "json": []
     },
     "/orgs/antgroup/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"2c364f48ca2a73efd71c253e8e51ebbff97c2b92578c04cdf70d490b5bd66f70\"",
+      "etag": "W/\"84a34706217310e411e58355b3627005854f4973722562588444a48fd987b8d8\"",
       "json": []
     },
     "/orgs/deepseek-ai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"17eed21289ccb2608d31a5f23faa4d6052049c8740aeea81d02dc40af687bc22\"",
+      "etag": "W/\"f996dc0de561628aba533f8ec4ac7ceed1565ffefe5507e9d124eb59dda77be5\"",
       "json": []
     },
     "/orgs/QwenLM/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"86946171de172b72dabd7e347e4f1b59737e184b0e466ebaf7034c1747aa402b\"",
+      "etag": "W/\"8be8c15f9753310abc06b51264257a874936d25b905fffc79b91005964cdecde\"",
       "json": []
     },
     "/orgs/apache/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"48a936f21306ef51ab5bab5bea51d557c7a0e51509a0a373d18b7e33c060d9e9\"",
+      "etag": "W/\"114256697cd2dd1e71a59ad378338d22e35037112e34d156d8d17eb13212e1b4\"",
       "json": []
     }
   },
-  "last_run": "2026-11-27T11:27:31.764514+00:00"
+  "last_run": "2026-11-27T11:28:50.136253+00:00"
 }
