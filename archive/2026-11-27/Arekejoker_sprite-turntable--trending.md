@@ -1,6 +1,6 @@
-# 趋势新仓库 Arekejoker/sprite-turntable
+# 趋势新仓库 Arek…[已脱敏]
 
-来源: https://github.com/Arekejoker/sprite-turntable
+来源: https://gi…[已脱敏]
 
 ---
 

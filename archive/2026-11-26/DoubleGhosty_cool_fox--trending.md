@@ -1,6 +1,6 @@
-# 趋势新仓库 DoubleGhosty/cool_fox
+# 趋势新仓库 Doub…[已脱敏]
 
-来源: https://github.com/DoubleGhosty/cool_fox
+来源: https://gi…[已脱敏]
 
 ---
 
