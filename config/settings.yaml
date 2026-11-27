@@ -6,7 +6,7 @@ llm:
     model: openai/gpt-4o-mini   # 作为 OpenAI 兼容端点的默认模型名（可用 OPENAI_MODEL 覆盖）
 analysis:
   max_items_per_run: 30     # 预留：单次分析条目上限（当前信号层全量采集，正文全量展示）
-  trending_days: 30         # 趋势仓库时间窗（天）[临时放宽验证，验证后改回 1]
+  trending_days: 1          # 趋势仓库时间窗（天）
   trending_min_stars: 100   # 趋势仓库最小 star
   trending_limit: 20        # 趋势仓库最多采集条数
 notifier:
