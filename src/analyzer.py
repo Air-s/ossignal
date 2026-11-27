@@ -210,7 +210,8 @@ class GeminiAnalyzer(BaseAnalyzer):
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent"
         payload = {
             "contents": [{"parts": [{"text": PROMPT.format(events=_events_payload(events))}]}],
-            "generationConfig": {"temperature": 0.3, "responseMimeType": "application/json"},
+            # 强制 JSON 输出；temperature 已被 Gemini 3.x 废弃，不再传采样参数
+            "generationConfig": {"responseMimeType": "application/json"},
         }
         return self._gemini_batch(events, url, payload)
 
@@ -218,7 +219,11 @@ class GeminiAnalyzer(BaseAnalyzer):
         last_exc: Exception | None = None
         for attempt in range(MAX_RETRIES + 1):
             try:
-                resp = requests.post(url, params={"key": self.api_key}, json=payload, timeout=REQUEST_TIMEOUT)
+                # key 必须通过 x-goog-api-key 请求头传递，而非 ?key= 查询参数
+                resp = requests.post(
+                    url, json=payload, timeout=REQUEST_TIMEOUT,
+                    headers={"x-goog-api-key": self.api_key, "Content-Type": "application/json"},
+                )
                 if resp.status_code == 429 or resp.status_code >= 500:
                     last_exc = requests.HTTPError(f"HTTP {resp.status_code}")
                     _backoff(attempt)
@@ -230,7 +235,6 @@ class GeminiAnalyzer(BaseAnalyzer):
                 except ValueError as e:
                     return _BatchResult(errors=[f"解析失败（原始返回前 200 字: {content[:200]!r}）: {e}"])
             except requests.RequestException as e:
-                # 去掉 URL 中的 key 参数，避免密钥泄漏到日报/日志
                 last_exc = _sanitize_request_error(e)
                 _backoff(attempt)
         return _BatchResult(errors=[f"LLM 请求失败（重试 {MAX_RETRIES} 次后）: {last_exc}"])
