@@ -1,6 +1,6 @@
 # 趋势新仓库 heydamir/unslop
 
-来源: https://gi…[已脱敏]
+来源: https://github.com/heydamir/unslop
 
 ---
 

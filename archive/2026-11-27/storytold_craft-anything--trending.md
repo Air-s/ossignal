@@ -1,6 +1,6 @@
 # 趋势新仓库 stor…[已脱敏]
 
-来源: https://gi…[已脱敏]
+来源: https://github.com/storytold/craft-anything
 
 ---
 

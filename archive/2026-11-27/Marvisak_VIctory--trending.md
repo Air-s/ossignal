@@ -1,6 +1,6 @@
 # 趋势新仓库 Marvisak/VIctory
 
-来源: https://gi…[已脱敏]
+来源: https://github.com/Marvisak/VIctory
 
 ---
 

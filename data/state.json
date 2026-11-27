@@ -26,11 +26,53 @@
       "readme_sha": "d230b6c0ad3a26b49b68b93737c2d652a1e56828"
     }
   },
-  "seen_new_repos": [],
-  "seen_since": {},
+  "seen_new_repos": [
+    "JuneYaooo/rea-video",
+    "Lee-xeo/Claude-Cage",
+    "Marvisak/VIctory",
+    "Minireel/HGhub",
+    "RoutineMiku/apkstart",
+    "anefzaoui/misterdownloadmanager",
+    "deepseek-ai/dsh-superagent-prototype",
+    "erkamyaman/rust-anything",
+    "ersinkoc/phonebox",
+    "heydamir/unslop",
+    "huami1314/GestaltX",
+    "janestreet/agent_skills",
+    "libracoder/kiri",
+    "mdiri-ai/SoduWork",
+    "patch-gg/pixelfx",
+    "storytold/craft-anything",
+    "valentderah/totk-pc-recomp",
+    "wangzan101/Mika",
+    "xcl-dev/xcl",
+    "zortos293/Lichii"
+  ],
+  "seen_since": {
+    "xcl-dev/xcl": "2026-11-27T10:57:43.338956+00:00",
+    "patch-gg/pixelfx": "2026-11-27T10:57:43.338939+00:00",
+    "libracoder/kiri": "2026-11-27T10:57:43.338882+00:00",
+    "erkamyaman/rust-anything": "2026-11-27T10:57:43.338915+00:00",
+    "heydamir/unslop": "2026-11-27T10:57:43.338869+00:00",
+    "ersinkoc/phonebox": "2026-11-27T10:57:43.338974+00:00",
+    "zortos293/Lichii": "2026-11-27T10:57:43.338921+00:00",
+    "huami1314/GestaltX": "2026-11-27T10:57:43.338945+00:00",
+    "Marvisak/VIctory": "2026-11-27T10:57:43.338899+00:00",
+    "janestreet/agent_skills": "2026-11-27T10:57:43.338910+00:00",
+    "storytold/craft-anything": "2026-11-27T10:57:43.338816+00:00",
+    "RoutineMiku/apkstart": "2026-11-27T10:57:43.338932+00:00",
+    "Minireel/HGhub": "2026-11-27T10:57:43.338905+00:00",
+    "deepseek-ai/dsh-superagent-prototype": "2026-11-27T10:57:43.338862+00:00",
+    "Lee-xeo/Claude-Cage": "2026-11-27T10:57:43.338951+00:00",
+    "anefzaoui/misterdownloadmanager": "2026-11-27T10:57:43.338875+00:00",
+    "JuneYaooo/rea-video": "2026-11-27T10:57:43.338888+00:00",
+    "wangzan101/Mika": "2026-11-27T10:57:43.338926+00:00",
+    "valentderah/totk-pc-recomp": "2026-11-27T10:57:43.338969+00:00",
+    "mdiri-ai/SoduWork": "2026-11-27T10:57:43.338963+00:00"
+  },
   "http_cache": {
     "/repos/vllm-project/vllm?": {
-      "etag": "W/\"76c16f47d41e1241fc7cbdb94882a11d1cc1ab88ce6eb92cfce1c5145be7dadb\"",
+      "etag": "W/\"1eda490255d6e3caf2460c9643d55e27e4e1d4158ee5c6974a6a19fdedc27774\"",
       "json": {
         "id": 599547518,
         "node_id": "R_kgDOI7xefg",
@@ -195,7 +237,7 @@
       }
     },
     "/repos/vllm-project/vllm/releases/latest?": {
-      "etag": "W/\"6b74d34e607b05cb2118cb917e2ed08841d5db19bddda3ab6284f6e0699b95df\"",
+      "etag": "W/\"404160e8983ffab32c9e5439db7c2cfd249debde48a4cfea8216a3b6b4a0d98f\"",
       "json": {
         "url": "https://api.github.com/repos/vllm-project/vllm/releases/447739190",
         "assets_url": "https://api.github.com/repos/vllm-project/vllm/releases/447739190/assets",
@@ -527,7 +569,7 @@
       }
     },
     "/repos/ollama/ollama?": {
-      "etag": "W/\"209c39f502dcd888787ad015538ea1e88a9972fd640d64e84a26dd950fb506b9\"",
+      "etag": "W/\"cc0ecdbc508405536c3b9fb5dc03dab54a513fbc11f03a23c2ec1a00dbc0b7dd\"",
       "json": {
         "id": 658928958,
         "node_id": "R_kgDOJ0Z1Pg",
@@ -686,7 +728,7 @@
       }
     },
     "/repos/ollama/ollama/releases/latest?": {
-      "etag": "W/\"ba191addf1b794a82ce3cc0b7a8c6c68299d3de996a8eceb42f7c2956b219884\"",
+      "etag": "W/\"b97e8963c9f2ad27d04d9220186839249762f6216e92f903f07ba020dba1a14f\"",
       "json": {
         "url": "https://api.github.com/repos/ollama/ollama/releases/456227993",
         "assets_url": "https://api.github.com/repos/ollama/ollama/releases/456227993/assets",
@@ -1342,7 +1384,7 @@
       }
     },
     "/repos/langchain-ai/langchain?": {
-      "etag": "W/\"7b279679dd803d2674f8eade1c1f17100396e16d460f78544459d9ecf55aaba2\"",
+      "etag": "W/\"f634025e117fecdd3059697f139ac9ac03319b25ba7466089826ec9a8aeff78a\"",
       "json": {
         "id": 552661142,
         "node_id": "R_kgDOIPDwlg",
@@ -1507,7 +1549,7 @@
       }
     },
     "/repos/langchain-ai/langchain/releases/latest?": {
-      "etag": "W/\"f02eca4b0afb1690a53a2501659cb00fdf2c4750d372bed29cf03241806c5bf1\"",
+      "etag": "W/\"caa33bbbda036ceaba6f451ec06cce17c39a4704a2cc11d274d5e3049fafce8a\"",
       "json": {
         "url": "https://api.github.com/repos/langchain-ai/langchain/releases/458690245",
         "assets_url": "https://api.github.com/repos/langchain-ai/langchain/releases/458690245/assets",
@@ -1646,7 +1688,7 @@
       }
     },
     "/repos/huggingface/transformers?": {
-      "etag": "W/\"f490cf973cb9cc6d4b383979b80ce0ff8a2426a5e8cc9d9f38f92da385849ab0\"",
+      "etag": "W/\"8d5f0ede8c14d0212579d13247bcd13fd11ce2b27600bda31ff28874e7caca0e\"",
       "json": {
         "id": 155220641,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNTUyMjA2NDE=",
@@ -1810,7 +1852,7 @@
       }
     },
     "/repos/huggingface/transformers/releases/latest?": {
-      "etag": "W/\"cbec61811b9841ec6f3a10436de6948decb068aa1f4d0e64d14e5ede1de93eed\"",
+      "etag": "W/\"b201333924c310c851d3fe80ec605ebfc868efe89233d1a3deb44f7fdee39d50\"",
       "json": {
         "url": "https://api.github.com/repos/huggingface/transformers/releases/457003909",
         "assets_url": "https://api.github.com/repos/huggingface/transformers/releases/457003909/assets",
@@ -1877,7 +1919,7 @@
       }
     },
     "/repos/modelscope/modelscope?": {
-      "etag": "W/\"3082c631a8887b4b1c29f01363bfe84e963e97cf700dc68ca607d28ad7a395b8\"",
+      "etag": "W/\"ced2ef0910944b669c7c8a8cfe78544155bae830ad0d4f26f4c8f07d213e6a87\"",
       "json": {
         "id": 517552648,
         "node_id": "R_kgDOHtk6CA",
@@ -2030,7 +2072,7 @@
       }
     },
     "/repos/modelscope/modelscope/releases/latest?": {
-      "etag": "W/\"e91785dcc84e1d5e0546c2f47dbbf0ecd3ff36d39c0c56f07a46a8e4e2b19a29\"",
+      "etag": "W/\"ecc689bf511f74f7d353329165bbcc53b4abdf2cdd33cf2e80ddcf9b6fab0a43\"",
       "json": {
         "url": "https://api.github.com/repos/modelscope/modelscope/releases/438952240",
         "assets_url": "https://api.github.com/repos/modelscope/modelscope/releases/438952240/assets",
@@ -2097,61 +2139,61 @@
       }
     },
     "/orgs/google/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"84349cb9fde6fe4afe26b709f79340a632e3b20681cade7712b0b8bb663bde97\"",
+      "etag": "W/\"dd54f706989a27eec6c6d3604695a74cb881e486d2e3e4a0cb54a5403ceb3e65\"",
       "json": []
     },
     "/orgs/google-deepmind/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b0a1795d079cb4577c93dd0b587d52f85b4a2ae1765a0367e9b0ccf68ef3a9bc\"",
+      "etag": "W/\"c642d927d15366cfc9a8738c6eefd0e09a028019aa9d1031a163eca7a99ed8ec\"",
       "json": []
     },
     "/orgs/microsoft/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"69260e44c51cc5332d34c029e265de1bf12a92d81d1176b11d28f90ace1270c7\"",
+      "etag": "W/\"db4a82485938a0893caabd812c8ad9d1efa9fded9a0971fa356fa167f8c784e6\"",
       "json": []
     },
     "/orgs/meta/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b12b6f48c40ede17d82427f4f2824b21c97f46f375ff55801074d672566d8a48\"",
+      "etag": "W/\"71c89ed638d5a15e1ff03a3961b452fec095cae01d667738609176740faf344f\"",
       "json": []
     },
     "/orgs/openai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"7769a81e6d64dd0916b62f3d92abac20ff128228d36f2d1d34a10eada214e052\"",
+      "etag": "W/\"f194fd3c0628df04f82a4aa240e6e92b17c440a7d5a207f6fb1e2d4a742669d6\"",
       "json": []
     },
     "/orgs/NVIDIA/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"f9dc4b085738be8227ab8addf95f8e88eb3927f44697351d206ca3e0528b34e2\"",
+      "etag": "W/\"851915d552c63cb6a31e638bcc9a20ad6af20fe40b230284d59c52547febb2cb\"",
       "json": []
     },
     "/orgs/aws/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"d2d8dc1564cc2384d0889a560f94641d6114a021cbb12322890a49d8ddfa3457\"",
+      "etag": "W/\"4c81c852702e43c2d91e426cc5ed094a92b8b9530b6abcd3271b0892778f6ac8\"",
       "json": []
     },
     "/orgs/alibaba/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"7a913341ee67d2b99282053c8b1c1bcf101273840a57625a87bfd03afaecebe1\"",
+      "etag": "W/\"0fd4e26e307a301b323d2bf24b5a045d188c9cfb07e4cee6f5897277fc439165\"",
       "json": []
     },
     "/orgs/tencent/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"a8908c1dc1cae01aeb042a0f8e3eff0242dd1db91b3ed56a0114c4be824fea36\"",
+      "etag": "W/\"42128d33255ab2d4e03c8537b0422a0334502e6cca66dcf990c6d0d28c37f1ea\"",
       "json": []
     },
     "/orgs/bytedance/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"1b006435ad67081d4fe1cd240683dc24f973715d2edb0f25ce6a459c32f7a350\"",
+      "etag": "W/\"4088d6389ab3d817cdc8ec2e0185cf257746952a81752961002304854354016f\"",
       "json": []
     },
     "/orgs/antgroup/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"3e671023b20a0cca7099ec31a4e40e5143b92f7a634f5f48c75a0a1c78bc5a8f\"",
+      "etag": "W/\"7c3775771cdf7a80b4f16a9c2ed42139a3a3d15a6e106719227df5122b04cf84\"",
       "json": []
     },
     "/orgs/deepseek-ai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"f2db644ba6b1cb178425ed05bbb0b96009cfddf17ba3f50094c7839559af2928\"",
+      "etag": "W/\"3f8612e31456fafedacb6d8c37bdaa5933122326a5ed93e5f788eeb448a85734\"",
       "json": []
     },
     "/orgs/QwenLM/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"1e5233a04900a31efe0214a1ee5aeda86d9188867f2c854eefa6239d5bd9fda0\"",
+      "etag": "W/\"e3dd4b34fe808e0e5167a1efd22f38a78110df13a26d456ea30e920b724478d7\"",
       "json": []
     },
     "/orgs/apache/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"cfda6f1417ddea71b7525f405dca7d434912d23fdf49bbca908fb90c651a1b63\"",
+      "etag": "W/\"5676ee88b1aa30b9ec5ae50e176e9243c6ff802870220b2d739d1f2b12b77de4\"",
       "json": []
     }
   },
-  "last_run": "2026-11-27T10:56:58.648511+00:00"
+  "last_run": "2026-11-27T10:59:41.566730+00:00"
 }

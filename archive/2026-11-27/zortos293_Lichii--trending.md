@@ -1,6 +1,6 @@
 # 趋势新仓库 zortos293/Lichii
 
-来源: https://gi…[已脱敏]
+来源: https://github.com/zortos293/Lichii
 
 ---
 
