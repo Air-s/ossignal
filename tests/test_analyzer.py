@@ -66,19 +66,26 @@ def test_create_analyzer_auto_prefers_gemini_when_key_present(monkeypatch):
     assert a.model == "m-gem"
 
 
-def test_create_analyzer_auto_uses_github_models_without_gemini(monkeypatch):
+def test_create_analyzer_auto_uses_openai_compat_without_gemini(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setenv("OPENAI_API_KEY", "k")
+    monkeypatch.setenv("OPENAI_BASE_URL", "https://x.example/v1")
+    a = create_analyzer(settings("auto"))
+    assert type(a).__name__ == "OpenAICompatAnalyzer"
+
+
+def test_create_analyzer_explicit_openai(monkeypatch):
+    monkeypatch.setenv("OPENAI_API_KEY", "k")
+    monkeypatch.setenv("OPENAI_BASE_URL", "https://x.example/v1")
+    a = create_analyzer(settings("openai"))
+    assert type(a).__name__ == "OpenAICompatAnalyzer"
+
+
+def test_create_analyzer_github_models_deprecated_routes_to_noop(monkeypatch):
+    # github-models 已退役，应不再走 GitHubModelsAnalyzer
     monkeypatch.setenv("GITHUB_TOKEN", "t")
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    a = create_analyzer(settings("auto"))
-    assert isinstance(a, GitHubModelsAnalyzer)
-    assert a.model == "m-gh"
-
-
-def test_create_analyzer_explicit_github_models(monkeypatch):
-    monkeypatch.setenv("GITHUB_TOKEN", "t")
-    monkeypatch.setenv("GEMINI_API_KEY", "g")
-    a = create_analyzer(settings("github-models"))
-    assert isinstance(a, GitHubModelsAnalyzer)
+    assert isinstance(create_analyzer(settings("github-models")), NoopAnalyzer)
 
 
 def test_create_analyzer_explicit_gemini_without_key_is_noop(monkeypatch):

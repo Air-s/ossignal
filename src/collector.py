@@ -19,6 +19,14 @@ _MIRROR_MARKERS = (
     "自动同步", "镜像", "搬运", "同步自", "fork自",
 )
 
+# 明显非技术/灰产关键词：外挂、作弊、破解、安装器、盗版软件等，不进技术雷达。
+_SPAM_MARKERS = (
+    "cheat", "cheats", "aimbot", "wallhack", "esp ", "undetect",
+    "money dupe", "dupe", "crack", "cracked", "keygen", "trainer",
+    "mod menu", "installer", "warez", "roblox", "aim ", "combat aid",
+    "in-game", "外挂", "作弊", "破解", "刷", "辅助",
+)
+
 
 @dataclass
 class Event:
@@ -31,7 +39,7 @@ class Event:
 
 
 def passes_quality_gate(item: dict) -> bool:
-    """判断一个仓库是否值得进入日报（过滤镜像/fork/archived/空描述）。
+    """判断一个仓库是否值得进入日报（过滤镜像/fork/archived/空描述/灰产外挂）。
 
     item 为 GitHub API 返回的仓库对象（Search API 或 org repos 条目）。
     返回 False 表示应被拦下。
@@ -46,6 +54,9 @@ def passes_quality_gate(item: dict) -> bool:
     if not desc:
         return False
     for marker in _MIRROR_MARKERS:
+        if marker.lower() in desc:
+            return False
+    for marker in _SPAM_MARKERS:
         if marker.lower() in desc:
             return False
     return True

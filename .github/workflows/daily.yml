@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write           # 提交 reports/ archive/ data/
-  models: read              # 调用 GitHub Models 推理 API
 
 jobs:
   run:

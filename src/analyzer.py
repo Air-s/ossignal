@@ -293,33 +293,35 @@ class NoopAnalyzer(BaseAnalyzer):
 
 
 def create_analyzer(settings: Settings) -> BaseAnalyzer:
-    """按 provider 配置选择实现：
-    - provider 显式指定 gemini / openai / github-models / none 时，走指定 provider；
-    - provider 为 auto 时，有 GEMINI_API_KEY 用 Gemini，否则用 GitHub Models；
-    - 完全无 Key 时降级 NoopAnalyzer。
+    """按 provider 配置选择实现。
+
+    重要：GitHub Models 已于 2026-07-30 全面退役，models.github.ai 端点只返回
+    text/plain 的 "OK" 占位符，不再提供推理。因此不再支持 github-models provider，
+    自动降级到 Gemini / OpenAI 兼容端点。
+
+    - provider 显式指定 gemini / openai / none 时，走指定 provider；
+    - provider 为 auto 时，有 GEMINI_API_KEY 用 Gemini，否则有 OPENAI_* 用 OpenAI 兼容；
+    - 完全无 Key 时降级 NoopAnalyzer（纯采集模式）。
     """
     provider = settings.llm_provider
-    gh_token = os.environ.get("GITHUB_TOKEN")
     gemini_key = os.environ.get("GEMINI_API_KEY")
     openai_key = os.environ.get("OPENAI_API_KEY")
+    openai_base = os.environ.get("OPENAI_BASE_URL")
 
     if provider == "none":
         return NoopAnalyzer()
 
     if provider == "gemini":
-        return GeminiAnalyzer(gemini_key or "", settings.gemini_model) if gemini_key else NoopAnalyzer()
+        return GeminiAnalyzer(gemini_key, settings.gemini_model) if gemini_key else NoopAnalyzer()
 
     if provider == "openai":
-        base_url = os.environ.get("OPENAI_BASE_URL", "")
         model = os.environ.get("OPENAI_MODEL", settings.github_models_model)
-        return OpenAICompatAnalyzer(base_url, openai_key or "", model) if (openai_key and base_url) else NoopAnalyzer()
+        return OpenAICompatAnalyzer(openai_base, openai_key, model) if (openai_key and openai_base) else NoopAnalyzer()
 
-    if provider == "github-models":
-        return GitHubModelsAnalyzer(gh_token, settings.github_models_model) if gh_token else NoopAnalyzer()
-
-    # auto：优先 Gemini，其次 GitHub Models
+    # auto（github-models 已退役，不再支持）：优先 Gemini，其次 OpenAI 兼容端点
     if gemini_key:
         return GeminiAnalyzer(gemini_key, settings.gemini_model)
-    if gh_token:
-        return GitHubModelsAnalyzer(gh_token, settings.github_models_model)
+    if openai_key and openai_base:
+        model = os.environ.get("OPENAI_MODEL", settings.github_models_model)
+        return OpenAICompatAnalyzer(openai_base, openai_key, model)
     return NoopAnalyzer()
