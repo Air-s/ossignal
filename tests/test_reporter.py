@@ -46,3 +46,29 @@ def test_archive_docs_sanitizes_filenames(tmp_path):
     assert written[0].name == "owner_repo--new_release.md"
     assert "原文内容" in written[0].read_text(encoding="utf-8")
     assert "http://u" in written[0].read_text(encoding="utf-8")
+
+
+def test_render_interpretation_field():
+    a = ana("x/1", "大模型")
+    a.interpretation = "解决XX问题，与YY对比，值得跟进"
+    md = render_daily_report(DAY, [a], [])
+    assert "技术解读: 解决XX问题" in md
+    assert "定位: 简介" in md
+
+
+def test_render_degraded_goes_to_separate_section():
+    a = ana("x/1", "大模型")
+    a.degraded = True
+    md = render_daily_report(DAY, [a], [], ["LLM 解析失败"])
+    assert "## 降级条目" in md
+    assert "## 分析降级说明" in md
+    assert "LLM 解析失败" in md
+    # 降级条目不应出现在分类章节
+    assert "## 大模型" not in md
+
+
+def test_render_unknown_category_normalized():
+    a = ana("x/1", "AI/ML")
+    md = render_daily_report(DAY, [a], [])
+    assert "## 其他" in md
+    assert "## AI/ML" not in md

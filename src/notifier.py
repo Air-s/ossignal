@@ -14,7 +14,7 @@ def build_summary(day_str: str, analyses: list[Analysis], report_url: str) -> st
     for a in analyses[:10]:
         lines.append(f"· [{a.category}] {a.event.repo} - {a.summary}")
     if len(analyses) > 10:
-        lines.append(f"... 等 {len(analyses)} 条")
+        lines.append(f"... 等 {len(analyses) - 10} 条")
     if report_url:
         lines.append(f"完整报告: {report_url}")
     return "\n".join(lines)

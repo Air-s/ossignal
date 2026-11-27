@@ -98,9 +98,10 @@ def test_org_new_repo_filters_by_age_stars_and_seen():
     )
     events, _ = collect_events(client, ORG_CFG, REPO_CFG, state)
     assert [e.repo for e in events] == ["bigtech/hot"]
-    # 所有扫描过的都记入 seen，避免重复扫描；old 触发提前终止不记入
+    # 达标的 hot 记入 seen；已见过的 seen 保留；cold（star 不达标）不再写 seen，避免永久漏报
     assert "bigtech/seen" in state.seen_new_repos
-    assert "bigtech/cold" in state.seen_new_repos
+    assert "bigtech/hot" in state.seen_new_repos
+    assert "bigtech/cold" not in state.seen_new_repos
 
 
 def test_trending_dedupes_tracked_and_seen():
@@ -131,3 +132,42 @@ def test_single_source_failure_does_not_break_others():
     events, failures = collect_events(client, ORG_CFG, REPO_CFG, state)
     assert [e.repo for e in events] == ["x/new"]
     assert any("a/b" in f for f in failures)
+
+
+# ---- 质量闸门测试 ----
+
+def test_quality_gate_blocks_mirror_fork_archived_empty():
+    from src.collector import passes_quality_gate
+    assert passes_quality_gate({"description": "Unmodified mirror of codec-d/cool_fox"}) is False
+    assert passes_quality_gate({"description": "A real project", "fork": True}) is False
+    assert passes_quality_gate({"description": "A real project", "archived": True}) is False
+    assert passes_quality_gate({"description": "   "}) is False
+    assert passes_quality_gate({"description": None}) is False
+    assert passes_quality_gate({"description": "镜像 自动同步"}) is False
+    assert passes_quality_gate({"description": "A legit deep learning library"}) is True
+
+
+def test_trending_filters_out_mirror_repo():
+    state = State()
+    client = StubClient(
+        repos_meta={"a/b": meta(0)},
+        trending=[
+            {"full_name": "x/mirror", "html_url": "h", "description": "Unmodified mirror of foo", "stargazers_count": 300},
+            {"full_name": "x/real", "html_url": "h", "description": "A useful tool", "stargazers_count": 300},
+        ],
+    )
+    events, _ = collect_events(client, ORG_CFG, REPO_CFG, state)
+    assert [e.repo for e in events] == ["x/real"]
+
+
+def test_org_new_repo_blocks_mirror():
+    state = State()
+    client = StubClient(
+        repos_meta={"a/b": meta(0)},
+        org_repos={"bigtech": [
+            {"full_name": "bigtech/mirror", "created_at": iso(1), "stargazers_count": 80, "html_url": "h", "description": "fork of upstream", "fork": True},
+            {"full_name": "bigtech/real", "created_at": iso(1), "stargazers_count": 80, "html_url": "h", "description": "real project"},
+        ]},
+    )
+    events, _ = collect_events(client, ORG_CFG, REPO_CFG, state)
+    assert [e.repo for e in events] == ["bigtech/real"]

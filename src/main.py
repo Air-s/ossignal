@@ -21,18 +21,24 @@ def run_daily(dry_run: bool = False) -> int:
     state = State.load()
 
     client = GitHubClient(cache=state.http_cache)
-    events, failures = collect_events(client, org_cfg, repo_cfg, state)
-    events = events[: settings.max_items_per_run]
+    events, failures = collect_events(
+        client, org_cfg, repo_cfg, state,
+        trending_days=settings.trending_days,
+        trending_min_stars=settings.trending_min_stars,
+        trending_limit=settings.trending_limit,
+    )
 
     analyzer = create_analyzer(settings)
+    llm_errors: list[str] = []
     try:
         analyses = analyzer.analyze(events)
+        llm_errors = getattr(analyzer, "last_errors", [])
     except Exception as e:  # noqa: BLE001 - LLM 失败降级，日报照常产出
-        failures.append(f"LLM 分析失败，已降级为原始信息: {e}")
+        llm_errors.append(f"LLM 分析失败，已降级为原始信息: {e}")
         analyses = NoopAnalyzer().analyze(events)
 
     today = date.today()
-    report = render_daily_report(today, analyses, failures)
+    report = render_daily_report(today, analyses, failures, llm_errors)
 
     if dry_run:
         print(report)

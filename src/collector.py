@@ -13,6 +13,12 @@ from .state import State
 
 API = "https://api.github.com"
 
+# 描述中命中这些关键词的仓库大概率是镜像/搬运/自动生成，直接拦下。
+_MIRROR_MARKERS = (
+    "mirror", "fork of ", "forked from", "unmodified mirror", "copy of ",
+    "自动同步", "镜像", "搬运", "同步自", "fork自",
+)
+
 
 @dataclass
 class Event:
@@ -22,6 +28,27 @@ class Event:
     url: str
     detail: str
     stars: int = 0
+
+
+def passes_quality_gate(item: dict) -> bool:
+    """判断一个仓库是否值得进入日报（过滤镜像/fork/archived/空描述）。
+
+    item 为 GitHub API 返回的仓库对象（Search API 或 org repos 条目）。
+    返回 False 表示应被拦下。
+    """
+    if item.get("fork"):
+        return False
+    if item.get("archived"):
+        return False
+    if item.get("disabled"):
+        return False
+    desc = (item.get("description") or "").strip().lower()
+    if not desc:
+        return False
+    for marker in _MIRROR_MARKERS:
+        if marker.lower() in desc:
+            return False
+    return True
 
 
 class CachedResponse:
@@ -83,7 +110,13 @@ class GitHubClient:
         if use_cache and resp.status_code == 200:
             etag = resp.headers.get("ETag")
             if etag:
-                self.cache[key] = {"etag": etag, "json": resp.json()}
+                body = resp.json()
+                # 列表类接口（org repos 等）响应体巨大，只缓存 ETag 不缓存 body，
+                # 避免 state.json 无限膨胀；单对象接口才缓存完整 JSON。
+                if isinstance(body, list):
+                    self.cache[key] = {"etag": etag, "json": []}
+                else:
+                    self.cache[key] = {"etag": etag, "json": body}
         return resp
 
     def get_repo(self, repo: str) -> dict:
@@ -131,7 +164,7 @@ class GitHubClient:
         resp = self._get(
             "/search/repositories",
             use_cache=False,  # 查询按日期变化且响应体量大，不进 ETag 缓存，避免 state.json 膨胀
-            q=f"created:>{since} stars:>={min_stars}",
+            q=f"created:>{since} stars:>={min_stars} fork:false archived:false",
             sort="stars", order="desc", per_page=limit,
         )
         resp.raise_for_status()
@@ -194,19 +227,26 @@ def _new_repo_events(client: GitHubClient, org: str, cfg: OrgConfig, state: Stat
         full = item["full_name"]
         if full in state.seen_new_repos:
             continue
-        state.seen_new_repos.add(full)
-        if item["stargazers_count"] >= cfg.new_repo_min_stars:
-            events.append(Event(
-                kind="new_repo", repo=full,
-                title=f"新仓库 {full}",
-                url=item["html_url"],
-                detail=(item.get("description") or "")[:500],
-                stars=item["stargazers_count"],
-            ))
+        # 先过 star 阈值再写 seen：避免当时不达标、后来涨上来的仓库被永久漏报。
+        if item["stargazers_count"] < cfg.new_repo_min_stars:
+            continue
+        if not passes_quality_gate(item):
+            state.mark_seen(full)  # 质量不达标的也标记已见，避免每日重复扫描
+            continue
+        state.mark_seen(full)
+        events.append(Event(
+            kind="new_repo", repo=full,
+            title=f"新仓库 {full}",
+            url=item["html_url"],
+            detail=(item.get("description") or "")[:500],
+            stars=item["stargazers_count"],
+        ))
     return events
 
 
-def collect_events(client: GitHubClient, org_cfg: OrgConfig, repo_cfg: RepoConfig, state: State) -> tuple[list[Event], list[str]]:
+def collect_events(client: GitHubClient, org_cfg: OrgConfig, repo_cfg: RepoConfig, state: State,
+                   trending_days: int = 1, trending_min_stars: int = 100,
+                   trending_limit: int = 20) -> tuple[list[Event], list[str]]:
     """汇总三路来源的事件。单源失败记录到 failures，不影响其他来源。"""
     events: list[Event] = []
     failures: list[str] = []
@@ -225,11 +265,13 @@ def collect_events(client: GitHubClient, org_cfg: OrgConfig, repo_cfg: RepoConfi
 
     try:
         tracked = set(repo_cfg.repos)
-        for item in client.search_trending():
+        for item in client.search_trending(days=trending_days, min_stars=trending_min_stars, limit=trending_limit):
             full = item["full_name"]
             if full in tracked or full in state.seen_new_repos:
                 continue
-            state.seen_new_repos.add(full)  # 记入 seen，避免同一趋势仓库跨日重复上报
+            state.mark_seen(full)  # 记入 seen，避免同一趋势仓库跨日重复上报
+            if not passes_quality_gate(item):
+                continue  # 镜像/搬运/空描述等，拦下不进日报
             events.append(Event(
                 kind="trending", repo=full,
                 title=f"趋势新仓库 {full}",

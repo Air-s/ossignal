@@ -14,6 +14,9 @@ class Settings:
     github_models_model: str
     gemini_model: str
     max_items_per_run: int
+    trending_days: int
+    trending_min_stars: int
+    trending_limit: int
     notifier_enabled: bool
     notifier_type: str
 
@@ -47,6 +50,9 @@ def load_settings(config_dir: Path = CONFIG_DIR) -> Settings:
         github_models_model=llm.get("github_models", {}).get("model", "openai/gpt-4o-mini"),
         gemini_model=llm.get("gemini", {}).get("model", "gemini-2.0-flash"),
         max_items_per_run=raw.get("analysis", {}).get("max_items_per_run", 30),
+        trending_days=raw.get("analysis", {}).get("trending_days", 1),
+        trending_min_stars=raw.get("analysis", {}).get("trending_min_stars", 100),
+        trending_limit=raw.get("analysis", {}).get("trending_limit", 20),
         notifier_enabled=notifier.get("enabled", False),
         notifier_type=notifier.get("type", "feishu"),
     )

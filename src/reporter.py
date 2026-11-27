@@ -12,29 +12,47 @@ def _category_sort_key(category: str) -> int:
     return CATEGORY_ORDER.index(category) if category in CATEGORY_ORDER else len(CATEGORY_ORDER)
 
 
-def render_daily_report(day: date, analyses: list[Analysis], failures: list[str]) -> str:
+def _normalize_category(category: str) -> str:
+    """把 LLM 可能返回的异常分类名规整到白名单，未知分类归入「其他」。"""
+    c = (category or "").strip()
+    return c if c in CATEGORY_ORDER else "其他"
+
+
+def render_daily_report(day: date, analyses: list[Analysis], failures: list[str],
+                        llm_errors: list[str] | None = None) -> str:
+    """渲染日报。failures 为采集异常；llm_errors 为 LLM 分析降级信息，分章节展示。"""
     lines = [f"# 开源技术雷达日报 {day.isoformat()}", ""]
     if not analyses:
         lines += ["今日无值得关注的新动态。", ""]
 
+    # 正文与降级分开展示：降级条目（degraded=True）不进正文，归入「降级条目」章节
+    body = [a for a in analyses if not a.degraded]
+    degraded = [a for a in analyses if a.degraded]
+
     groups: dict[str, list[Analysis]] = {}
-    for a in analyses:
-        groups.setdefault(a.category or "其他", []).append(a)
+    for a in body:
+        cat = _normalize_category(a.category)
+        groups.setdefault(cat, []).append(a)
 
     for category in sorted(groups, key=_category_sort_key):
         lines.append(f"## {category}")
         lines.append("")
         for a in groups[category]:
-            lines.append(f"### [{a.event.title}]({a.event.url})")
-            lines.append("")
-            lines.append(f"- Stars: {a.event.stars}")
-            if a.summary:
-                lines.append(f"- 简介: {a.summary}")
-            if a.highlights:
-                lines.append(f"- 亮点: {a.highlights}")
-            if a.recommendation:
-                lines.append(f"- 推荐理由: {a.recommendation}")
-            lines.append("")
+            _render_item(lines, a)
+
+    if degraded:
+        lines.append("## 降级条目")
+        lines.append("")
+        lines.append("> 以下条目因 LLM 分析失败，仅保留原始信息，未做技术解读。")
+        lines.append("")
+        for a in degraded:
+            _render_item(lines, a)
+
+    if llm_errors:
+        lines.append("## 分析降级说明")
+        lines.append("")
+        lines += [f"- {e}" for e in llm_errors]
+        lines.append("")
 
     if failures:
         lines.append("## 采集异常")
@@ -43,6 +61,22 @@ def render_daily_report(day: date, analyses: list[Analysis], failures: list[str]
         lines.append("")
 
     return "\n".join(lines)
+
+
+def _render_item(lines: list[str], a: Analysis) -> None:
+    """渲染单条动态为一个小节（标题 + 定位 + 解读 + 亮点 + 推荐 + 建议动作）。"""
+    lines.append(f"### [{a.event.title}]({a.event.url})")
+    lines.append("")
+    lines.append(f"- Stars: {a.event.stars}")
+    if a.summary:
+        lines.append(f"- 定位: {a.summary}")
+    if a.interpretation:
+        lines.append(f"- 技术解读: {a.interpretation}")
+    if a.highlights:
+        lines.append(f"- 亮点: {a.highlights}")
+    if a.recommendation:
+        lines.append(f"- 推荐理由: {a.recommendation}")
+    lines.append("")
 
 
 def write_report(content: str, reports_dir: Path, day: date) -> Path:

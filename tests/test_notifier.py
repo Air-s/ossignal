@@ -16,7 +16,7 @@ def test_build_summary_truncates_to_ten():
     assert "共 15 条动态" in text
     assert "o/r9" in text
     assert "o/r10" not in text
-    assert "等 15 条" in text
+    assert "等 5 条" in text
     assert "http://report" in text
 
 
