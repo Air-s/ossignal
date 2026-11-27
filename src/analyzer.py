@@ -19,8 +19,9 @@ from .collector import Event
 from .config_loader import Settings
 
 BATCH_SIZE = 6          # 每批最多分析的事件数，降低单次输出过长导致格式失真的概率
-MAX_RETRIES = 2         # 网络/服务端错误的重试次数
+MAX_RETRIES = 3         # 网络/服务端错误的重试次数
 REQUEST_TIMEOUT = 120
+BATCH_INTERVAL = 3      # 批间休眠秒数，降低触发限流的概率
 
 PROMPT = """你是技术雷达分析师，读者是做技术预研的工程师。下面是今日 GitHub 上值得关注的事件列表（JSON）。
 请逐条给出中文分析，严格输出 JSON 数组（不要输出任何解释文字，不要用 markdown 代码块包裹），每项包含：
@@ -157,8 +158,9 @@ def _post_json(url: str, payload: dict, headers: dict, timeout: int = REQUEST_TI
 
 
 def _backoff(attempt: int) -> None:
+    # 指数退避，上限 30s：429/503 需要比 1~2s 更长的等待
     if attempt < MAX_RETRIES:
-        time.sleep(2 ** attempt)
+        time.sleep(min(2 ** (attempt + 1), 30))
 
 
 def _sanitize_request_error(e: requests.RequestException) -> Exception:
@@ -272,8 +274,10 @@ def _analyze_in_batches(analyzer, events: list[Event]) -> list[Analysis]:
         return []
     analyzer.last_errors = []
     results: list[Analysis] = []
-    for i in range(0, len(events), BATCH_SIZE):
-        batch = events[i:i + BATCH_SIZE]
+    for i, start in enumerate(range(0, len(events), BATCH_SIZE)):
+        batch = events[start:start + BATCH_SIZE]
+        if i > 0:
+            time.sleep(BATCH_INTERVAL)  # 批间休眠，降低限流
         try:
             br = analyzer._analyze_batch(batch)  # type: ignore[attr-defined]
         except Exception as e:  # noqa: BLE001 - 单批失败降级该批
