@@ -26,32 +26,8 @@
       "readme_sha": "d230b6c0ad3a26b49b68b93737c2d652a1e56828"
     }
   },
-  "seen_new_repos": [
-    "Arekejoker/sprite-turntable",
-    "TheFoxGames/xeno-rbx-babemar",
-    "ali1814alali-coder/fl-studio-installer-ralelor",
-    "dazacode/vilauncher",
-    "gomakhalid92-bot/robrun-money-dupe-undetect",
-    "gsmkhulna/cinema-4d-saralen",
-    "mobilelegendsak47-sketch/rob-run-cheat",
-    "ndamase107/robrun-mod-trainer",
-    "niteshnandan790/robrun-cheat",
-    "shahroz-0/robrun-cheat-undetect",
-    "ziosatya/rob-run-aim"
-  ],
-  "seen_since": {
-    "shahroz-0/robrun-cheat-undetect": "2026-11-27T11:28:18.657778+00:00",
-    "TheFoxGames/xeno-rbx-babemar": "2026-11-27T11:28:18.657843+00:00",
-    "ndamase107/robrun-mod-trainer": "2026-11-27T11:28:18.657850+00:00",
-    "ziosatya/rob-run-aim": "2026-11-27T11:28:18.657804+00:00",
-    "gsmkhulna/cinema-4d-saralen": "2026-11-27T11:28:18.657829+00:00",
-    "Arekejoker/sprite-turntable": "2026-11-27T11:28:18.657854+00:00",
-    "gomakhalid92-bot/robrun-money-dupe-undetect": "2026-11-27T11:28:18.657812+00:00",
-    "dazacode/vilauncher": "2026-11-27T11:28:18.657861+00:00",
-    "niteshnandan790/robrun-cheat": "2026-11-27T11:28:18.657818+00:00",
-    "ali1814alali-coder/fl-studio-installer-ralelor": "2026-11-27T11:28:18.657822+00:00",
-    "mobilelegendsak47-sketch/rob-run-cheat": "2026-11-27T11:28:18.657827+00:00"
-  },
+  "seen_new_repos": [],
+  "seen_since": {},
   "http_cache": {
     "/repos/vllm-project/vllm?": {
       "etag": "W/\"cf3bd3dcee5ec664f987521250b517abea4c19b83cddc27323d4dbe78cb4e9f2\"",
@@ -2177,5 +2153,5 @@
       "json": []
     }
   },
-  "last_run": "2026-11-27T11:28:50.136253+00:00"
+  "last_run": "2026-11-27T11:32:05.555807+00:00"
 }
