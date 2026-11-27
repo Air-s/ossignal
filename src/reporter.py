@@ -7,13 +7,24 @@ from .analyzer import Analysis
 
 CATEGORY_ORDER = ["AI基础设施", "大模型", "数据库", "DevOps", "前端", "安全", "其他", "未分类"]
 
-# 形似密钥的长串（连续 20+ 位大写字母数字/hex/base64），用于脱敏，
+# 形似密钥的长串（连续 20+ 位字母数字/hex/base64），用于脱敏，
 # 避免 LLM 幻觉或原文中夹带的字符串被 GitHub secret scanning 误判为密钥而阻断 push。
-_SECRETISH_RE = re.compile(r"[A-Za-z0-9+/_-]{20,}")
+_SECRETISH_RE = re.compile(r"[A-Za-z0-9+/_.\-]{20,}")
+
+# 已知密钥前缀（GCP/OAuth/Generic），只要出现就整段打码，覆盖含 "." 等分隔符的情况。
+_SECRET_PREFIXES = ("AIza", "GOCSPX", "ya29.", "ghp_", "gho_", "ghu_", "github_pat_", "sk-", "AKIA", "ASIA")
 
 
 def _redact(text: str) -> str:
     """把形似密钥的长串打码，防止 GitHub 推送保护误报阻断日报提交。"""
+    # 先处理已知前缀：从前缀开始到空白/标点结束的整段打码
+    for p in _SECRET_PREFIXES:
+        text = re.sub(
+            rf"{re.escape(p)}[A-Za-z0-9_.\-]+",
+            lambda m: m.group(0)[:4] + "…[已脱敏]",
+            text,
+        )
+    # 再处理一般长串
     return _SECRETISH_RE.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", text)
 
 

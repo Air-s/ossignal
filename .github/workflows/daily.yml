@@ -35,6 +35,9 @@ jobs:
           WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
         run: python -m src.main
 
+      - name: Redact secrets before commit
+        run: python -m src.redact_output
+
       - name: Commit results
         run: |
           git config user.name "oss-radar-bot"
