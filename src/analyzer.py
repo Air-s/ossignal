@@ -18,7 +18,8 @@ import requests
 from .collector import Event
 from .config_loader import Settings
 
-BATCH_SIZE = 6          # 每批最多分析的事件数，降低单次输出过长导致格式失真的概率
+BATCH_SIZE = 20         # 每批最多分析的事件数。调大以合并请求：Gemini 免费层每日配额极低，
+                        # 一次请求分析完当天所有条目，可把请求数降到最低（20 条 = 1 次请求）。
 MAX_RETRIES = 3         # 网络/服务端错误的重试次数
 REQUEST_TIMEOUT = 120
 BATCH_INTERVAL = 3      # 批间休眠秒数，降低触发限流的概率
