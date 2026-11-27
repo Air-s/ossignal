@@ -170,6 +170,17 @@ def _sanitize_request_error(e: requests.RequestException) -> Exception:
     return type(e)(msg)
 
 
+# 形似密钥的长串（连续 20+ 位字母数字/hex/base64，含 . / _ / - 分隔符），用于脱敏。
+_SECRETISH_RE = re.compile(r"[A-Za-z0-9._\-]{20,}")
+
+
+def _redact_secretish(text: str) -> str:
+    """把形似密钥的长串打码（如 API key、token），用于留痕时避免泄漏到日志/日报。"""
+    if not text:
+        return ""
+    return _SECRETISH_RE.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", text)
+
+
 class GitHubModelsAnalyzer(BaseAnalyzer):
     """GitHub Models 推理 API，使用 Actions 内置 GITHUB_TOKEN。"""
 
@@ -225,7 +236,7 @@ class GeminiAnalyzer(BaseAnalyzer):
                     headers={"x-goog-api-key": self.api_key, "Content-Type": "application/json"},
                 )
                 if resp.status_code == 429 or resp.status_code >= 500:
-                    last_exc = requests.HTTPError(f"HTTP {resp.status_code}")
+                    last_exc = requests.HTTPError(self._describe_http_error(resp))
                     _backoff(attempt)
                     continue
                 resp.raise_for_status()
@@ -238,6 +249,20 @@ class GeminiAnalyzer(BaseAnalyzer):
                 last_exc = _sanitize_request_error(e)
                 _backoff(attempt)
         return _BatchResult(errors=[f"LLM 请求失败（重试 {MAX_RETRIES} 次后）: {last_exc}"])
+
+    @staticmethod
+    def _describe_http_error(resp) -> str:
+        """把非 2xx 响应的状态码 + 响应体摘要拼进错误信息，便于事后诊断。
+
+        响应体可能包含密钥/敏感信息，截断到 300 字并做一次脱敏。
+        """
+        body = ""
+        try:
+            text = resp.text[:300]
+            body = _redact_secretish(text)
+        except Exception:  # noqa: BLE001
+            body = ""
+        return f"HTTP {resp.status_code}" + (f" | body: {body}" if body else "")
 
     def analyze(self, events: list[Event]) -> list[Analysis]:
         return _analyze_in_batches(self, events)
