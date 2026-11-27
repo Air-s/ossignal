@@ -72,3 +72,20 @@ def test_render_unknown_category_normalized():
     md = render_daily_report(DAY, [a], [])
     assert "## 其他" in md
     assert "## AI/ML" not in md
+
+
+def test_redact_masks_secret_like_long_strings():
+    from src.reporter import _redact
+    # 40 位 GCP key 风格字符串应被脱敏
+    assert "已脱敏" in _redact("key=AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    # 短字符串 / 正常中文不受影响
+    assert _redact("这是一个正常的简介") == "这是一个正常的简介"
+    assert _redact("支持量化") == "支持量化"
+
+
+def test_render_redacts_secret_like_text():
+    a = ana("x/1", "大模型")
+    a.interpretation = "示例密钥 AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ 请勿泄露"
+    md = render_daily_report(DAY, [a], [])
+    assert "AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ" not in md
+    assert "已脱敏" in md

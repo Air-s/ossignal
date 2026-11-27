@@ -7,6 +7,15 @@ from .analyzer import Analysis
 
 CATEGORY_ORDER = ["AI基础设施", "大模型", "数据库", "DevOps", "前端", "安全", "其他", "未分类"]
 
+# 形似密钥的长串（连续 20+ 位大写字母数字/hex/base64），用于脱敏，
+# 避免 LLM 幻觉或原文中夹带的字符串被 GitHub secret scanning 误判为密钥而阻断 push。
+_SECRETISH_RE = re.compile(r"[A-Za-z0-9+/_-]{20,}")
+
+
+def _redact(text: str) -> str:
+    """把形似密钥的长串打码，防止 GitHub 推送保护误报阻断日报提交。"""
+    return _SECRETISH_RE.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", text)
+
 
 def _category_sort_key(category: str) -> int:
     return CATEGORY_ORDER.index(category) if category in CATEGORY_ORDER else len(CATEGORY_ORDER)
@@ -69,13 +78,13 @@ def _render_item(lines: list[str], a: Analysis) -> None:
     lines.append("")
     lines.append(f"- Stars: {a.event.stars}")
     if a.summary:
-        lines.append(f"- 定位: {a.summary}")
+        lines.append(f"- 定位: {_redact(a.summary)}")
     if a.interpretation:
-        lines.append(f"- 技术解读: {a.interpretation}")
+        lines.append(f"- 技术解读: {_redact(a.interpretation)}")
     if a.highlights:
-        lines.append(f"- 亮点: {a.highlights}")
+        lines.append(f"- 亮点: {_redact(a.highlights)}")
     if a.recommendation:
-        lines.append(f"- 推荐理由: {a.recommendation}")
+        lines.append(f"- 推荐理由: {_redact(a.recommendation)}")
     lines.append("")
 
 
@@ -96,7 +105,7 @@ def archive_docs(analyses: list[Analysis], archive_dir: Path, day: date) -> list
         path = archive_dir / day.isoformat() / f"{safe_name}--{a.event.kind}.md"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(
-            f"# {a.event.title}\n\n来源: {a.event.url}\n\n---\n\n{a.event.detail}\n",
+            f"# {a.event.title}\n\n来源: {a.event.url}\n\n---\n\n{_redact(a.event.detail)}\n",
             encoding="utf-8",
         )
         written.append(path)
