@@ -1,0 +1,13 @@
+# ollama/ollama 发布 v0.40.19
+
+来源: https://github.com/ollama/ollama/releases/tag/v0.40.19
+
+---
+
+## What's Changed
+* inkling2: faster short histories, draft proposals and conv snapshots by @dhiltgen in https://github.com/ollama/ollama/pull/19881
+* mlxrunner: compact Engram history buffers by @pdevine in https://github.com/ollama/ollama/pull/19913
+* bump llama-server by @pdevine in https://github.com/ollama/ollama/pull/19917
+
+
+**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.18...v0.40.19-rc0
