@@ -1,7 +1,7 @@
 {
   "repos": {
     "vllm-project/vllm": {
-      "stars": 97742,
+      "stars": 97743,
       "last_release": "v0.34.0",
       "readme_sha": "d01261427d0535d9e8f2494f1fc6704e6488bbf4"
     },
@@ -26,12 +26,12 @@
       "readme_sha": "d230b6c0ad3a26b49b68b93737c2d652a1e56828"
     },
     "sgl-project/sglang": {
-      "stars": 39151,
+      "stars": 39152,
       "last_release": "v0.5.23",
       "readme_sha": "81cbca3fe2f2dc3f0f9f06ed24d2dab8f14f04d2"
     },
     "ggml-org/llama.cpp": {
-      "stars": 136487,
+      "stars": 136488,
       "last_release": "v1.1.0",
       "readme_sha": "8f2b101415404dd3572543d2750ba6e957ceba5f"
     },
@@ -66,12 +66,12 @@
       "readme_sha": "831bf0164f8e625d70c35a99ae23fd3522870f52"
     },
     "envoyproxy/envoy": {
-      "stars": 29309,
+      "stars": 29310,
       "last_release": "v1.40.2",
       "readme_sha": "f65c07de163af632b5483215623ba9fe140ae118"
     },
     "istio/istio": {
-      "stars": 38540,
+      "stars": 38541,
       "last_release": "1.32.0",
       "readme_sha": "b661e415aeefb569a3ea002ce9b29e226df2bfdb"
     },
@@ -86,7 +86,7 @@
       "readme_sha": "70351d4789027f73dbcd4baba1299ad77c33efda"
     },
     "mongodb/mongo": {
-      "stars": 28736,
+      "stars": 28737,
       "last_release": null,
       "readme_sha": "c2728e8d826161aa0d8557717a57c603e3b85cda"
     },
@@ -106,7 +106,7 @@
       "readme_sha": "fd07f01107c1ddfa1605e1e70b730b909820928a"
     },
     "pingcap/tidb": {
-      "stars": 40782,
+      "stars": 40783,
       "last_release": "v7.5.8",
       "readme_sha": "11b967a80bf823b4f28a5b11167102de50185156"
     },
@@ -121,7 +121,7 @@
       "readme_sha": "7fa7ccea105f40c3823e3c89de0a07f8fb15ef73"
     },
     "sveltejs/svelte": {
-      "stars": 89870,
+      "stars": 89871,
       "last_release": "svelte@5.59.2",
       "readme_sha": "7ea71647521ae850fd0933665f94760806ac5b29"
     },
@@ -151,7 +151,7 @@
       "readme_sha": "0ec9c2b65d4612c3a9c70eaca316ee870570c905"
     },
     "grafana/loki": {
-      "stars": 29270,
+      "stars": 29272,
       "last_release": "v3.7.11",
       "readme_sha": "32e1eedc9a9fb2d26b731ce5ae5214a52e289207"
     },
@@ -207,53 +207,53 @@
     "ziosatya/rob-run-aim"
   ],
   "seen_since": {
-    "sara75512/wave-luau-workspace": "2026-11-28T10:59:54.432018+00:00",
-    "SanjayWu26480/delta-luau-workspace": "2026-11-28T10:59:54.432024+00:00",
-    "MadisonMattsson163/grand-theft-auto-iv-the-complete-trainer-mod-menu": "2026-11-28T10:59:54.432046+00:00",
-    "SanaRusso559/bo6-cheat": "2026-11-28T04:30:54.711934+00:00",
-    "SecoteFiv29/polymarket-bot": "2026-11-28T04:30:54.711844+00:00",
-    "nWatanabe8281/horizon-forbidden-west-trainer-mod-menu": "2026-11-28T10:59:54.432035+00:00",
-    "niteshnandan790/robrun-cheat": "2026-11-27T11:32:42.523444+00:00",
-    "ndamase107/robrun-mod-trainer": "2026-11-27T11:32:42.523477+00:00",
-    "dazacode/vilauncher": "2026-11-27T11:32:42.523502+00:00",
-    "gsmkhulna/cinema-4d-saralen": "2026-11-27T11:32:42.523457+00:00",
-    "agarnier471/base-uniswap-sniper-bot": "2026-11-28T04:30:54.711882+00:00",
-    "sgray58/exitlag": "2026-11-28T04:30:54.711890+00:00",
-    "Riyak312/valorant-colorbot": "2026-11-28T04:30:54.711938+00:00",
-    "MisaWagner/swbf2-star-wars-battlefront-ii-trainer-mod-menu": "2026-11-28T10:59:54.432031+00:00",
-    "shahroz-0/robrun-cheat-undetect": "2026-11-27T11:32:42.523401+00:00",
-    "lindawu10389/cs2-cheat": "2026-11-28T04:30:54.711828+00:00",
-    "TheFoxGames/xeno-rbx-babemar": "2026-11-27T11:32:42.523469+00:00",
-    "ziosatya/rob-run-aim": "2026-11-27T11:32:42.523429+00:00",
-    "Scholz53/pump-fun-bot": "2026-11-28T04:30:54.711897+00:00",
-    "mobilelegendsak47-sketch/rob-run-cheat": "2026-11-27T11:32:42.523454+00:00",
-    "gomakhalid92-bot/robrun-money-dupe-undetect": "2026-11-27T11:32:42.523437+00:00",
-    "mikaelsiekiera/dressmaker-trainer-mod-menu": "2026-11-28T10:59:54.432064+00:00",
-    "Minho34667/d4-diablo-iv-trainer-mod-menu": "2026-11-28T10:59:54.432061+00:00",
+    "Schmidt42/solana-sniper-bot": "2026-11-28T04:30:54.711905+00:00",
     "SanaZawadzki/r6-cheat": "2026-11-28T04:30:54.711926+00:00",
-    "NarongWalker839/skyrim-special-edition-trainer-mod-menu": "2026-11-28T10:59:54.432057+00:00",
-    "mioannidis40347/oblivion-tes4-the-elder-scrolls-iv-trainer-mod-menu": "2026-11-28T10:59:54.432052+00:00",
-    "adrianpanagiotou/hyperliquid-trading-bot": "2026-11-28T04:30:54.711872+00:00",
-    "Sinano80909/postman-enterprise-desktop-pro-patcher-installer": "2026-11-28T10:59:54.431993+00:00",
+    "SecoteFiv29/polymarket-bot": "2026-11-28T04:30:54.711844+00:00",
+    "MisaWagner/swbf2-star-wars-battlefront-ii-trainer-mod-menu": "2026-11-28T10:59:54.432031+00:00",
+    "rJain655/apex-legends-cheat": "2026-11-28T04:30:54.711922+00:00",
+    "TheFoxGames/xeno-rbx-babemar": "2026-11-27T11:32:42.523469+00:00",
+    "sara75512/wave-luau-workspace": "2026-11-28T10:59:54.432018+00:00",
+    "SanaRusso559/bo6-cheat": "2026-11-28T04:30:54.711934+00:00",
     "Pedro77323/cs2-external": "2026-11-28T04:30:54.711857+00:00",
     "ali1814alali-coder/fl-studio-installer-ralelor": "2026-11-27T11:32:42.523448+00:00",
+    "Minho34667/d4-diablo-iv-trainer-mod-menu": "2026-11-28T10:59:54.432061+00:00",
+    "gsmkhulna/cinema-4d-saralen": "2026-11-27T11:32:42.523457+00:00",
     "Sandra61310/gta-5-mod-menu": "2026-11-28T04:30:54.711912+00:00",
+    "shahroz-0/robrun-cheat-undetect": "2026-11-27T11:32:42.523401+00:00",
     "Arekejoker/sprite-turntable": "2026-11-27T11:32:42.523481+00:00",
-    "schmidt21402/hwid-spoofer": "2026-11-28T04:30:54.711834+00:00",
-    "Schmidt42/solana-sniper-bot": "2026-11-28T04:30:54.711905+00:00",
-    "sergeijang/windows-11-activator": "2026-11-28T04:30:54.711790+00:00",
-    "park969/elite-dangerous-trainer-mod-menu": "2026-11-28T10:59:54.432041+00:00",
-    "ryu61903/rust-cheat": "2026-11-28T04:30:54.711852+00:00",
-    "ewabennett38892/xeno-luau-ide": "2026-11-28T10:59:54.431956+00:00",
-    "rJain655/apex-legends-cheat": "2026-11-28T04:30:54.711922+00:00",
-    "sblanchard352/overwatch-2-cheat": "2026-11-28T04:30:54.711931+00:00",
-    "SoyeonKaraca/no-mercy-trainer-mod-menu": "2026-11-28T04:30:54.711918+00:00",
+    "gomakhalid92-bot/robrun-money-dupe-undetect": "2026-11-27T11:32:42.523437+00:00",
+    "Scholz53/pump-fun-bot": "2026-11-28T04:30:54.711897+00:00",
     "riyasasaki450/fortnite-spoofer": "2026-11-28T04:30:54.711942+00:00",
-    "tylerk9406/forsaken-roblox-script": "2026-11-28T04:30:54.711864+00:00"
+    "tylerk9406/forsaken-roblox-script": "2026-11-28T04:30:54.711864+00:00",
+    "Riyak312/valorant-colorbot": "2026-11-28T04:30:54.711938+00:00",
+    "Sinano80909/postman-enterprise-desktop-pro-patcher-installer": "2026-11-28T10:59:54.431993+00:00",
+    "ryu61903/rust-cheat": "2026-11-28T04:30:54.711852+00:00",
+    "nWatanabe8281/horizon-forbidden-west-trainer-mod-menu": "2026-11-28T10:59:54.432035+00:00",
+    "ndamase107/robrun-mod-trainer": "2026-11-27T11:32:42.523477+00:00",
+    "adrianpanagiotou/hyperliquid-trading-bot": "2026-11-28T04:30:54.711872+00:00",
+    "park969/elite-dangerous-trainer-mod-menu": "2026-11-28T10:59:54.432041+00:00",
+    "mioannidis40347/oblivion-tes4-the-elder-scrolls-iv-trainer-mod-menu": "2026-11-28T10:59:54.432052+00:00",
+    "SanjayWu26480/delta-luau-workspace": "2026-11-28T10:59:54.432024+00:00",
+    "ziosatya/rob-run-aim": "2026-11-27T11:32:42.523429+00:00",
+    "lindawu10389/cs2-cheat": "2026-11-28T04:30:54.711828+00:00",
+    "agarnier471/base-uniswap-sniper-bot": "2026-11-28T04:30:54.711882+00:00",
+    "mikaelsiekiera/dressmaker-trainer-mod-menu": "2026-11-28T10:59:54.432064+00:00",
+    "sgray58/exitlag": "2026-11-28T04:30:54.711890+00:00",
+    "dazacode/vilauncher": "2026-11-27T11:32:42.523502+00:00",
+    "SoyeonKaraca/no-mercy-trainer-mod-menu": "2026-11-28T04:30:54.711918+00:00",
+    "MadisonMattsson163/grand-theft-auto-iv-the-complete-trainer-mod-menu": "2026-11-28T10:59:54.432046+00:00",
+    "NarongWalker839/skyrim-special-edition-trainer-mod-menu": "2026-11-28T10:59:54.432057+00:00",
+    "niteshnandan790/robrun-cheat": "2026-11-27T11:32:42.523444+00:00",
+    "ewabennett38892/xeno-luau-ide": "2026-11-28T10:59:54.431956+00:00",
+    "schmidt21402/hwid-spoofer": "2026-11-28T04:30:54.711834+00:00",
+    "sblanchard352/overwatch-2-cheat": "2026-11-28T04:30:54.711931+00:00",
+    "sergeijang/windows-11-activator": "2026-11-28T04:30:54.711790+00:00",
+    "mobilelegendsak47-sketch/rob-run-cheat": "2026-11-27T11:32:42.523454+00:00"
   },
   "http_cache": {
     "/repos/vllm-project/vllm?": {
-      "etag": "W/\"938dab576eff6f41f341ac498f9cd2bdaca549d8fe58b55efaaa13c3fe15f8da\"",
+      "etag": "W/\"d3537fb82eab23246f00e1f9decf75b4ff63297477564e96c280754ce9dacf2e\"",
       "json": {
         "id": 599547518,
         "node_id": "R_kgDOI7xefg",
@@ -322,7 +322,7 @@
         "releases_url": "https://api.github.com/repos/vllm-project/vllm/releases{/id}",
         "deployments_url": "https://api.github.com/repos/vllm-project/vllm/deployments",
         "created_at": "2023-02-09T11:23:20Z",
-        "updated_at": "2026-11-28T10:51:20Z",
+        "updated_at": "2026-11-28T11:02:35Z",
         "pushed_at": "2026-11-28T10:46:37Z",
         "git_url": "git://github.com/vllm-project/vllm.git",
         "ssh_url": "git@github.com:vllm-project/vllm.git",
@@ -330,8 +330,8 @@
         "svn_url": "https://github.com/vllm-project/vllm",
         "homepage": "https://vllm.ai",
         "size": 395675,
-        "stargazers_count": 97742,
-        "watchers_count": 97742,
+        "stargazers_count": 97743,
+        "watchers_count": 97743,
         "language": "Python",
         "has_issues": true,
         "has_projects": true,
@@ -381,7 +381,7 @@
         "visibility": "public",
         "forks": 25410,
         "open_issues": 11267,
-        "watchers": 97742,
+        "watchers": 97743,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -418,7 +418,7 @@
       }
     },
     "/repos/vllm-project/vllm/releases/latest?": {
-      "etag": "W/\"99219fd044bc404df54fc622883e364706ff4c9d41a04fefcd861f4690947b1a\"",
+      "etag": "W/\"0ae860760ba06d97830536c286853674bdf3e3b957b57d24353944ec193e4318\"",
       "json": {
         "url": "https://api.github.com/repos/vllm-project/vllm/releases/447739190",
         "assets_url": "https://api.github.com/repos/vllm-project/vllm/releases/447739190/assets",
@@ -524,7 +524,7 @@
             "state": "uploaded",
             "size": 78561625,
             "digest": "sha256:2621c0e1f231b09bd225f316447ad87ad9a857e582c08ed7f5cf735a3084225d",
-            "download_count": 732,
+            "download_count": 733,
             "created_at": "2026-11-16T23:49:58Z",
             "updated_at": "2026-11-16T23:50:04Z",
             "browser_download_url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0%2Bcpu-cp38-abi3-manylinux_2_39_aarch64.whl"
@@ -750,7 +750,7 @@
       }
     },
     "/repos/ollama/ollama?": {
-      "etag": "W/\"e3a528a680f30df3bc26d559125266855089723d9dbf569cdf1e14aeb166ab0d\"",
+      "etag": "W/\"c6a1a4435a74b15a84ee506b66f5a609554d6963c66c80a8f100ce3276efc128\"",
       "json": {
         "id": 658928958,
         "node_id": "R_kgDOJ0Z1Pg",
@@ -909,7 +909,7 @@
       }
     },
     "/repos/ollama/ollama/releases/latest?": {
-      "etag": "W/\"1f3854e2a090a6635c765060d690d385e1ce2d0182c3dec4e46b2148c4ecc4f8\"",
+      "etag": "W/\"f5f4d408cec7a23b484440d373c26abf012897b2762ffd88d183c68a0b75bb30\"",
       "json": {
         "url": "https://api.github.com/repos/ollama/ollama/releases/459061903",
         "assets_url": "https://api.github.com/repos/ollama/ollama/releases/459061903/assets",
@@ -979,7 +979,7 @@
             "state": "uploaded",
             "size": 23242,
             "digest": "sha256:5c69e6e4c9452e3b0f9d8b639a26220638b5eadfc367e178bb2694a50086af5f",
-            "download_count": 7300,
+            "download_count": 7413,
             "created_at": "2026-11-27T21:03:21Z",
             "updated_at": "2026-11-27T21:03:21Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/install.ps1"
@@ -1015,7 +1015,7 @@
             "state": "uploaded",
             "size": 15993,
             "digest": "sha256:17659c2456c9e65a3b11056b76da51774911cb822f47bf44f7f3ecc0c40528a8",
-            "download_count": 14733,
+            "download_count": 14930,
             "created_at": "2026-11-27T21:03:22Z",
             "updated_at": "2026-11-27T21:03:22Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/install.sh"
@@ -1051,7 +1051,7 @@
             "state": "uploaded",
             "size": 189225505,
             "digest": "sha256:c335802128e9ac33fc0599fa9da661c3d44fbe0dc0176bb6a2f4134386205942",
-            "download_count": 910,
+            "download_count": 924,
             "created_at": "2026-11-27T21:03:13Z",
             "updated_at": "2026-11-27T21:03:21Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-darwin.tgz"
@@ -1087,7 +1087,7 @@
             "state": "uploaded",
             "size": 232385746,
             "digest": "sha256:86ece905ada3d389e182426a77ac7dc4311c654ce578810be1a7fdfa9b9a3ef0",
-            "download_count": 97329,
+            "download_count": 98546,
             "created_at": "2026-11-27T21:03:08Z",
             "updated_at": "2026-11-27T21:03:16Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/Ollama-darwin.zip"
@@ -1159,7 +1159,7 @@
             "state": "uploaded",
             "size": 1059538173,
             "digest": "sha256:a0441f39adf2c4da3e9513ee8f24e088fdcbc6236eef715e5db0fc2c5ba59985",
-            "download_count": 1224,
+            "download_count": 1240,
             "created_at": "2026-11-27T21:03:15Z",
             "updated_at": "2026-11-27T21:03:53Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-linux-amd64-rocm.tar.zst"
@@ -1195,7 +1195,7 @@
             "state": "uploaded",
             "size": 1649689331,
             "digest": "sha256:8eb99f9dd91c82f4c51a2c891415bfbdf07bd43f627d82514c47dfd613d2070f",
-            "download_count": 15612,
+            "download_count": 15862,
             "created_at": "2026-11-27T21:03:16Z",
             "updated_at": "2026-11-27T21:04:18Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-linux-amd64.tar.zst"
@@ -1267,7 +1267,7 @@
             "state": "uploaded",
             "size": 1705316386,
             "digest": "sha256:29e1dd8826628d73c49655b497c70cb3f3c40f7d0d43ca8f8a150a4e6e4dbc72",
-            "download_count": 1846,
+            "download_count": 1912,
             "created_at": "2026-11-27T21:03:18Z",
             "updated_at": "2026-11-27T21:04:20Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-linux-arm64.tar.zst"
@@ -1303,7 +1303,7 @@
             "state": "uploaded",
             "size": 924789644,
             "digest": "sha256:0cce8da5a7727f70d6fba97ab099f4c14d7b2dda0d1c08dd6126443fb44d0e19",
-            "download_count": 278,
+            "download_count": 288,
             "created_at": "2026-11-27T21:03:09Z",
             "updated_at": "2026-11-27T21:03:41Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-windows-amd64-mlx.zip"
@@ -1339,7 +1339,7 @@
             "state": "uploaded",
             "size": 266561816,
             "digest": "sha256:135c1538d578c7abb5042e7392f1ce98fbed77cdfaf74a8e586d25bd05806349",
-            "download_count": 528,
+            "download_count": 531,
             "created_at": "2026-11-27T21:03:10Z",
             "updated_at": "2026-11-27T21:03:20Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-windows-amd64-rocm.zip"
@@ -1375,7 +1375,7 @@
             "state": "uploaded",
             "size": 1718318809,
             "digest": "sha256:0114b9f103d783b96f14390cf7f11d0fa360040b3ee9941f370fdee503cca308",
-            "download_count": 6495,
+            "download_count": 6587,
             "created_at": "2026-11-27T21:03:11Z",
             "updated_at": "2026-11-27T21:04:24Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/ollama-windows-amd64.zip"
@@ -1447,7 +1447,7 @@
             "state": "uploaded",
             "size": 233223838,
             "digest": "sha256:c938989f515977d56e8b4000573c9643b02aa0e8961f7c76c9c82e6aa7213bbf",
-            "download_count": 2716,
+            "download_count": 2761,
             "created_at": "2026-11-27T21:03:20Z",
             "updated_at": "2026-11-27T21:03:29Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/Ollama.dmg"
@@ -1483,7 +1483,7 @@
             "state": "uploaded",
             "size": 1953925384,
             "digest": "sha256:8b5714e2516809bd8b95d136d42846df2d98b87df514cd5508eb69b5e5f43143",
-            "download_count": 106008,
+            "download_count": 107483,
             "created_at": "2026-11-27T21:03:19Z",
             "updated_at": "2026-11-27T21:04:43Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/OllamaSetup.exe"
@@ -1519,7 +1519,7 @@
             "state": "uploaded",
             "size": 1368,
             "digest": "sha256:9f41f175fc86149112000b8d02c94beb2cb967cfb535880034dd2597ab8e96aa",
-            "download_count": 1532,
+            "download_count": 1550,
             "created_at": "2026-11-27T21:04:44Z",
             "updated_at": "2026-11-27T21:04:44Z",
             "browser_download_url": "https://github.com/ollama/ollama/releases/download/v0.40.19/sha256sum.txt"
@@ -1565,7 +1565,7 @@
       }
     },
     "/repos/langchain-ai/langchain?": {
-      "etag": "W/\"d7cba51a23e58700179ed782dc6c82224304bf916dc6db959a3b4ccb187bc593\"",
+      "etag": "W/\"1f407d07287aad5413d8e2a6f9d015ee58a0259a69604bfad9761b459cf4a748\"",
       "json": {
         "id": 552661142,
         "node_id": "R_kgDOIPDwlg",
@@ -1730,7 +1730,7 @@
       }
     },
     "/repos/langchain-ai/langchain/releases/latest?": {
-      "etag": "W/\"87c47d1b080c5c9d5d9a7d0fb55d5788c2e89dce5d0b971c1b15935b72893402\"",
+      "etag": "W/\"a607e24900fcc3c3d9ace1c95163340dc7481b4efc6fc10670080d2459a753d8\"",
       "json": {
         "url": "https://api.github.com/repos/langchain-ai/langchain/releases/458690245",
         "assets_url": "https://api.github.com/repos/langchain-ai/langchain/releases/458690245/assets",
@@ -1869,7 +1869,7 @@
       }
     },
     "/repos/huggingface/transformers?": {
-      "etag": "W/\"3a33cad23d3f5eaefde51a217d3b069b55c0c32a36316299bcca533581dc333e\"",
+      "etag": "W/\"6cbf1021e46b2fff9dd0e0d6281c3ca38d1fcc42c8f4a3fc4d942aa0acee6e6c\"",
       "json": {
         "id": 155220641,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNTUyMjA2NDE=",
@@ -2033,7 +2033,7 @@
       }
     },
     "/repos/huggingface/transformers/releases/latest?": {
-      "etag": "W/\"901ee9790a0bb4ba1ef90ee766671c6256d7c6b98c0592db2cd5f0d3a83070a6\"",
+      "etag": "W/\"49a76f981b58ada566fed683961b195440d2cce951722f433a32f2b16d09244d\"",
       "json": {
         "url": "https://api.github.com/repos/huggingface/transformers/releases/457003909",
         "assets_url": "https://api.github.com/repos/huggingface/transformers/releases/457003909/assets",
@@ -2100,7 +2100,7 @@
       }
     },
     "/repos/modelscope/modelscope?": {
-      "etag": "W/\"8e1538532bb4a1a3fc169a6c2e4915050e28773210939dd51b7952f91977891d\"",
+      "etag": "W/\"6f1a650cb52a7912d9b332b6ef05fe9b28b9aa758464c13b7901a3ff0acf5de4\"",
       "json": {
         "id": 517552648,
         "node_id": "R_kgDOHtk6CA",
@@ -2253,7 +2253,7 @@
       }
     },
     "/repos/modelscope/modelscope/releases/latest?": {
-      "etag": "W/\"47f746fd48178077f43e4246156e4c6f9884de48781a64a6148ac2afc075806b\"",
+      "etag": "W/\"4f517b1de4b5d9f21fd85d08ae322040378b5dfdb4dd10f32acaa7aec78fb4e6\"",
       "json": {
         "url": "https://api.github.com/repos/modelscope/modelscope/releases/438952240",
         "assets_url": "https://api.github.com/repos/modelscope/modelscope/releases/438952240/assets",
@@ -2320,63 +2320,63 @@
       }
     },
     "/orgs/google/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"91d35835672e45c48cd6d3ccc75445b3e787631baf5b3c8af766e0946e579180\"",
+      "etag": "W/\"de270f16212e5af9b4628f93fdc53209598f783fca7491140dd38e3c469e6712\"",
       "json": []
     },
     "/orgs/google-deepmind/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"85eca9d6d701f12ecc807ea2db75003dbe9dcf538dda13398f2760a3c34c0d1c\"",
+      "etag": "W/\"b302e67cd49b84022e78b5496b0fefabc634d5a6515f948ebeb356f3b5877d1b\"",
       "json": []
     },
     "/orgs/microsoft/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"94dfb84eb416233aff0bc222b3228345d74c3b6b6cdc6087c4ef9584d0caf77d\"",
+      "etag": "W/\"052e3d84bbde8a2e8b57e63e72c7137269b2e096cd8894c220a0f1401c6a27a5\"",
       "json": []
     },
     "/orgs/meta/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"377ebd505da00ac76510a544dfb3f497a10529c0ac12069ea94f8713189cf88b\"",
+      "etag": "W/\"0f170d2950612dbd2312d31c8dc4be5a19536ed015ead569178bd5b272e3bc61\"",
       "json": []
     },
     "/orgs/openai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"0e69790ef6279bec8c1241642bbc05f8a7e7dc940ecad1d7050c0dfef9ab8f2d\"",
+      "etag": "W/\"a780ea75222db845fbd90d2f8e217a0579e043a82fa738e1d9ff8795e3b7a7c3\"",
       "json": []
     },
     "/orgs/NVIDIA/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"a8ba1a393a9b3135923330aff1282d1bf1098209008981f33790ac1b7652d93a\"",
+      "etag": "W/\"c62251747e8ab6e6d760cd0b5fc4393b715b019118abed91657c5fbc9ad4793d\"",
       "json": []
     },
     "/orgs/aws/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"355f7b3b8b0e32cae2084f0f6964ea2d03c5ca019824234a8fcf93998aeb9d9a\"",
+      "etag": "W/\"bcda4429efd979e5cc7074bc31238c029f1cc2d405a36621360ac66c91087609\"",
       "json": []
     },
     "/orgs/alibaba/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"06c11a1a9c73d83e0e3680d10df67b72b0b661bd39742e662279397e63e8df5b\"",
+      "etag": "W/\"3d0f06258778e477d05dba0b61a5fe505cd404694fa4c3c1a5f799b0e6a92961\"",
       "json": []
     },
     "/orgs/tencent/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"3e60ce4ac9695f961bac2bdf36183964864bd85aa95df9ccefdeedb3f709eb57\"",
+      "etag": "W/\"8177ae598bfc616b792fca315d3dc63e3efc714dcdfcf6e5957636960234248e\"",
       "json": []
     },
     "/orgs/bytedance/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"d0a04445cd86d4c464beeceac07050648c996cb85bf7bdc750812b76015b539e\"",
+      "etag": "W/\"5b2a75cf1251feeab2cde0d72e8c8348d646fb5fc371311598efc1cb7377d1ea\"",
       "json": []
     },
     "/orgs/antgroup/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"bfa6b643b83341c3254c23ff50759a4ef08ecf92de3273267a122d7cf80d4c54\"",
+      "etag": "W/\"6671b92baa15815037033154ee3f8b86362a34b46ed687d42e4f714c47ca0c93\"",
       "json": []
     },
     "/orgs/deepseek-ai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"f29eef655d1b02f4dd063949edc0b4dc476c30c38f3f4939febacfc5b0ecef3c\"",
+      "etag": "W/\"e943e926cb1478d14836803ec5e03f263e4c18c02b6b4af3d7b3a384ecf1f35f\"",
       "json": []
     },
     "/orgs/QwenLM/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"406da34be9560461ccdb7672719565fdd6565211fe8a511293ac62b406c3ce88\"",
+      "etag": "W/\"f564086578789967ea9e52d823912e09c077b46f8a04cf462f6f24ed8b20435e\"",
       "json": []
     },
     "/orgs/apache/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"85c9c0853969d470e5d15bffcbe84402a666c40d05844bed997138b532117d15\"",
+      "etag": "W/\"9dc828fb5b0199922ca7f5beecb704afdfd3505e9245e99e66bdfd7da27f1c19\"",
       "json": []
     },
     "/repos/sgl-project/sglang?": {
-      "etag": "W/\"d918334821a62e703fddd303b57b929268c7ff5fc734fb225cd9d4a9d8a5c10b\"",
+      "etag": "W/\"6578f3dabb2ac1834487f784c5dbde4551cee42a825bcedf6f19181c1b18287c\"",
       "json": {
         "id": 740303686,
         "node_id": "R_kgDOLCAjRg",
@@ -2445,16 +2445,16 @@
         "releases_url": "https://api.github.com/repos/sgl-project/sglang/releases{/id}",
         "deployments_url": "https://api.github.com/repos/sgl-project/sglang/deployments",
         "created_at": "2024-01-08T04:15:52Z",
-        "updated_at": "2026-11-28T10:41:59Z",
-        "pushed_at": "2026-11-28T10:47:33Z",
+        "updated_at": "2026-11-28T11:00:55Z",
+        "pushed_at": "2026-11-28T11:01:00Z",
         "git_url": "git://github.com/sgl-project/sglang.git",
         "ssh_url": "git@github.com:sgl-project/sglang.git",
         "clone_url": "https://github.com/sgl-project/sglang.git",
         "svn_url": "https://github.com/sgl-project/sglang",
         "homepage": "https://sglang.io",
         "size": 564551,
-        "stargazers_count": 39151,
-        "watchers_count": 39151,
+        "stargazers_count": 39152,
+        "watchers_count": 39152,
         "language": "Python",
         "has_issues": true,
         "has_projects": false,
@@ -2466,7 +2466,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 7500,
+        "open_issues_count": 7496,
         "license": {
           "key": "apache-2.0",
           "name": "Apache License 2.0",
@@ -2501,8 +2501,8 @@
         ],
         "visibility": "public",
         "forks": 10948,
-        "open_issues": 7500,
-        "watchers": 39151,
+        "open_issues": 7496,
+        "watchers": 39152,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -2539,7 +2539,7 @@
       }
     },
     "/repos/sgl-project/sglang/releases/latest?": {
-      "etag": "W/\"fcb2c4a3e76b702d3f639bf1c6d1db66193e02b81d44e7f0f8576a9967dc7da2\"",
+      "etag": "W/\"e7974d199bfe28e46410824a63b045c870ce3ef6dc13fc82dab1b2d77426bc0f\"",
       "json": {
         "url": "https://api.github.com/repos/sgl-project/sglang/releases/432026534",
         "assets_url": "https://api.github.com/repos/sgl-project/sglang/releases/432026534/assets",
@@ -2618,7 +2618,7 @@
       }
     },
     "/repos/ggml-org/llama.cpp?": {
-      "etag": "W/\"1256c7c0f0c177f1767742e2413afb6e2a40f94b1ab5abccb6cdc9eb1dace31e\"",
+      "etag": "W/\"8abea781ac834a0ac1cabaa065905942280587430f0934bd1e0576f363d20745\"",
       "json": {
         "id": 612354784,
         "node_id": "R_kgDOJH_K4A",
@@ -2687,16 +2687,16 @@
         "releases_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases{/id}",
         "deployments_url": "https://api.github.com/repos/ggml-org/llama.cpp/deployments",
         "created_at": "2023-03-10T18:58:00Z",
-        "updated_at": "2026-11-28T10:56:34Z",
+        "updated_at": "2026-11-28T11:01:19Z",
         "pushed_at": "2026-11-28T10:49:49Z",
         "git_url": "git://github.com/ggml-org/llama.cpp.git",
         "ssh_url": "git@github.com:ggml-org/llama.cpp.git",
         "clone_url": "https://github.com/ggml-org/llama.cpp.git",
         "svn_url": "https://github.com/ggml-org/llama.cpp",
         "homepage": "https://llama.app",
-        "size": 521525,
-        "stargazers_count": 136487,
-        "watchers_count": 136487,
+        "size": 521520,
+        "stargazers_count": 136488,
+        "watchers_count": 136488,
         "language": "C++",
         "has_issues": true,
         "has_projects": true,
@@ -2727,7 +2727,7 @@
         "visibility": "public",
         "forks": 26205,
         "open_issues": 2672,
-        "watchers": 136487,
+        "watchers": 136488,
         "default_branch": "master",
         "permissions": {
           "admin": false,
@@ -2760,11 +2760,11 @@
           "site_admin": false
         },
         "network_count": 26205,
-        "subscribers_count": 902
+        "subscribers_count": 903
       }
     },
     "/repos/ggml-org/llama.cpp/releases/latest?": {
-      "etag": "W/\"0fba262f40ff2ffdeb87ecf421a4ddc88d7247afc824b0e6c48b8bc092741ebd\"",
+      "etag": "W/\"46eb00a407bddcbe4430ad1b471d907a7b5ee984fd5bdd4bf1a26f4715e5d2a2\"",
       "json": {
         "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/459181980",
         "assets_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/459181980/assets",
@@ -2834,7 +2834,7 @@
             "state": "uploaded",
             "size": 7,
             "digest": "sha256:096db3b09c5541c8ab7bd8032f96d00c04dd737fd857fcb6801af28e24d66b58",
-            "download_count": 12740,
+            "download_count": 12771,
             "created_at": "2026-11-26T09:16:48Z",
             "updated_at": "2026-11-26T09:16:49Z",
             "browser_download_url": "https://github.com/ggml-org/llama.cpp/releases/download/v1.1.0/nightly-tag.txt"
@@ -2879,7 +2879,7 @@
       }
     },
     "/repos/lm-sys/FastChat?": {
-      "etag": "W/\"e44be660f8d18c765695ba155c13e3131403a82ef42f0f497dca828f3b7a5a9d\"",
+      "etag": "W/\"0deff479cbb0a40ca02dce94baefbfc682c566f19f9f0cdbcada05fae33729e1\"",
       "json": {
         "id": 615882673,
         "node_id": "R_kgDOJLWfsQ",
@@ -3023,7 +3023,7 @@
       }
     },
     "/repos/lm-sys/FastChat/releases/latest?": {
-      "etag": "W/\"a93893cca9b60004a4cdeec119fee6efce13edf13679af21382aa2f2b31119df\"",
+      "etag": "W/\"dee40efd25f846b713a16801b46a1c520e4e655a4eeaa2ac29adfabc50fbd19b\"",
       "json": {
         "url": "https://api.github.com/repos/lm-sys/FastChat/releases/141537910",
         "assets_url": "https://api.github.com/repos/lm-sys/FastChat/releases/141537910/assets",
@@ -3102,7 +3102,7 @@
       }
     },
     "/repos/pytorch/pytorch?": {
-      "etag": "W/\"14bd8b37367cd239e694e43e437dd352e3f80dd02a769b4bf706711e56efddc8\"",
+      "etag": "W/\"a60d0fd9f5426ef54b24f71c4ef1730d06c2771c977ed94179c9df9cdefa0af7\"",
       "json": {
         "id": 65600975,
         "node_id": "MDEwOlJlcG9zaXRvcnk2NTYwMDk3NQ==",
@@ -3255,7 +3255,7 @@
       }
     },
     "/repos/pytorch/pytorch/releases/latest?": {
-      "etag": "W/\"0db15d5f827ca6b3cefe0a0be7b91bcefccf424361ef415949200a4621a2f53b\"",
+      "etag": "W/\"015c0ad83339a97c1f877abf6dc9f28314f0a81cc9c80e704cc69a0d34e93b9a\"",
       "json": {
         "url": "https://api.github.com/repos/pytorch/pytorch/releases/426958393",
         "assets_url": "https://api.github.com/repos/pytorch/pytorch/releases/426958393/assets",
@@ -3406,7 +3406,7 @@
       }
     },
     "/repos/tensorflow/tensorflow?": {
-      "etag": "W/\"d32fcc797d53f018684e4f8efddabaa567fa9750bcc68b8fab7676ee454180f8\"",
+      "etag": "W/\"ad07acc942d82d24e79cc3c323b45c49792230f7c868021c5943f185cf16a394\"",
       "json": {
         "id": 45717250,
         "node_id": "MDEwOlJlcG9zaXRvcnk0NTcxNzI1MA==",
@@ -3568,7 +3568,7 @@
       }
     },
     "/repos/tensorflow/tensorflow/releases/latest?": {
-      "etag": "W/\"c1fd5bcaf936068517389b872865613ca05015698ed87e52ea071bf075cd9361\"",
+      "etag": "W/\"b11568500c12c3592254541383888be66ab9d86e939cab06182faa46f4841df1\"",
       "json": {
         "url": "https://api.github.com/repos/tensorflow/tensorflow/releases/294054260",
         "assets_url": "https://api.github.com/repos/tensorflow/tensorflow/releases/294054260/assets",
@@ -3646,7 +3646,7 @@
       }
     },
     "/repos/apache/mxnet?": {
-      "etag": "W/\"9e7b741fef9914bc6d59bd72faf1cbf25a704b933c056a7027b669710556ad41\"",
+      "etag": "W/\"052be304290569e84e9894db0b9f84acef60d261247804ef0c610138ccf3b410\"",
       "json": {
         "id": 34864402,
         "node_id": "MDEwOlJlcG9zaXRvcnkzNDg2NDQwMg==",
@@ -3792,7 +3792,7 @@
       }
     },
     "/repos/apache/mxnet/releases/latest?": {
-      "etag": "W/\"85c1e06f0c35b90955603a7b6a7a448de8f4f79ded0fb3a7e80c59c55dbeb8e6\"",
+      "etag": "W/\"4ba51f064ea7b9a90d1bfd55e5e42c0114ffd52b375b3e69e6ec6e098f0b857f\"",
       "json": {
         "url": "https://api.github.com/repos/apache/mxnet/releases/66513131",
         "assets_url": "https://api.github.com/repos/apache/mxnet/releases/66513131/assets",
@@ -3858,7 +3858,7 @@
       }
     },
     "/repos/jax-ml/jax?": {
-      "etag": "W/\"36c7beac348b9e83a56042ecbfddf9e0659c1f2a5f30db4702d5e935ec85ac39\"",
+      "etag": "W/\"3a787d1f9bfc247d8061c1ef0ca885d56d626aab2ff6c579894dccbb3cc65f44\"",
       "json": {
         "id": 154739597,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ3Mzk1OTc=",
@@ -4010,7 +4010,7 @@
       }
     },
     "/repos/jax-ml/jax/releases/latest?": {
-      "etag": "W/\"7c5e68bc67f58cd1e6ea15842eba7e92e91452772294b37384309a25471b387f\"",
+      "etag": "W/\"a4a80bb39057c733b9ba993b6fc24044a488751abbc1ef1518f63d410b7951c7\"",
       "json": {
         "url": "https://api.github.com/repos/jax-ml/jax/releases/450071758",
         "assets_url": "https://api.github.com/repos/jax-ml/jax/releases/450071758/assets",
@@ -4088,7 +4088,7 @@
       }
     },
     "/repos/kubernetes/kubernetes?": {
-      "etag": "W/\"d7969d55050cbb5bd6dc929d314403333d8fa8a39afd205eb66916d1bfc152fe\"",
+      "etag": "W/\"cd57c3da5aca54b0f32f50509ba4ceba80d2185a18aeb7f0df5373b3ca78adb2\"",
       "json": {
         "id": 20580498,
         "node_id": "MDEwOlJlcG9zaXRvcnkyMDU4MDQ5OA==",
@@ -4237,7 +4237,7 @@
       }
     },
     "/repos/kubernetes/kubernetes/releases/latest?": {
-      "etag": "W/\"4f267a05161ada8c5c5100eb22e25f93a2234608070ebc68b01cf462bb53cbc3\"",
+      "etag": "W/\"6dfaa8ffe1a23587c02e3a8035b5ca53a3fef09ebf6e78334644bf6fcf5135cb\"",
       "json": {
         "url": "https://api.github.com/repos/kubernetes/kubernetes/releases/458262337",
         "assets_url": "https://api.github.com/repos/kubernetes/kubernetes/releases/458262337/assets",
@@ -4315,7 +4315,7 @@
       }
     },
     "/repos/envoyproxy/envoy?": {
-      "etag": "W/\"c11bbf79fde45581a4b9e542bbb9e1d686c8cf28d0784070d3b7c507e7678ab5\"",
+      "etag": "W/\"1b10024155fa76223ea0972cfa1b4720186ca46df11b14d76087472b4226449c\"",
       "json": {
         "id": 65214191,
         "node_id": "MDEwOlJlcG9zaXRvcnk2NTIxNDE5MQ==",
@@ -4384,7 +4384,7 @@
         "releases_url": "https://api.github.com/repos/envoyproxy/envoy/releases{/id}",
         "deployments_url": "https://api.github.com/repos/envoyproxy/envoy/deployments",
         "created_at": "2016-08-08T15:07:24Z",
-        "updated_at": "2026-11-28T10:37:35Z",
+        "updated_at": "2026-11-28T10:59:15Z",
         "pushed_at": "2026-11-28T10:40:09Z",
         "git_url": "git://github.com/envoyproxy/envoy.git",
         "ssh_url": "git@github.com:envoyproxy/envoy.git",
@@ -4392,8 +4392,8 @@
         "svn_url": "https://github.com/envoyproxy/envoy",
         "homepage": "https://www.envoyproxy.io",
         "size": 391950,
-        "stargazers_count": 29309,
-        "watchers_count": 29309,
+        "stargazers_count": 29310,
+        "watchers_count": 29310,
         "language": "C++",
         "has_issues": true,
         "has_projects": true,
@@ -4431,7 +4431,7 @@
         "visibility": "public",
         "forks": 5754,
         "open_issues": 1965,
-        "watchers": 29309,
+        "watchers": 29310,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -4468,7 +4468,7 @@
       }
     },
     "/repos/envoyproxy/envoy/releases/latest?": {
-      "etag": "W/\"56ea83551a97465093a9543f7ed97810f8374f08587c1d54efdaa55a97ee9da7\"",
+      "etag": "W/\"ff6143d6228e0b4a581a65fc0de463539caa831947d7b663441fb035df2f4601\"",
       "json": {
         "url": "https://api.github.com/repos/envoyproxy/envoy/releases/424953653",
         "assets_url": "https://api.github.com/repos/envoyproxy/envoy/releases/424953653/assets",
@@ -4763,7 +4763,7 @@
       }
     },
     "/repos/istio/istio?": {
-      "etag": "W/\"15eedff1d11bc0971b47e91369da6c923e734bdadcbc7b504b69c187de78d40c\"",
+      "etag": "W/\"2ab5d548d30187093197fbad533dae622462e275c199f12744c6b3d4ca9f81b6\"",
       "json": {
         "id": 74175805,
         "node_id": "MDEwOlJlcG9zaXRvcnk3NDE3NTgwNQ==",
@@ -4832,7 +4832,7 @@
         "releases_url": "https://api.github.com/repos/istio/istio/releases{/id}",
         "deployments_url": "https://api.github.com/repos/istio/istio/deployments",
         "created_at": "2016-11-18T23:57:21Z",
-        "updated_at": "2026-11-28T10:53:51Z",
+        "updated_at": "2026-11-28T11:00:45Z",
         "pushed_at": "2026-11-27T23:08:38Z",
         "git_url": "git://github.com/istio/istio.git",
         "ssh_url": "git@github.com:istio/istio.git",
@@ -4840,8 +4840,8 @@
         "svn_url": "https://github.com/istio/istio",
         "homepage": "https://istio.io",
         "size": 312593,
-        "stargazers_count": 38540,
-        "watchers_count": 38540,
+        "stargazers_count": 38541,
+        "watchers_count": 38541,
         "language": "Go",
         "has_issues": true,
         "has_projects": false,
@@ -4887,7 +4887,7 @@
         "visibility": "public",
         "forks": 8465,
         "open_issues": 524,
-        "watchers": 38540,
+        "watchers": 38541,
         "default_branch": "master",
         "permissions": {
           "admin": false,
@@ -4920,11 +4920,11 @@
           "site_admin": false
         },
         "network_count": 8465,
-        "subscribers_count": 954
+        "subscribers_count": 955
       }
     },
     "/repos/istio/istio/releases/latest?": {
-      "etag": "W/\"374e1ffef6a4686df05dd364d4b82c30171269a3274f1b3c93c5a4804fc1f677\"",
+      "etag": "W/\"7e02edeca7f785636cfecf1267007e0ae4af2b846b4a9b47077030738ac5b8ad\"",
       "json": {
         "url": "https://api.github.com/repos/istio/istio/releases/439514312",
         "assets_url": "https://api.github.com/repos/istio/istio/releases/439514312/assets",
@@ -5642,7 +5642,7 @@
             "state": "uploaded",
             "size": 30424845,
             "digest": "sha256:4771175dec92527cd90ddc7edb3b3abcb32ca2f3bc32b31aa31e0b12ad36f897",
-            "download_count": 11659,
+            "download_count": 11667,
             "created_at": "2026-11-09T18:59:12Z",
             "updated_at": "2026-11-09T18:59:14Z",
             "browser_download_url": "https://github.com/istio/istio/releases/download/1.32.0/istioctl-1.32.0-linux-amd64.tar.gz"
@@ -6227,7 +6227,7 @@
       }
     },
     "/repos/redis/redis?": {
-      "etag": "W/\"07f9cd741bc6f876806a1f1d7cd3f5dd8be56326866cea7c47ee288b1b063b6f\"",
+      "etag": "W/\"aeaffdd7701ad15b8ee1dd12088cca6a2ab71bdac4bf14b168e536bbdf3f0425\"",
       "json": {
         "id": 156018,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNTYwMTg=",
@@ -6296,7 +6296,7 @@
         "releases_url": "https://api.github.com/repos/redis/redis/releases{/id}",
         "deployments_url": "https://api.github.com/repos/redis/redis/deployments",
         "created_at": "2009-03-21T22:32:25Z",
-        "updated_at": "2026-11-28T10:13:10Z",
+        "updated_at": "2026-11-28T10:59:56Z",
         "pushed_at": "2026-11-28T09:40:52Z",
         "git_url": "git://github.com/redis/redis.git",
         "ssh_url": "git@github.com:redis/redis.git",
@@ -6388,11 +6388,11 @@
           "site_admin": false
         },
         "network_count": 24976,
-        "subscribers_count": 2510
+        "subscribers_count": 2511
       }
     },
     "/repos/redis/redis/releases/latest?": {
-      "etag": "W/\"8ab87da61651433b0570cc9df44bc672b14218ce2837ba5d6aaa7ac5d25f3107\"",
+      "etag": "W/\"b52860a5bc54063d2de4b99f6314d38077b7d9d8f8c733da7921c4bc7dd35b00\"",
       "json": {
         "url": "https://api.github.com/repos/redis/redis/releases/454445221",
         "assets_url": "https://api.github.com/repos/redis/redis/releases/454445221/assets",
@@ -6507,7 +6507,7 @@
       }
     },
     "/repos/valkey-io/valkey?": {
-      "etag": "W/\"183d9a22367b000312515dfd9af22724016dcfb154895cd9bc2e02906a02ce73\"",
+      "etag": "W/\"fa5e0975e49a5f29640c151a586f63c6ec26388fa2765383fb464618dcb863d5\"",
       "json": {
         "id": 775743011,
         "node_id": "R_kgDOLjzmIw",
@@ -6660,7 +6660,7 @@
       }
     },
     "/repos/valkey-io/valkey/releases/latest?": {
-      "etag": "W/\"129ed2998d75618d09008f2396b4c27a4399d96c0cfbf667d7599fca95ab09b9\"",
+      "etag": "W/\"8b898660d42ed90d0415d3914148be6b8087c0c4c836161ca4ef3124e3634201\"",
       "json": {
         "url": "https://api.github.com/repos/valkey-io/valkey/releases/459028915",
         "assets_url": "https://api.github.com/repos/valkey-io/valkey/releases/459028915/assets",
@@ -6739,7 +6739,7 @@
       }
     },
     "/repos/mongodb/mongo?": {
-      "etag": "W/\"dc819f033d179535574259119f3d2c65d3a7e949dd71bff7cf8ac458a8e8bbc9\"",
+      "etag": "W/\"11542a7eaf678f40a2480c67a459afdd5a73cfda94b844aa19cb2fb76fc538a2\"",
       "json": {
         "id": 108110,
         "node_id": "MDEwOlJlcG9zaXRvcnkxMDgxMTA=",
@@ -6808,7 +6808,7 @@
         "releases_url": "https://api.github.com/repos/mongodb/mongo/releases{/id}",
         "deployments_url": "https://api.github.com/repos/mongodb/mongo/deployments",
         "created_at": "2009-01-15T16:15:18Z",
-        "updated_at": "2026-11-28T10:52:36Z",
+        "updated_at": "2026-11-28T11:00:40Z",
         "pushed_at": "2026-11-27T19:49:54Z",
         "git_url": "git://github.com/mongodb/mongo.git",
         "ssh_url": "git@github.com:mongodb/mongo.git",
@@ -6816,8 +6816,8 @@
         "svn_url": "https://github.com/mongodb/mongo",
         "homepage": "https://www.mongodb.com/",
         "size": 1462786,
-        "stargazers_count": 28736,
-        "watchers_count": 28736,
+        "stargazers_count": 28737,
+        "watchers_count": 28737,
         "language": "C++",
         "has_issues": false,
         "has_projects": true,
@@ -6851,7 +6851,7 @@
         "visibility": "public",
         "forks": 5859,
         "open_issues": 52,
-        "watchers": 28736,
+        "watchers": 28737,
         "default_branch": "master",
         "permissions": {
           "admin": false,
@@ -6914,7 +6914,7 @@
       }
     },
     "/repos/grafana/grafana?": {
-      "etag": "W/\"d9d6291a4a74a135373e21bfb1fc5bc44e54c9ef2c846c3d8d551a7c84727d1d\"",
+      "etag": "W/\"44322ff0e5bed4c343f94afef4a33e9da94dc3a7435513bd27e20c2dd8beedb5\"",
       "json": {
         "id": 15111821,
         "node_id": "MDEwOlJlcG9zaXRvcnkxNTExMTgyMQ==",
@@ -6983,7 +6983,7 @@
         "releases_url": "https://api.github.com/repos/grafana/grafana/releases{/id}",
         "deployments_url": "https://api.github.com/repos/grafana/grafana/deployments",
         "created_at": "2013-12-11T15:59:56Z",
-        "updated_at": "2026-11-28T10:48:15Z",
+        "updated_at": "2026-11-28T11:01:57Z",
         "pushed_at": "2026-11-28T10:07:28Z",
         "git_url": "git://github.com/grafana/grafana.git",
         "ssh_url": "git@github.com:grafana/grafana.git",
@@ -7070,11 +7070,11 @@
           "site_admin": false
         },
         "network_count": 15043,
-        "subscribers_count": 1292
+        "subscribers_count": 1293
       }
     },
     "/repos/grafana/grafana/releases/latest?": {
-      "etag": "W/\"3ba0a9f44d0f1323e3c93accdf773b28a41a2f43cf688de92bc0ceb4dad21aca\"",
+      "etag": "W/\"f1fc7812bfe390e84859e98c324f537237ea3fef1f0940b8cad802074a61d290\"",
       "json": {
         "url": "https://api.github.com/repos/grafana/grafana/releases/457138299",
         "assets_url": "https://api.github.com/repos/grafana/grafana/releases/457138299/assets",
@@ -7621,7 +7621,7 @@
       }
     },
     "/repos/prometheus/prometheus?": {
-      "etag": "W/\"63ee3f6d476e0e9eecc9ae0fb8c931f6dd2be807c8a8857e70ef06431d0aed3a\"",
+      "etag": "W/\"2017f36a671d7fc26b52f7406c7b57d0d5a0a1d91b524a8f22457ae97a5aad01\"",
       "json": {
         "id": 6838921,
         "node_id": "MDEwOlJlcG9zaXRvcnk2ODM4OTIx",
@@ -7773,7 +7773,7 @@
       }
     },
     "/repos/prometheus/prometheus/releases/latest?": {
-      "etag": "W/\"724e50799c2ba08fc6fae8eba09afa94b5a52408804ae24ea5986d934b4efe73\"",
+      "etag": "W/\"4f697fe1e3cfe64b794db2a261b4160155929ab68f7a55eecd8066e8e41015b3\"",
       "json": {
         "url": "https://api.github.com/repos/prometheus/prometheus/releases/435394330",
         "assets_url": "https://api.github.com/repos/prometheus/prometheus/releases/435394330/assets",
@@ -8239,7 +8239,7 @@
             "state": "uploaded",
             "size": 113671675,
             "digest": "sha256:68727009472a2c02e1ff7f062fd5b3e637285bffc8fc2d340c76fb449d6e0f34",
-            "download_count": 266587,
+            "download_count": 266668,
             "created_at": "2026-11-05T15:41:19Z",
             "updated_at": "2026-11-05T15:41:23Z",
             "browser_download_url": "https://github.com/prometheus/prometheus/releases/download/v3.16.0/prometheus-3.16.0.linux-amd64.tar.gz"
@@ -8275,7 +8275,7 @@
             "state": "uploaded",
             "size": 103819916,
             "digest": "sha256:fd8571b8162f4020232d886f17340bcf92e1722985ae3b4c1d096157826c0fbe",
-            "download_count": 21606,
+            "download_count": 21608,
             "created_at": "2026-11-05T15:41:24Z",
             "updated_at": "2026-11-05T15:41:27Z",
             "browser_download_url": "https://github.com/prometheus/prometheus/releases/download/v3.16.0/prometheus-3.16.0.linux-arm64.tar.gz"
@@ -8995,7 +8995,7 @@
             "state": "uploaded",
             "size": 116719126,
             "digest": "sha256:89c03c2f24400fb58668440b6d7226f68564acda27d657e77acfbda42be32cb3",
-            "download_count": 9003,
+            "download_count": 9004,
             "created_at": "2026-11-05T15:42:53Z",
             "updated_at": "2026-11-05T15:42:55Z",
             "browser_download_url": "https://github.com/prometheus/prometheus/releases/download/v3.16.0/prometheus-3.16.0.windows-amd64.zip"
@@ -9139,7 +9139,7 @@
             "state": "uploaded",
             "size": 3725,
             "digest": "sha256:8ad106c1533afc9c650c8d0c10677c4b8820a20d38ab2ab6eeb9a27a3e06f9a3",
-            "download_count": 46120,
+            "download_count": 46138,
             "created_at": "2026-11-05T15:43:07Z",
             "updated_at": "2026-11-05T15:43:07Z",
             "browser_download_url": "https://github.com/prometheus/prometheus/releases/download/v3.16.0/sha256sums.txt"
@@ -9184,7 +9184,7 @@
       }
     },
     "/repos/milvus-io/milvus?": {
-      "etag": "W/\"ab01143828424d8367da1d9e9b5cbc2b048f1a6350f98770bec539999cd4a4ce\"",
+      "etag": "W/\"adef5b04728e34eba94f644f4b56ef679ad055b2665f654c667c0236e350c98f\"",
       "json": {
         "id": 208728772,
         "node_id": "MDEwOlJlcG9zaXRvcnkyMDg3Mjg3NzI=",
@@ -9347,7 +9347,7 @@
       }
     },
     "/repos/milvus-io/milvus/releases/latest?": {
-      "etag": "W/\"1f0c33b316ad5bff23eaa0aa75400c8e34fb6e08cd6848fad1a2bd42c7aebf08\"",
+      "etag": "W/\"c2836e73a328912d36ece693c78fe3f8f7f7ce0daa9f86395351dd06b213644b\"",
       "json": {
         "url": "https://api.github.com/repos/milvus-io/milvus/releases/441392162",
         "assets_url": "https://api.github.com/repos/milvus-io/milvus/releases/441392162/assets",
@@ -9498,7 +9498,7 @@
       }
     },
     "/repos/pingcap/tidb?": {
-      "etag": "W/\"534913d17765a72080d689d3f4149aa0c5ade85694d9edd9994fb4b60737a7c7\"",
+      "etag": "W/\"df1ba751f2bbc05c8189572c96108f6153ba827e32750948bff465c243b14751\"",
       "json": {
         "id": 41986369,
         "node_id": "MDEwOlJlcG9zaXRvcnk0MTk4NjM2OQ==",
@@ -9567,7 +9567,7 @@
         "releases_url": "https://api.github.com/repos/pingcap/tidb/releases{/id}",
         "deployments_url": "https://api.github.com/repos/pingcap/tidb/deployments",
         "created_at": "2015-09-06T04:01:52Z",
-        "updated_at": "2026-11-28T10:54:24Z",
+        "updated_at": "2026-11-28T11:00:17Z",
         "pushed_at": "2026-11-28T09:34:14Z",
         "git_url": "git://github.com/pingcap/tidb.git",
         "ssh_url": "git@github.com:pingcap/tidb.git",
@@ -9575,8 +9575,8 @@
         "svn_url": "https://github.com/pingcap/tidb",
         "homepage": "https://www.tidb.io/",
         "size": 906963,
-        "stargazers_count": 40782,
-        "watchers_count": 40782,
+        "stargazers_count": 40783,
+        "watchers_count": 40783,
         "language": "Go",
         "has_issues": true,
         "has_projects": true,
@@ -9625,7 +9625,7 @@
         "visibility": "public",
         "forks": 6310,
         "open_issues": 7888,
-        "watchers": 40782,
+        "watchers": 40783,
         "default_branch": "master",
         "permissions": {
           "admin": false,
@@ -9662,7 +9662,7 @@
       }
     },
     "/repos/pingcap/tidb/releases/latest?": {
-      "etag": "W/\"1f6f3beba94c10b69284b12cd05a7196f8cb6211583f101385bfde35342a2940\"",
+      "etag": "W/\"2c60f2aeeb1eb8705b0a9c6948d2ddfa38b05c1a95bf3c907b5fd33fb88e9485\"",
       "json": {
         "url": "https://api.github.com/repos/pingcap/tidb/releases/390466527",
         "assets_url": "https://api.github.com/repos/pingcap/tidb/releases/390466527/assets",
@@ -9728,7 +9728,7 @@
       }
     },
     "/repos/facebook/react-native?": {
-      "etag": "W/\"6dc8934ffc4d6a0f07f343a2d4c751dff21df66b6ae28c526a7a7a2c3b8a5669\"",
+      "etag": "W/\"7951a54840e74c7c28b9c22c240f44d91d043838ee5a47e7e20712b7419e5db8\"",
       "json": {
         "id": 29028775,
         "node_id": "MDEwOlJlcG9zaXRvcnkyOTAyODc3NQ==",
@@ -9797,7 +9797,7 @@
         "releases_url": "https://api.github.com/repos/react/react-native/releases{/id}",
         "deployments_url": "https://api.github.com/repos/react/react-native/deployments",
         "created_at": "2015-01-09T18:10:16Z",
-        "updated_at": "2026-11-28T10:49:38Z",
+        "updated_at": "2026-11-28T10:59:29Z",
         "pushed_at": "2026-11-28T06:30:35Z",
         "git_url": "git://github.com/react/react-native.git",
         "ssh_url": "org-102812@github.com:react/react-native.git",
@@ -9877,11 +9877,11 @@
           "site_admin": false
         },
         "network_count": 25432,
-        "subscribers_count": 3517
+        "subscribers_count": 3518
       }
     },
     "/repos/facebook/react-native/releases/latest?": {
-      "etag": "W/\"9cf48d13333070ec3a763df89711ce296c370494c3289a5a5aa01a2fb44ed002\"",
+      "etag": "W/\"c5782a4e1b10390a414dbd382d2e0a0ad479584145ed711c25d91f1ee98dd741\"",
       "json": {
         "url": "https://api.github.com/repos/react/react-native/releases/425580693",
         "assets_url": "https://api.github.com/repos/react/react-native/releases/425580693/assets",
@@ -9951,7 +9951,7 @@
             "state": "uploaded",
             "size": 115271683,
             "digest": "sha256:020eea3cf10f77b8f4e1ae4a2aaa7d78a77c3802de6b00448866aa9c860509c4",
-            "download_count": 27376,
+            "download_count": 27388,
             "created_at": "2026-10-27T14:39:41Z",
             "updated_at": "2026-10-27T14:39:46Z",
             "browser_download_url": "https://github.com/react/react-native/releases/download/v0.88.1/React.Native.DevTools-linux-aarch64.tar.gz"
@@ -9987,7 +9987,7 @@
             "state": "uploaded",
             "size": 114840132,
             "digest": "sha256:933aa98eb68da7f8d1b6e83e611e51f66d026f3b410dc13577faa6adf1b0f75c",
-            "download_count": 324339,
+            "download_count": 324433,
             "created_at": "2026-10-27T14:39:48Z",
             "updated_at": "2026-10-27T14:39:52Z",
             "browser_download_url": "https://github.com/react/react-native/releases/download/v0.88.1/React.Native.DevTools-linux-x86_64.tar.gz"
@@ -10023,7 +10023,7 @@
             "state": "uploaded",
             "size": 111220109,
             "digest": "sha256:4a1c234b1cf27f1ff006fafce6628b8ef6993d7d3298c6ed2127e3055c93dcc6",
-            "download_count": 171434,
+            "download_count": 171471,
             "created_at": "2026-10-27T14:39:54Z",
             "updated_at": "2026-10-27T14:39:57Z",
             "browser_download_url": "https://github.com/react/react-native/releases/download/v0.88.1/React.Native.DevTools-macos-aarch64.tar.gz"
@@ -10059,7 +10059,7 @@
             "state": "uploaded",
             "size": 119260983,
             "digest": "sha256:9f1de3cb78688befaea4d9e5f640a66833dd44ad58b05590a7e07bce279bf532",
-            "download_count": 16317,
+            "download_count": 16319,
             "created_at": "2026-10-27T14:40:00Z",
             "updated_at": "2026-10-27T14:40:04Z",
             "browser_download_url": "https://github.com/react/react-native/releases/download/v0.88.1/React.Native.DevTools-macos-x86_64.tar.gz"
@@ -10095,7 +10095,7 @@
             "state": "uploaded",
             "size": 138037080,
             "digest": "sha256:5b56e22828549f12be49f0431fd74c54dcebfbfb4277e4b87573ec1ab084c288",
-            "download_count": 254924,
+            "download_count": 254977,
             "created_at": "2026-10-27T14:40:06Z",
             "updated_at": "2026-10-27T14:40:12Z",
             "browser_download_url": "https://github.com/react/react-native/releases/download/v0.88.1/React.Native.DevTools-windows-x86_64.tar.gz"
@@ -10140,7 +10140,7 @@
       }
     },
     "/repos/vuejs/core?": {
-      "etag": "W/\"f8ef43b19fc0f009d9cc5fcd6f44a24430bf25c9c23a3b5b4f449e060738e380\"",
+      "etag": "W/\"fef0bef1d60d9d831cbe3f1a4b6e9d613e762e6f305117827a6ebaf0a1e0f1ee\"",
       "json": {
         "id": 137078487,
         "node_id": "MDEwOlJlcG9zaXRvcnkxMzcwNzg0ODc=",
@@ -10284,7 +10284,7 @@
       }
     },
     "/repos/vuejs/core/releases/latest?": {
-      "etag": "W/\"e6e5101e4cd21d715e35aa832c0aa9e72756db66046170a76bb9777b6c1f16cf\"",
+      "etag": "W/\"7b09fcfbd24e1b9aa4917276de9e336ca018bea42a3b57964f1c9a604c3ad41c\"",
       "json": {
         "url": "https://api.github.com/repos/vuejs/core/releases/452426826",
         "assets_url": "https://api.github.com/repos/vuejs/core/releases/452426826/assets",
@@ -10362,7 +10362,7 @@
       }
     },
     "/repos/sveltejs/svelte?": {
-      "etag": "W/\"2ac5b657fc7326be6138a04166fe2f3eff34d45109922a7fb1a8bbebd1e05139\"",
+      "etag": "W/\"455de3a5c72caa15bd817b985ecdb7ed16df27a69ba0dda0559e4fd9dc224a42\"",
       "json": {
         "id": 74293321,
         "node_id": "MDEwOlJlcG9zaXRvcnk3NDI5MzMyMQ==",
@@ -10431,7 +10431,7 @@
         "releases_url": "https://api.github.com/repos/sveltejs/svelte/releases{/id}",
         "deployments_url": "https://api.github.com/repos/sveltejs/svelte/deployments",
         "created_at": "2016-11-20T18:13:05Z",
-        "updated_at": "2026-11-28T10:57:20Z",
+        "updated_at": "2026-11-28T10:59:18Z",
         "pushed_at": "2026-11-27T14:15:31Z",
         "git_url": "git://github.com/sveltejs/svelte.git",
         "ssh_url": "git@github.com:sveltejs/svelte.git",
@@ -10439,8 +10439,8 @@
         "svn_url": "https://github.com/sveltejs/svelte",
         "homepage": "https://svelte.dev",
         "size": 126231,
-        "stargazers_count": 89870,
-        "watchers_count": 89870,
+        "stargazers_count": 89871,
+        "watchers_count": 89871,
         "language": "JavaScript",
         "has_issues": true,
         "has_projects": true,
@@ -10473,7 +10473,7 @@
         "visibility": "public",
         "forks": 6021,
         "open_issues": 1072,
-        "watchers": 89870,
+        "watchers": 89871,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -10510,7 +10510,7 @@
       }
     },
     "/repos/sveltejs/svelte/releases/latest?": {
-      "etag": "W/\"0dffee00331d9ca1bc4dadaeadf9a2a1a0465aa2e83205e6a31b04664ecb92ae\"",
+      "etag": "W/\"7a7f183bfdbf26195033ff778dfaccc54572263c5f50d3a130c9123c142051ea\"",
       "json": {
         "url": "https://api.github.com/repos/sveltejs/svelte/releases/458401012",
         "assets_url": "https://api.github.com/repos/sveltejs/svelte/releases/458401012/assets",
@@ -10588,7 +10588,7 @@
       }
     },
     "/repos/vitejs/vite?": {
-      "etag": "W/\"d97d4603cb236edf7ca10b96a0b1eb93565eb22efc8dc06a2df5403196ea2edd\"",
+      "etag": "W/\"37cf57062913ad3981caf0695c4f705871ab5e28ff81e69a86216b4b6075e9e8\"",
       "json": {
         "id": 257485422,
         "node_id": "MDEwOlJlcG9zaXRvcnkyNTc0ODU0MjI=",
@@ -10738,7 +10738,7 @@
       }
     },
     "/repos/vitejs/vite/releases/latest?": {
-      "etag": "W/\"4f15f8921d7dacf363db0b35cadd12945b2f71ea10cc5f0956e8bb96b69c5abc\"",
+      "etag": "W/\"9594216626c5b306c1741726140e78b52b7c2650bf01ccfb991bcd28b476d02c\"",
       "json": {
         "url": "https://api.github.com/repos/vitejs/vite/releases/459288656",
         "assets_url": "https://api.github.com/repos/vitejs/vite/releases/459288656/assets",
@@ -10816,7 +10816,7 @@
       }
     },
     "/repos/denoland/deno?": {
-      "etag": "W/\"7be0d31aecaea6affe81f1f2f7c26e0c01138098905b59bd3c7215c16d32e3f6\"",
+      "etag": "W/\"f464acdcd811f532b80f0814b4f1fb33c66e166e53822f51c1428b3b4b933668\"",
       "json": {
         "id": 133442384,
         "node_id": "MDEwOlJlcG9zaXRvcnkxMzM0NDIzODQ=",
@@ -10965,7 +10965,7 @@
       }
     },
     "/repos/denoland/deno/releases/latest?": {
-      "etag": "W/\"45caf64305b29236d3f198a2ffe458a55b36f79fb335d916dfd92ec109327726\"",
+      "etag": "W/\"51b0532419e471441b1471c9099ad0b33840c321ce3a7a691cd2c4a3e1769d7b\"",
       "json": {
         "url": "https://api.github.com/repos/denoland/deno/releases/419563720",
         "assets_url": "https://api.github.com/repos/denoland/deno/releases/419563720/assets",
@@ -11143,7 +11143,7 @@
             "state": "uploaded",
             "size": 38770795,
             "digest": "sha256:9f0bf660393da2eaff044cdc7444cb08c73f235849b61d224d825a194ce7c98e",
-            "download_count": 140256,
+            "download_count": 140287,
             "created_at": "2026-10-21T15:04:56Z",
             "updated_at": "2026-10-21T15:04:59Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-aarch64-apple-darwin.zip"
@@ -11179,7 +11179,7 @@
             "state": "uploaded",
             "size": 96,
             "digest": "sha256:1ca4234e7c94173c442249c0399070cdce09cc841092c0a6d205101bbde7dca3",
-            "download_count": 15233,
+            "download_count": 15237,
             "created_at": "2026-10-21T15:04:56Z",
             "updated_at": "2026-10-21T15:04:57Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-aarch64-apple-darwin.zip.sha256sum"
@@ -11503,7 +11503,7 @@
             "state": "uploaded",
             "size": 40120596,
             "digest": "sha256:d49596c20b9788cf8f5d8ddf644103d4bde56ed239753f0bdb92ba9361d51905",
-            "download_count": 237392,
+            "download_count": 237410,
             "created_at": "2026-10-21T13:13:21Z",
             "updated_at": "2026-10-21T13:13:24Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-aarch64-unknown-linux-gnu.zip"
@@ -11863,7 +11863,7 @@
             "state": "uploaded",
             "size": 42917472,
             "digest": "sha256:cba84b26e0df5ae7f74fc66b86a95b866872a86292ebd84fa1e959927edd93bf",
-            "download_count": 931481,
+            "download_count": 931661,
             "created_at": "2026-10-21T13:01:02Z",
             "updated_at": "2026-10-21T13:01:05Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip"
@@ -11899,7 +11899,7 @@
             "state": "uploaded",
             "size": 177,
             "digest": "sha256:0fdedd625087373992be0dff62a3c3a3a9b254a0cf01d46d54c559c451c86413",
-            "download_count": 123115,
+            "download_count": 123170,
             "created_at": "2026-10-21T13:01:02Z",
             "updated_at": "2026-10-21T13:01:02Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip.sha256sum"
@@ -12043,7 +12043,7 @@
             "state": "uploaded",
             "size": 41963064,
             "digest": "sha256:e890975bc2549807bbcc0b584ffafda72cc7c93349dd99c80483dd784f6c4609",
-            "download_count": 2057866,
+            "download_count": 2058238,
             "created_at": "2026-10-21T13:10:57Z",
             "updated_at": "2026-10-21T13:10:59Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-unknown-linux-gnu.zip"
@@ -12079,7 +12079,7 @@
             "state": "uploaded",
             "size": 100,
             "digest": "sha256:f41fbb4278955d03b735c37f957470a1432bdae643d673866e913eea6e4a7855",
-            "download_count": 113383,
+            "download_count": 113402,
             "created_at": "2026-10-21T13:10:57Z",
             "updated_at": "2026-10-21T13:10:57Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-unknown-linux-gnu.zip.sha256sum"
@@ -12547,7 +12547,7 @@
             "state": "uploaded",
             "size": 37035922,
             "digest": "sha256:b57d0281c1647effc735f242ba52bc409747fc6ed6ad4946e76f062c67e113eb",
-            "download_count": 28500,
+            "download_count": 28503,
             "created_at": "2026-10-21T13:10:57Z",
             "updated_at": "2026-10-21T13:10:59Z",
             "browser_download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno_src.tar.gz"
@@ -13060,7 +13060,7 @@
       }
     },
     "/repos/oven-sh/bun?": {
-      "etag": "W/\"345e04aadf8d2fd7f5bd3084f98dc46b5c5c1ddac5a59f0fc43849fa00df3991\"",
+      "etag": "W/\"b3c06e0bc38cabeb187de347a154dfd08eba1fb0d34fe7b9d38e33e4b6b4b885\"",
       "json": {
         "id": 357728969,
         "node_id": "MDEwOlJlcG9zaXRvcnkzNTc3Mjg5Njk=",
@@ -13217,7 +13217,7 @@
       }
     },
     "/repos/oven-sh/bun/releases/latest?": {
-      "etag": "W/\"9ab345fc7a61ea4d8148c13b50a88903954e925bfc42d7828e928dfc51ebc133\"",
+      "etag": "W/\"354b62c6d0288ba747a963bc33e7a41f6f4f6e1e35499da5c0a75749fa9bc9eb\"",
       "json": {
         "url": "https://api.github.com/repos/oven-sh/bun/releases/451031435",
         "assets_url": "https://api.github.com/repos/oven-sh/bun/releases/451031435/assets",
@@ -13323,7 +13323,7 @@
             "state": "uploaded",
             "size": 39827261,
             "digest": "sha256:b5d6bc2e13caf14e57c89661e89efd073ff16165b41bfe43882616410609cd10",
-            "download_count": 183189,
+            "download_count": 183283,
             "created_at": "2026-11-19T07:58:34Z",
             "updated_at": "2026-11-19T07:58:35Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-darwin-aarch64.zip"
@@ -13467,7 +13467,7 @@
             "state": "uploaded",
             "size": 43473769,
             "digest": "sha256:a4972e778cce4b6a194d7d289f326aa61576d71d80b7a53e9da2f3739566e5fd",
-            "download_count": 15029,
+            "download_count": 15066,
             "created_at": "2026-11-19T07:58:34Z",
             "updated_at": "2026-11-19T07:58:35Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-darwin-x64.zip"
@@ -13899,7 +13899,7 @@
             "state": "uploaded",
             "size": 51133631,
             "digest": "sha256:18656a3bf0ea5641f5796ae4213b75255579a70a0fded2f337933785568cdf84",
-            "download_count": 215770,
+            "download_count": 215883,
             "created_at": "2026-11-19T07:58:34Z",
             "updated_at": "2026-11-19T07:58:36Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-aarch64.zip"
@@ -14115,7 +14115,7 @@
             "state": "uploaded",
             "size": 51336091,
             "digest": "sha256:dcb23a18a1c2fff12d57bcef696dbbb42eb67fde29f43816ecb595459a24c463",
-            "download_count": 190160,
+            "download_count": 190267,
             "created_at": "2026-11-19T07:58:58Z",
             "updated_at": "2026-11-19T07:59:00Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64-baseline.zip"
@@ -14187,7 +14187,7 @@
             "state": "uploaded",
             "size": 48273337,
             "digest": "sha256:96fb94108eed872ff623ed39007d6b5699a83a5d0086fcfba84921c18145e3e6",
-            "download_count": 5104,
+            "download_count": 5110,
             "created_at": "2026-11-19T07:59:00Z",
             "updated_at": "2026-11-19T07:59:03Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64-musl-baseline.zip"
@@ -14259,7 +14259,7 @@
             "state": "uploaded",
             "size": 48273301,
             "digest": "sha256:9b6bdba1fa0914b6adfe48e4438212e2c106d9199b77ba642a9b8a3968a49a59",
-            "download_count": 14514,
+            "download_count": 14521,
             "created_at": "2026-11-19T07:58:39Z",
             "updated_at": "2026-11-19T07:58:41Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64-musl.zip"
@@ -14331,7 +14331,7 @@
             "state": "uploaded",
             "size": 51336055,
             "digest": "sha256:94559b3b528995a49452f9f2404cec74f2efd7d06e0a000a8cd214b02c3666eb",
-            "download_count": 826180,
+            "download_count": 826766,
             "created_at": "2026-11-19T07:58:36Z",
             "updated_at": "2026-11-19T07:58:38Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64.zip"
@@ -14439,7 +14439,7 @@
             "state": "uploaded",
             "size": 284469238,
             "digest": "sha256:89b996dea8e06065f5aad7da14c41ecceb8cb1a74543218912b2b2a03499e1c5",
-            "download_count": 311,
+            "download_count": 312,
             "created_at": "2026-11-19T07:59:08Z",
             "updated_at": "2026-11-19T07:59:18Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-windows-x64-baseline-profile.zip"
@@ -14475,7 +14475,7 @@
             "state": "uploaded",
             "size": 54438042,
             "digest": "sha256:3c081c73865e7a3453a9d514cc2ba3d699880621bcf67bb17241ff5194cb1d4b",
-            "download_count": 59702,
+            "download_count": 59729,
             "created_at": "2026-11-19T07:59:07Z",
             "updated_at": "2026-11-19T07:59:09Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-windows-x64-baseline.zip"
@@ -14547,7 +14547,7 @@
             "state": "uploaded",
             "size": 54437990,
             "digest": "sha256:815ab45ec7f549abf87e6869584b506eab088e24225683957b7e150b47d6de30",
-            "download_count": 166959,
+            "download_count": 167060,
             "created_at": "2026-11-19T07:58:50Z",
             "updated_at": "2026-11-19T07:58:52Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-windows-x64.zip"
@@ -14583,7 +14583,7 @@
             "state": "uploaded",
             "size": 3431,
             "digest": "sha256:d7bb41dfb7becdc2d3d33f0d518e5693c62fba9ac14749426c68fe6e76a2c19d",
-            "download_count": 224322,
+            "download_count": 224489,
             "created_at": "2026-11-19T08:48:43Z",
             "updated_at": "2026-11-19T08:48:43Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/SHASUMS256.txt"
@@ -14619,7 +14619,7 @@
             "state": "uploaded",
             "size": 3709,
             "digest": "sha256:2091113b267a5a7d5c9859820e91425d37418855f65886d25a785dea27774976",
-            "download_count": 14922,
+            "download_count": 14932,
             "created_at": "2026-11-19T08:48:44Z",
             "updated_at": "2026-11-19T08:48:44Z",
             "browser_download_url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/SHASUMS256.txt.asc"
@@ -14664,7 +14664,7 @@
       }
     },
     "/repos/biomejs/biome?": {
-      "etag": "W/\"1a15e7c0991fe08711629979557c211cb46664bcafcdb87efa31360027e46c4d\"",
+      "etag": "W/\"a8cb0f22ac34e23e3f3c20db6c99666f6a109ceaa0435a745cff4cf98d2d708a\"",
       "json": {
         "id": 671654508,
         "node_id": "R_kgDOKAiibA",
@@ -14818,7 +14818,7 @@
       }
     },
     "/repos/biomejs/biome/releases/latest?": {
-      "etag": "W/\"1e37ab5ef2a9eb91067fb96f91a41e14f6381feaa4d8e7de1abb6fcea5786f01\"",
+      "etag": "W/\"5bb2ed01deaf69adec46a3d31fe9c8dade8522cbf03d2c921e3c7966ebb87220\"",
       "json": {
         "url": "https://api.github.com/repos/biomejs/biome/releases/456937979",
         "assets_url": "https://api.github.com/repos/biomejs/biome/releases/456937979/assets",
@@ -15032,7 +15032,7 @@
             "state": "uploaded",
             "size": 100221880,
             "digest": "sha256:5409e32eb17b47e0d1d9bbf213b749eba1f9c35d8b18fbd2ee55971157918a57",
-            "download_count": 10600,
+            "download_count": 10609,
             "created_at": "2026-11-24T15:14:12Z",
             "updated_at": "2026-11-24T15:14:20Z",
             "browser_download_url": "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.6.9/biome-linux-x64"
@@ -15186,7 +15186,7 @@
       }
     },
     "/repos/getsentry/sentry?": {
-      "etag": "W/\"5e5c2f535fd6a316f07b3fb488a3cff1a8fcc5c4e9f18791af086fcae6475277\"",
+      "etag": "W/\"0d65b8820840d262792bbe40f43cf208a2909853e92a6f6ca7f3ea8f7fef5972\"",
       "json": {
         "id": 873328,
         "node_id": "MDEwOlJlcG9zaXRvcnk4NzMzMjg=",
@@ -15272,7 +15272,7 @@
         "has_wiki": false,
         "has_pages": false,
         "has_discussions": true,
-        "forks_count": 4994,
+        "forks_count": 4995,
         "mirror_url": null,
         "archived": false,
         "disabled": false,
@@ -15307,7 +15307,7 @@
           "tag-production"
         ],
         "visibility": "public",
-        "forks": 4994,
+        "forks": 4995,
         "open_issues": 2300,
         "watchers": 45894,
         "default_branch": "master",
@@ -15344,12 +15344,12 @@
           "user_view_type": "public",
           "site_admin": false
         },
-        "network_count": 4994,
+        "network_count": 4995,
         "subscribers_count": 660
       }
     },
     "/repos/getsentry/sentry/releases/latest?": {
-      "etag": "W/\"60989028f1b52d3f5852caf406fe33a44b0d843da4b35394f21adce1700fdd1c\"",
+      "etag": "W/\"68a0e3cf4ffe1baa6d57f9e87ef82f49a7b196d253e26d1db045c0621a399da1\"",
       "json": {
         "url": "https://api.github.com/repos/getsentry/sentry/releases/446223113",
         "assets_url": "https://api.github.com/repos/getsentry/sentry/releases/446223113/assets",
@@ -15416,7 +15416,7 @@
       }
     },
     "/repos/grafana/loki?": {
-      "etag": "W/\"8d67466fef85c96e7c4af836cea51c86ac97be6b1b9cb8c2ea8a40737b31c64e\"",
+      "etag": "W/\"c4fa9e7817e4977cdfbb3a1405db43aed08c548079557300a61e74a9f5f732c1\"",
       "json": {
         "id": 129717717,
         "node_id": "MDEwOlJlcG9zaXRvcnkxMjk3MTc3MTc=",
@@ -15485,7 +15485,7 @@
         "releases_url": "https://api.github.com/repos/grafana/loki/releases{/id}",
         "deployments_url": "https://api.github.com/repos/grafana/loki/deployments",
         "created_at": "2018-04-16T09:22:48Z",
-        "updated_at": "2026-11-28T10:56:21Z",
+        "updated_at": "2026-11-28T11:02:49Z",
         "pushed_at": "2026-11-28T09:04:59Z",
         "git_url": "git://github.com/grafana/loki.git",
         "ssh_url": "git@github.com:grafana/loki.git",
@@ -15493,8 +15493,8 @@
         "svn_url": "https://github.com/grafana/loki",
         "homepage": "https://grafana.com/oss/loki",
         "size": 581147,
-        "stargazers_count": 29270,
-        "watchers_count": 29270,
+        "stargazers_count": 29272,
+        "watchers_count": 29272,
         "language": "Go",
         "has_issues": true,
         "has_projects": true,
@@ -15530,7 +15530,7 @@
         "visibility": "public",
         "forks": 4208,
         "open_issues": 1073,
-        "watchers": 29270,
+        "watchers": 29272,
         "default_branch": "main",
         "permissions": {
           "admin": false,
@@ -15567,7 +15567,7 @@
       }
     },
     "/repos/grafana/loki/releases/latest?": {
-      "etag": "W/\"d79321225a92d784265f9bc1114ae0555e618af00c6a2cc4d232db5413ab895e\"",
+      "etag": "W/\"03958aaa7647db9194b4f4df9526e88e461df39b5718d3ea98e71ffd8b6f84a3\"",
       "json": {
         "url": "https://api.github.com/repos/grafana/loki/releases/460731924",
         "assets_url": "https://api.github.com/repos/grafana/loki/releases/460731924/assets",
@@ -16789,7 +16789,7 @@
             "state": "uploaded",
             "size": 48290618,
             "digest": "sha256:85063c20203a7c1f24c2eaab3b057ae088a849118a1ee7828351785ce195af79",
-            "download_count": 204,
+            "download_count": 207,
             "created_at": "2026-11-27T14:51:41Z",
             "updated_at": "2026-11-27T14:51:43Z",
             "browser_download_url": "https://github.com/grafana/loki/releases/download/v3.7.11/loki-linux-amd64.zip"
@@ -16933,7 +16933,7 @@
             "state": "uploaded",
             "size": 49090904,
             "digest": "sha256:25614f6ac51ffc596a699a77a37ebf6a814587565ea23eb2d4c49e3b7a71efbb",
-            "download_count": 49,
+            "download_count": 50,
             "created_at": "2026-11-27T14:51:43Z",
             "updated_at": "2026-11-27T14:51:45Z",
             "browser_download_url": "https://github.com/grafana/loki/releases/download/v3.7.11/loki-windows-amd64.exe.zip"
@@ -17221,7 +17221,7 @@
             "state": "uploaded",
             "size": 49038690,
             "digest": "sha256:c7800fe406675de252c5673b0813f67577d8498aa3806fd14a4536a11be52212",
-            "download_count": 22,
+            "download_count": 23,
             "created_at": "2026-11-27T14:51:43Z",
             "updated_at": "2026-11-27T14:51:45Z",
             "browser_download_url": "https://github.com/grafana/loki/releases/download/v3.7.11/loki_3.7.11_amd64.deb"
@@ -17374,7 +17374,7 @@
       }
     },
     "/repos/containerd/containerd?": {
-      "etag": "W/\"dfc2485f98ae598548d981c14aad8a37c3af45252b76dd1cc118b5f7b9535c68\"",
+      "etag": "W/\"9e64e70caae7cb986f6db95f102ed21eba623a1776182a428408457c8cc6740c\"",
       "json": {
         "id": 46089560,
         "node_id": "MDEwOlJlcG9zaXRvcnk0NjA4OTU2MA==",
@@ -17527,7 +17527,7 @@
       }
     },
     "/repos/containerd/containerd/releases/latest?": {
-      "etag": "W/\"ef9d8c78f367d07e7cc3edb0ddcaac53db23cef4c7d8ca8055a134f058900019\"",
+      "etag": "W/\"364178152bfbe419020a4dcc4044302439b4487ace6aee81869521df1d0b3cff\"",
       "json": {
         "url": "https://api.github.com/repos/containerd/containerd/releases/412165957",
         "assets_url": "https://api.github.com/repos/containerd/containerd/releases/412165957/assets",
@@ -17633,7 +17633,7 @@
             "state": "uploaded",
             "size": 35901304,
             "digest": "sha256:35880c1dd4627e8ce56526bfabb39c144e83458ffdb197ce6f05d17d94d7d91e",
-            "download_count": 62572,
+            "download_count": 62586,
             "created_at": "2026-10-13T22:35:02Z",
             "updated_at": "2026-10-13T22:35:04Z",
             "browser_download_url": "https://github.com/containerd/containerd/releases/download/v2.4.2/containerd-2.4.2-linux-amd64.tar.gz"
@@ -17669,7 +17669,7 @@
             "state": "uploaded",
             "size": 102,
             "digest": "sha256:8bd72634e2514309680246e40c7d2e70fc3f3b52a215fda48e3e55de314ffda2",
-            "download_count": 11613,
+            "download_count": 11619,
             "created_at": "2026-10-13T22:35:02Z",
             "updated_at": "2026-10-13T22:35:02Z",
             "browser_download_url": "https://github.com/containerd/containerd/releases/download/v2.4.2/containerd-2.4.2-linux-amd64.tar.gz.sha256sum"
@@ -18422,129 +18422,129 @@
       }
     },
     "/orgs/google-ai-edge/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"1e3f9645150f5a17a25fa7f3407257530bf5e801787fb332ec5552563462d0ee\"",
+      "etag": "W/\"56dec3084fb9ac6566da15c5cbd8d533b334259c4c24a286cee1cd4b2fdcfee7\"",
       "json": []
     },
     "/orgs/googleapis/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"ad2df2a61bc3260b2dc227f5cde7f1a70382551f86da4f9cc315cdcb9889d4aa\"",
+      "etag": "W/\"4550d13f46fac7f50df074c9dbe7a60f85b4f3b446b164dcc7835c078710f939\"",
       "json": []
     },
     "/orgs/azure/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b7dd6b59d315c980e5f98f5305b70be83edc0d383ad018ebc4061b7632f71942\"",
+      "etag": "W/\"4e56d1df03c50eb485a6c54589f6151143fb1536be1e9ab28d4ed8a00d7794b6\"",
       "json": []
     },
     "/orgs/facebookresearch/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"ecd9647c63e22ca0f526110fe428882c472c4d592a4b9901adb1a0bd42b7a7c1\"",
+      "etag": "W/\"6079f01dabb643e536c731dfb281ff95a3aca65b4eb3ddeaa77bc795c496a5f0\"",
       "json": []
     },
     "/orgs/anthropics/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"4f2e9cb01baabf66fbbd4a3aabe430dc0e0c5499028da47c63b78bd907b6cec0\"",
+      "etag": "W/\"ee6e0b38d4d24a159ad9edbddf2b3aa835383a8988b257ca1511456ea6dfaf15\"",
       "json": []
     },
     "/orgs/xai-org/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"f7e35eb57b711fa9c07c1d177ab39244e33776284bfc9f2bd8fc5056955b8dd4\"",
+      "etag": "W/\"6e84efef46911d765c180ea7bb7310e3de851f3fd90e5bfb7b2e618fa37a5b87\"",
       "json": []
     },
     "/orgs/cohere-ai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"3a1f9d2ae6179c9b9b6da6165f614e82880411204ac951862025dc0e99da08be\"",
+      "etag": "W/\"f5679400be3efdcf677d285adea63b7eceb95b8e682a26563409477dfe0f7ecc\"",
       "json": []
     },
     "/orgs/mistralai/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"703bae305335ec54fc357a2f84cdb67b156515336276099ddef8644734c11f22\"",
+      "etag": "W/\"6f92c9540cf261289ea19f4ee04baeb0d82bd3521969766203283c66cb9f7ca7\"",
       "json": []
     },
     "/orgs/amazon-web-services/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"4b7ef890980d1a855573627e4106759838800c608ad9f3b26b793c65ac3233a4\"",
+      "etag": "W/\"28882ce3f71e45d750c66d14412667ebb465a7c993f2dbc7495b6da475adb187\"",
       "json": []
     },
     "/orgs/baidu/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"de3302d88e7847d5777ddeeee771ef2f895809e2c4d201aae176f34c3cbfa6f1\"",
+      "etag": "W/\"1978292090520b73804b5b4bd0d426ff57ca9ea0d4b1daad23eba025f3f68acc\"",
       "json": []
     },
     "/orgs/Stability-AI/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"97d3defc47bb35ad6b35253e5a7954a6631c6f3a73b6e962ec2fdee72bb8fd5c\"",
+      "etag": "W/\"7d4b38ef4acc0776140922ff55f9eda427dba18e96f9869eafeee0fe820e438e\"",
       "json": []
     },
     "/orgs/huggingface/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"d3d200b1553b330aa6163d83fd9fd8c28a7b7b6ef169f5b9bc2148157c21a254\"",
+      "etag": "W/\"3ab8c7e6341aae22993977e3438e9206de51f22c332c449534b3f88f12856eaf\"",
       "json": []
     },
     "/orgs/modelscope/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"00167249592e8c398fb65630ee5adf84e8eec91cee94876630e3193dc0358740\"",
+      "etag": "W/\"ddeaf35926a979aff787196e6f2b76e78b3de2aca9cd3ad7775d6a9f465cd3f3\"",
       "json": []
     },
     "/orgs/apple/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"2633c24121e9b6500204860a65ab51f3a2f691286a8b7d97fb7aef0ce92e38b2\"",
+      "etag": "W/\"49a5cfc6f1a9d65cece42a88de1f6c11e6421aff662442a281bafee1d72ea38a\"",
       "json": []
     },
     "/orgs/togethercomputer/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"7e63b60f2c1eb9d5b019c41b2e8a143df6c546f7bad8012daf63ce534f7cb1d5\"",
+      "etag": "W/\"3648b853d95926034fe447f875dba7f17e38b39692e7220d27b11c8ec7928398\"",
       "json": []
     },
     "/orgs/lm-sys/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"d9764d69689a2fb42a607b879701f8bf00ec684943fcd610cd33125ed0177ba9\"",
+      "etag": "W/\"4d4c9e47b3f822506f9be3e634497ba198a7bccf96dcbada0068bbd730961b45\"",
       "json": []
     },
     "/orgs/cncf/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"6722d4915286dac4ba507bb9f84e2234d5f9fc6f9ef192d16cee00b5bb57441b\"",
+      "etag": "W/\"2213021737eb62eaea24709fcf53e8fb2d98fa752743a5be6e5fb1e409329103\"",
       "json": []
     },
     "/orgs/kubernetes/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"1d027553c0f5eb37054e06812e51f42176cf3c152a48068f4aafbf58c8db4775\"",
+      "etag": "W/\"760856fc0a0827941eb80c32f705f72340365708fa26c5967a90b7ee8f604b8f\"",
       "json": []
     },
     "/orgs/kubernetes-sigs/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"1ca3132d1ebc770e044c6068c0cd9370815d5a9a7585d9c4eb025a2ae5b00092\"",
+      "etag": "W/\"44e29e278302aff4da91c4c6086eff547c06bf5479c2c023a67fc95ff6579d30\"",
       "json": []
     },
     "/orgs/tensorflow/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"c551e3a0ddb89abe3124bab554f93f9ed3acac1b74b0b7723f93e1a5f441339e\"",
+      "etag": "W/\"9fedcd1767ae28b000cd0732b2e7b54c17814b1b74ab2370b6658c5d0d04fb3f\"",
       "json": []
     },
     "/orgs/pytorch/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"ffefc5e9f5d4da9d13040a59ac8620158877a18f16e3a45520dc860a336215c5\"",
+      "etag": "W/\"163dbed59dbf78eb97d366af0ac117d9763e28a031fc9f7cba19fc11a74b8aa2\"",
       "json": []
     },
     "/orgs/rust-lang/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"d1c9751e726398091444163aaa0e6c36755ec9498dd3adc8d539bb8cd3cab7cd\"",
+      "etag": "W/\"eaa03b7aeb517a9d1e85c1cccf5ea3456b58e87c3b2d139f072499e5bf986286\"",
       "json": []
     },
     "/orgs/golang/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"ae092f8c32120fda51f86531dca8c526f84deaa709a686d96ead8ba61ba5a6fe\"",
+      "etag": "W/\"2ca87ae1e4855730441a214931eddfacab39a0dbc28b886743692b77c49c6054\"",
       "json": []
     },
     "/orgs/nodejs/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b601a2e60e15403e156e623496d8ccfc577abd300f2dece926c66ff2206614ff\"",
+      "etag": "W/\"f2ef433981531b80be02290d4f626ff4e644c25645c99791846d51c1265f1357\"",
       "json": []
     },
     "/orgs/redis/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"ad90df8397ea15c5a44f2fdcf8dc88d50088ea7bb66421cafdf7bba4d0d5e9a0\"",
+      "etag": "W/\"747b541356a2bffd64bda1547b005e74e9f315e2e11e41398aee4426f08a40ec\"",
       "json": []
     },
     "/orgs/mongodb/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"7efb3828acfe06d7c810d93de32b378474d238066753d30061c1b17b8bcb1a6d\"",
+      "etag": "W/\"9a910032501a4c9dd4c384eb2e97eb344e08d3be67078f79018b566eb277c8a4\"",
       "json": []
     },
     "/orgs/elastic/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"b436fe98e767588d27f646aff6e3716347ba5338c293a2dae637d402e41eb07c\"",
+      "etag": "W/\"1a652413f3ef71ad7bd996e8c5479e42063775a21d549d0f57fc6cdbb5ecc0fc\"",
       "json": []
     },
     "/orgs/grafana/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"f24045f01a5ab813c80c654f5694a32e3658c04d9cdc2144b3a72de385910244\"",
+      "etag": "W/\"04e9c784dea254d0983e65fa0164f212ebcbef1345dd72ee7026e2a422e01fb3\"",
       "json": []
     },
     "/orgs/prometheus/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"aa05f6337be8c0659d4dca7c41d6575e5de1f183d7417be7d164e4da0afdde97\"",
+      "etag": "W/\"fefcc56703877b02e45e43a9e419a9b0386d5d2b1ce37583e82511e3c05e0977\"",
       "json": []
     },
     "/orgs/istio/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"3990b472d03de9ba1b8eb5422abd602d49c9c6af96ef0ade149768d98cb80f16\"",
+      "etag": "W/\"df3b3ce503f1cb79465d220b9fcba79fee5b1086bba0631ff0a9d7d9ef61c0e0\"",
       "json": []
     },
     "/orgs/envoyproxy/repos?direction=desc&page=1&per_page=100&sort=created&type=public": {
-      "etag": "W/\"029089e8d245d9dd35f12b1cc3d003726d794d82ec27f3ffd54af7f67ca8382b\"",
+      "etag": "W/\"c590ef0ef4f98923c26f0e8c2e195fdde7838d585983c73e977b7f5bb622757d\"",
       "json": []
     }
   },
-  "last_run": "2026-11-28T11:00:58.087074+00:00"
+  "last_run": "2026-11-28T11:03:38.863131+00:00"
 }

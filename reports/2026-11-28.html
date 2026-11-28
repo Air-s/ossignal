@@ -53,43 +53,7 @@ h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
 <div class="container">
 <h1>开源技术雷达日报 <span style="font-weight:400;color:var(--muted)">2026-11-28</span></h1>
 <p class="subtitle">每条动态附带「技术解读 + 架构流程图 + 建议动作」</p>
-<h2 class="section-title">安全</h2>
-<div class="card">
-<div class="card-head">
-<span class="repo-name"><a href="https://github.com/Sinano80909/postman-enterprise-desktop-pro-patcher-installer" target="_blank" rel="noopener">Sinano80909/postman-enterprise-desktop-pro-patcher-installer</a></span>
-<span class="tag">趋势</span>
-<span class="tag">安全</span>
-</div>
-<div class="metrics">
-<div class="metric"><div class="label">Stars</div><div class="value">242</div></div>
-</div>
-<div class="field"><span class="key">定位：</span>针对 Postman 桌面客户端的第三方补丁与便携化安装工具，用于解锁企业级本地功能。</div>
-<div class="interp">
-<div class="i-title">解决什么问题</div>
-<div class="i-body">随着 Postman 逐步转向强云端协同并废弃离线 Scratch Pad 功能，部分受制于内网安全合规、数据不出域或预算限制的研发团队受到较大冲击。该项目旨在通过本地修补绕过云端认证限制，恢复离线与高级功能使用。</div>
-<div class="i-title">核心机制</div>
-<div class="i-body">其实现依赖对 Postman Electron 客户端代码的篡改。自动化流程定位本地安装文件后解包 app.asar，对涉及身份认证、License 判定和云端同步的 JavaScript 代码段进行 Hook 或硬编码覆盖，Mock 模拟企业版鉴权响应，并重新打包注入宿主环境，最终生成免安装便携版或覆盖安装包。</div>
-<div class="i-title">与竞品的关系</div>
-<div class="i-body">相较于原厂方案，它强行保留了旧版使用习惯但剥离了正版云服务；相较于 Bruno、Hoppscotch、Yaak 等原生支持本地文件存储的开源替代品，它并非独立软件，属于高风险的逆向破解外挂。</div>
-<div class="i-title">值不值得跟进</div>
-<div class="i-body">严禁企业或商业项目采用，存在严重的合规侵权风险、第三方代码投毒隐患且极易随官方版本升级失效；对安全工程师有逆向研究价值，有离线 API 调试需求的团队建议直接迁移至 Bruno 等合规开源方案。</div>
-</div>
-<div class="field"><span class="key">亮点：</span>通过自动化脚本反编译与修补 Electron asar 核心包，修改客户端授权校验并阻断云端强制拦截。</div>
-<div class="flow-title">技术架构 / 数据流</div>
-<div class="mermaid-box"><pre class="mermaid">
-flowchart TB
-  A[启动安装修补脚本] --&gt; B[检测系统Postman安装路径]
-  B --&gt; C[提取app.asar资源包]
-  C --&gt; D[反编译前端与运行时代码]
-  D --&gt; E[定位授权鉴权核心模块]
-  E --&gt; F[注入Mock企业版权限补丁]
-  F --&gt; G[禁用强制云端同步逻辑]
-  G --&gt; H[重新封装asar归档]
-  H --&gt; I[替换目标程序运行时资源]
-  I --&gt; J[启动离线企业版桌面环境]
-</pre></div>
-<div class="action-box"><strong>建议动作：</strong>反映了开发者对 API 工具离线化和强云端化的反弹，可作为逆向防篡改技术研究参考。</div>
-</div>
+<p>今日无值得关注的新动态。</p>
 </div>
 <script>
 mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { curve: 'basis' } });
