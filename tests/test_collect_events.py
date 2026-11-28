@@ -197,3 +197,18 @@ def test_quality_gate_still_passes_legit_repos():
     from src.collector import passes_quality_gate
     assert passes_quality_gate({"description": "A distributed SQL database"}) is True
     assert passes_quality_gate({"description": "High-performance LLM inference engine"}) is True
+
+
+def test_quality_gate_checks_full_name_for_spam():
+    """灰产特征可能藏在仓库名里（如 xxx-patcher），描述却很中性，必须拦下。"""
+    from src.collector import passes_quality_gate
+    # 真实漏网案例：描述是 "Portable & Windows Setup"，灰产词全在 full_name
+    assert passes_quality_gate({
+        "description": "Postman Enterprise Desktop Portable & Windows Setup",
+        "full_name": "Sinano80909/postman-enterprise-desktop-pro-patcher-installer",
+    }) is False
+    # 正常仓库全名不应被误伤
+    assert passes_quality_gate({
+        "description": "High-performance LLM inference engine",
+        "full_name": "vllm-project/vllm",
+    }) is True

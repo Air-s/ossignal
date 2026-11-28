@@ -35,7 +35,7 @@ _SPAM_MARKERS = (
     "fortnite", "cs2", "csgo", "valorant", "warzone", "pubg",
     "minecraft", "gta5", "gta v", "injector",
     "token grabber", "stealer", "infostealer", "info stealer",
-    "exitlag", "hwid",
+    "exitlag", "hwid", "patcher", "patched", "pro-patcher", "pro patcher",
 )
 
 
@@ -54,6 +54,9 @@ def passes_quality_gate(item: dict) -> bool:
 
     item 为 GitHub API 返回的仓库对象（Search API 或 org repos 条目）。
     返回 False 表示应被拦下。
+
+    灰产/镜像关键词同时检查 description 与 full_name：刷星灰产常把特征藏在
+    仓库名里（如 xxx-patcher / xxx-installer），而描述写得很中性。
     """
     if item.get("fork"):
         return False
@@ -64,11 +67,14 @@ def passes_quality_gate(item: dict) -> bool:
     desc = (item.get("description") or "").strip().lower()
     if not desc:
         return False
+    # 综合检查文本：描述 + 仓库全名（后者用小写，含 owner/name 与 - 连字符）
+    full_name = (item.get("full_name") or "").strip().lower()
+    haystack = f"{desc} {full_name}"
     for marker in _MIRROR_MARKERS:
-        if marker.lower() in desc:
+        if marker.lower() in haystack:
             return False
     for marker in _SPAM_MARKERS:
-        if marker.lower() in desc:
+        if marker.lower() in haystack:
             return False
     return True
 
