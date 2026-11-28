@@ -8,6 +8,7 @@ from src.analyzer import (
     NoopAnalyzer,
     _parse_analyses,
     _strip_code_fence,
+    _strip_mermaid_fence,
     create_analyzer,
 )
 from src.collector import Event
@@ -152,6 +153,30 @@ def test_parse_analyses_normalizes_unknown_category():
     raw = json.dumps([{"index": 0, "category": "不存在的分类"}])
     result = _parse_analyses(raw, [ev()])
     assert result[0].category == "其他"
+
+
+def test_parse_analyses_passes_diagram_field():
+    raw = json.dumps([{
+        "index": 0, "summary": "s", "category": "数据库",
+        "diagram": "flowchart LR\n  A-->B",
+    }])
+    result = _parse_analyses(raw, [ev()])
+    assert result[0].diagram == "flowchart LR\n  A-->B"
+
+
+def test_parse_analyses_strips_mermaid_fence_from_diagram():
+    raw = json.dumps([{
+        "index": 0, "diagram": "```mermaid\nflowchart LR\n  A-->B\n```",
+    }])
+    result = _parse_analyses(raw, [ev()])
+    assert result[0].diagram == "flowchart LR\n  A-->B"
+
+
+def test_strip_mermaid_fence_variants():
+    assert _strip_mermaid_fence("```mermaid\nflowchart LR\n```") == "flowchart LR"
+    assert _strip_mermaid_fence("```\nflowchart LR\n```") == "flowchart LR"
+    assert _strip_mermaid_fence("flowchart LR") == "flowchart LR"
+    assert _strip_mermaid_fence("") == ""
 
 
 def test_github_models_analyzer_handles_empty_content(monkeypatch):

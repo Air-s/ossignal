@@ -8,7 +8,13 @@ from .analyzer import NoopAnalyzer, create_analyzer
 from .collector import GitHubClient, collect_events
 from .config_loader import load_orgs, load_repos, load_settings
 from .notifier import build_summary, send_webhook
-from .reporter import archive_docs, render_daily_report, write_report
+from .reporter import (
+    archive_docs,
+    render_daily_html,
+    render_daily_report,
+    write_html_report,
+    write_report,
+)
 from .state import State
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,12 +45,14 @@ def run_daily(dry_run: bool = False) -> int:
 
     today = date.today()
     report = render_daily_report(today, analyses, failures, llm_errors)
+    html_report = render_daily_html(today, analyses, failures, llm_errors)
 
     if dry_run:
         print(report)
         return 0
 
     write_report(report, BASE_DIR / "reports", today)
+    html_path = write_html_report(html_report, BASE_DIR / "reports", today)
     archive_docs(analyses, BASE_DIR / "archive", today)
     state.save()
 
@@ -63,6 +71,7 @@ def run_daily(dry_run: bool = False) -> int:
             print(f"webhook 推送失败: {e}")
 
     print(f"完成：{len(analyses)} 条动态，{len(failures)} 个异常")
+    print(f"HTML 日报: {html_path}")
     return 0
 
 

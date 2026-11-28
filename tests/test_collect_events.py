@@ -171,3 +171,29 @@ def test_org_new_repo_blocks_mirror():
     )
     events, _ = collect_events(client, ORG_CFG, REPO_CFG, state)
     assert [e.repo for e in events] == ["bigtech/real"]
+
+
+def test_spam_markers_block_todays_garbage_repos():
+    """今天抓到的刷星灰产仓库应全部被质量闸门拦下。"""
+    from src.collector import passes_quality_gate
+    garbage = [
+        "Hardware ID spoofer and bypass tool for anti-cheat systems",
+        "CS2 external cheat with aimbot and wallhack",
+        "Windows 11 activator and crack",
+        "Polymarket trading bot",
+        "Solana sniper bot for pump.fun",
+        "Hyperliquid trading bot portable",
+        "Base Uniswap sniper bot",
+        "ExitLag cracked mirror",
+        "Fortnite spoofer HWID cleaner",
+        "auto-buy script for airdrop farming",
+        "token stealer and info grabber",
+    ]
+    for desc in garbage:
+        assert passes_quality_gate({"description": desc}) is False, f"应拦截: {desc}"
+
+
+def test_quality_gate_still_passes_legit_repos():
+    from src.collector import passes_quality_gate
+    assert passes_quality_gate({"description": "A distributed SQL database"}) is True
+    assert passes_quality_gate({"description": "High-performance LLM inference engine"}) is True

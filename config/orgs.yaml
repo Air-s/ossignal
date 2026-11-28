@@ -1,18 +1,51 @@
 orgs:
+  # —— 大厂 AI / 云 ——
   - google
   - google-deepmind
+  - google-ai-edge
+  - googleapis
   - microsoft
+  - azure
   - meta
+  - facebookresearch
   - openai
+  - anthropics
+  - xai-org
+  - cohere-ai
+  - mistralai
   - NVIDIA
   - aws
+  - amazon-web-services
   - alibaba
   - tencent
   - bytedance
   - antgroup
+  - baidu
   - deepseek-ai
   - QwenLM
+  - Stability-AI
+  - huggingface
+  - modelscope
+  - apple
+  - togethercomputer
+  - lm-sys
+  # —— 开源基础设施 / 基金会 ——
   - apache
+  - cncf
+  - kubernetes
+  - kubernetes-sigs
+  - tensorflow
+  - pytorch
+  - rust-lang
+  - golang
+  - nodejs
+  - redis
+  - mongodb
+  - elastic
+  - grafana
+  - prometheus
+  - istio
+  - envoyproxy
 new_repo:
   max_age_days: 7           # 创建 7 天内视为新仓库
   min_stars: 50             # 且 star 达到该阈值才关注

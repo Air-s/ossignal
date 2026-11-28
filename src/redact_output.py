@@ -11,8 +11,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # 已知密钥前缀 + 一般长串
+# 注意：去掉「20+ 位字母数字」的宽泛长串规则——它会误伤 GitHub 仓库全名（owner/name 连起来
+# 常超 20 字符），把日报标题打成无意义的 "schm…[已脱敏]"。真实密钥都有明确前缀，精确匹配即可。
 _SECRET_PREFIXES = ("AIza", "GOCSPX", "ya29.", "ghp_", "gho_", "ghu_", "github_pat_", "sk-", "AKIA", "ASIA")
-_LONG_TOKEN = re.compile(r"[A-Za-z0-9+/_.\-]{20,}")
 
 
 def redact_text(text: str) -> str:
@@ -25,7 +26,6 @@ def redact_text(text: str) -> str:
                 continue
             for prefix in _SECRET_PREFIXES:
                 p = re.sub(rf"{re.escape(prefix)}[A-Za-z0-9_.\-]+", lambda m: m.group(0)[:4] + "…[已脱敏]", p)
-            p = _LONG_TOKEN.sub(lambda m: m.group(0)[:4] + "…[已脱敏]", p)
             out.append(p)
         return "".join(out)
 

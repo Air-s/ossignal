@@ -20,11 +20,22 @@ _MIRROR_MARKERS = (
 )
 
 # 明显非技术/灰产关键词：外挂、作弊、破解、安装器、盗版软件等，不进技术雷达。
+# 这些刷星灰产仓库命名有强规律：xxx-spoofer / xxx-cheat / xxx-sniper / xxx-bot /
+# xxx-activator / xxx-crack，命名本身即暴露属性，命中即拦下。
+# 用子串匹配（含词边界语义），对 "trading bot"、"sniping bot" 等空格分隔的也生效。
 _SPAM_MARKERS = (
     "cheat", "cheats", "aimbot", "wallhack", "esp ", "undetect",
     "money dupe", "dupe", "crack", "cracked", "keygen", "trainer",
     "mod menu", "installer", "warez", "roblox", "aim ", "combat aid",
     "in-game", "外挂", "作弊", "破解", "刷", "辅助",
+    # 刷星灰产高发命名（spoofer/sniper/bot/activator 等，几乎全是钓鱼或作弊工具）
+    "spoofer", "sniper", " bot", "trading-bot", "trade-bot",
+    "activator", "auto-buy", "autobuy", "auto-sell", "flipper",
+    "airdrop", "claimer", "farming", "unlocker", "bypass",
+    "fortnite", "cs2", "csgo", "valorant", "warzone", "pubg",
+    "minecraft", "gta5", "gta v", "injector",
+    "token grabber", "stealer", "infostealer", "info stealer",
+    "exitlag", "hwid",
 )
 
 
@@ -247,7 +258,7 @@ def _new_repo_events(client: GitHubClient, org: str, cfg: OrgConfig, state: Stat
         state.mark_seen(full)
         events.append(Event(
             kind="new_repo", repo=full,
-            title=f"新仓库 {full}",
+            title=full,  # 标题直接用仓库全名
             url=item["html_url"],
             detail=(item.get("description") or "")[:500],
             stars=item["stargazers_count"],
@@ -285,7 +296,7 @@ def collect_events(client: GitHubClient, org_cfg: OrgConfig, repo_cfg: RepoConfi
                 continue  # 镜像/搬运/空描述等，拦下不进日报
             events.append(Event(
                 kind="trending", repo=full,
-                title=f"趋势新仓库 {full}",
+                title=full,  # 标题直接用仓库全名，避免冗余前缀
                 url=item["html_url"],
                 detail=(item.get("description") or "")[:500],
                 stars=item["stargazers_count"],

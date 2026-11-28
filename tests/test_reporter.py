@@ -2,7 +2,14 @@ from datetime import date
 
 from src.analyzer import Analysis
 from src.collector import Event
-from src.reporter import archive_docs, render_daily_report, write_report
+from src.reporter import (
+    _interp_blocks,
+    archive_docs,
+    render_daily_html,
+    render_daily_report,
+    write_html_report,
+    write_report,
+)
 
 DAY = date(2026, 11, 18)
 
@@ -104,3 +111,79 @@ def test_redact_still_masks_secrets_alongside_urls():
     assert "https://github.com/a/b" in out
     assert "AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ" not in out
     assert "已脱敏" in out
+
+
+def test_redact_preserves_repo_full_name():
+    """仓库全名 owner/name（含长用户名）不应被脱敏，这是修复标题误伤的关键回归。"""
+    from src.reporter import _redact
+    # 真实案例：schmidt21402/hwid-spoofer 曾被打成 schm…[已脱敏]
+    assert _redact("schmidt21402/hwid-spoofer") == "schmidt21402/hwid-spoofer"
+    assert _redact("sergeijang/windows-11-activator") == "sergeijang/windows-11-activator"
+    # 真实密钥前缀仍要脱敏
+    assert "已脱敏" in _redact("ghp_abcdefghijklmnopqrstuvwxyz1234567890")
+    assert "已脱敏" in _redact("sk-abcdefghijklmnopqrstuvwxyz1234567890ABCD")
+
+
+def test_redact_output_preserves_repo_name():
+    """redact_output 兜底脚本同样不能误伤仓库名。"""
+    from src.redact_output import redact_text
+    assert redact_text("schmidt21402/hwid-spoofer") == "schmidt21402/hwid-spoofer"
+    assert "已脱敏" in redact_text("AIzaSyA1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+
+# ---- mermaid 与 HTML 卡片渲染 ----
+
+def test_render_includes_mermaid_block_when_diagram_present():
+    a = ana("x/1", "大模型")
+    a.diagram = "flowchart LR\n  A-->B"
+    md = render_daily_report(DAY, [a], [])
+    assert "```mermaid" in md
+    assert "flowchart LR" in md
+
+
+def test_render_omits_mermaid_when_no_diagram():
+    md = render_daily_report(DAY, [ana("x/1", "大模型")], [])
+    assert "```mermaid" not in md
+
+
+def test_interp_blocks_splits_by_bracket_headings():
+    text = "【解决什么问题】痛点A。【核心机制】机制B。【值不值得跟进】建议C。"
+    blocks = _interp_blocks(text)
+    assert blocks == [
+        ("解决什么问题", "痛点A。"),
+        ("核心机制", "机制B。"),
+        ("值不值得跟进", "建议C。"),
+    ]
+
+
+def test_interp_blocks_without_headings_is_single_block():
+    text = "没有小标题的一段解读"
+    blocks = _interp_blocks(text)
+    assert blocks == [("", "没有小标题的一段解读")]
+
+
+def test_render_html_contains_card_and_mermaid():
+    a = ana("x/1", "大模型")
+    a.interpretation = "【解决什么问题】痛点A。【核心机制】机制B。"
+    a.diagram = "flowchart LR\n  A-->B"
+    html_out = render_daily_html(DAY, [a], [])
+    assert "<!DOCTYPE html>" in html_out
+    assert 'class="card"' in html_out
+    assert "mermaid" in html_out
+    assert "flowchart LR" in html_out
+    assert "解决什么问题" in html_out
+    assert "核心机制" in html_out
+
+
+def test_render_html_escapes_html_in_content():
+    a = ana("x/1", "大模型")
+    a.summary = "<script>alert(1)</script>"
+    html_out = render_daily_html(DAY, [a], [])
+    assert "<script>alert(1)</script>" not in html_out
+    assert "&lt;script&gt;" in html_out
+
+
+def test_write_html_report_creates_file(tmp_path):
+    path = write_html_report("<!DOCTYPE html><html></html>", tmp_path / "reports", DAY)
+    assert path.name == "2026-11-18.html"
+    assert path.read_text(encoding="utf-8") == "<!DOCTYPE html><html></html>"

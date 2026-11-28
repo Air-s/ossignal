@@ -1,6 +1,38 @@
 repos:
+  # —— 大模型推理 / 框架 ——
   - vllm-project/vllm
   - ollama/ollama
   - langchain-ai/langchain
   - huggingface/transformers
   - modelscope/modelscope
+  - sgl-project/sglang
+  - ggml-org/llama.cpp
+  - lm-sys/FastChat
+  # —— 深度学习框架 ——
+  - pytorch/pytorch
+  - tensorflow/tensorflow
+  - apache/mxnet
+  - jax-ml/jax
+  # —— 基础设施 / 数据库 ——
+  - kubernetes/kubernetes
+  - envoyproxy/envoy
+  - istio/istio
+  - redis/redis
+  - valkey-io/valkey
+  - mongodb/mongo
+  - grafana/grafana
+  - prometheus/prometheus
+  - milvus-io/milvus
+  - pingcap/tidb
+  # —— 前端 / 工具链 ——
+  - facebook/react-native
+  - vuejs/core
+  - sveltejs/svelte
+  - vitejs/vite
+  - denoland/deno
+  - oven-sh/bun
+  - biomejs/biome
+  # —— 安全 / 其他 ——
+  - getsentry/sentry
+  - grafana/loki
+  - containerd/containerd

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开源技术雷达日报 - 增强版 Demo</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f7f7f5;
+    --text: #1a1a1a;
+    --muted: #666666;
+    --border: #e5e5e0;
+    --accent: #378ADD;
+    --accent-bg: #E6F1FB;
+    --teal: #0F6E56;
+    --teal-bg: #E1F5EE;
+    --amber: #854F0B;
+    --amber-bg: #FAEEDA;
+    --red: #A32D2D;
+    --red-bg: #FCEBEB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; margin: 0 0 1.5rem; }
+  .badge-demo {
+    display: inline-block; background: var(--accent-bg); color: var(--accent);
+    font-size: 12px; padding: 2px 10px; border-radius: 12px; margin-bottom: 1.5rem;
+  }
+  .section-title {
+    font-size: 16px; font-weight: 600; margin: 2rem 0 1rem;
+    padding-left: 10px; border-left: 3px solid var(--accent);
+  }
+  .card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .card-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .repo-name { font-size: 16px; font-weight: 600; color: var(--accent); }
+  .repo-name a { color: inherit; text-decoration: none; }
+  .repo-name a:hover { text-decoration: underline; }
+  .tag {
+    font-size: 11px; padding: 1px 8px; border-radius: 10px;
+    background: var(--surface); color: var(--muted); border: 1px solid var(--border);
+  }
+  .metrics {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px; margin: 0.9rem 0;
+  }
+  .metric {
+    background: var(--surface); border-radius: 8px; padding: 0.6rem 0.8rem;
+  }
+  .metric .label { font-size: 11px; color: var(--muted); }
+  .metric .value { font-size: 18px; font-weight: 600; }
+  .field { margin: 0.5rem 0; font-size: 14px; }
+  .field .key { font-weight: 600; color: var(--text); }
+  .interp { margin: 0.5rem 0; font-size: 14px; }
+  .interp .i-title { font-weight: 600; color: var(--teal); }
+  .interp .i-title::before { content: ""; display: inline-block; width: 6px; height: 6px;
+    border-radius: 50%; background: var(--teal); margin-right: 6px; vertical-align: middle; }
+  .interp .i-body { color: var(--text); margin: 0.2rem 0 0.6rem; }
+  .flow-title {
+    font-size: 13px; font-weight: 600; margin: 1rem 0 0.5rem;
+    color: var(--teal);
+  }
+  .mermaid-box {
+    background: var(--surface); border-radius: 8px; padding: 1rem;
+    overflow-x: auto;
+  }
+  .action-box {
+    background: var(--amber-bg); color: var(--amber);
+    border-radius: 8px; padding: 0.6rem 0.9rem; margin-top: 0.8rem; font-size: 13px;
+  }
+  .risk-box {
+    background: var(--red-bg); color: var(--red);
+    border-radius: 8px; padding: 0.6rem 0.9rem; margin-top: 0.6rem; font-size: 13px;
+  }
+  .summary-line { color: var(--muted); font-size: 13px; margin: 0.6rem 0 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>开源技术雷达日报 <span style="font-weight:400;color:var(--muted)">2026-11-28</span></h1>
+  <p class="subtitle">增强版 Demo — 每条动态附带「技术解读 + 架构流程图 + 建议动作」</p>
+  <span class="badge-demo">演示样例（非线上真实产物）</span>
+
+  <h2 class="section-title">大模型 / AI 基础设施</h2>
+
+  <!-- ============ 卡片 1：ollama ============ -->
+  <div class="card">
+    <div class="card-head">
+      <span class="repo-name"><a href="https://github.com/ollama/ollama">ollama/ollama</a></span>
+      <span class="tag">发布 v0.40.19</span>
+      <span class="tag">大模型 / 本地推理</span>
+    </div>
+    <div class="metrics">
+      <div class="metric"><div class="label">Stars</div><div class="value">188,338</div></div>
+      <div class="metric"><div class="label">语言</div><div class="value">Go</div></div>
+      <div class="metric"><div class="label">License</div><div class="value">MIT</div></div>
+      <div class="metric"><div class="label">今日关注度</div><div class="value" style="color:var(--teal)">高</div></div>
+    </div>
+
+    <div class="field"><span class="key">定位：</span>本地大模型运行与管理框架，一条命令拉起 Llama / Qwen / DeepSeek 等开源模型。</div>
+
+    <div class="interp">
+      <div class="i-title">解决什么问题</div>
+      <div class="i-body">本地部署大模型的门槛：显卡驱动、量化、显存管理、模型拉取等环节琐碎且分散。Ollama 把「拉取模型 → 启动推理 → 暴露 API」压缩成一条命令，让开发者在笔记本上就能跑通开源模型，是本地 RAG、边缘推理、原型验证的首选工具。</div>
+      <div class="i-title">核心机制</div>
+      <div class="i-body">v0.40.19 针对多轮对话与长上下文做了关键优化：通过 inkling2 加速短对话历史处理，引入草稿提议与会话快照机制缩短多轮交互的首字延迟；同时在 Apple Silicon 的 mlxrunner 后端压缩 Engram 历史缓冲，降低内存占用。</div>
+      <div class="i-title">与竞品的关系</div>
+      <div class="i-body">相比 vLLM / SGLang 等面向生产的高吞吐推理框架，Ollama 不做极致吞吐优化，而是专注本地开发体验与跨平台易用性；相比 LM Studio 等 GUI 工具，它更偏 CLI/API 化、可脚本编排，更适合嵌入自动化流水线。</div>
+      <div class="i-title">值不值得跟进</div>
+      <div class="i-body">做本地推理流水线或 AI 应用原型的工程师建议跟进升级，重点验证首字延迟与显存占用是否改善；若目标是高并发生产推理，仍需迁移到 vLLM/SGLang 等专用框架。</div>
+    </div>
+
+    <div class="field"><span class="key">亮点：</span>短历史推理加速 + 草稿提议 + 会话快照 + MLX 内存压缩。</div>
+
+    <div class="flow-title">技术架构 / 数据流（LLM 自动生成）</div>
+    <div class="mermaid-box">
+      <pre class="mermaid">
+flowchart LR
+  A[用户请求] --> B[HTTP Server]
+  B --> C[会话管理器<br/>草稿提议 / 会话快照]
+  C --> D[llama-server<br/>推理引擎]
+  D --> E{平台后端}
+  E -->|Apple Silicon| F[mlxrunner<br/>压缩 Engram 缓冲]
+  E -->|NVIDIA / 通用| G[CUDA / CPU]
+  D --> H[返回流式响应]
+  H --> A
+      </pre>
+    </div>
+
+    <div class="action-box"><strong>建议动作：</strong>本地推理流水线的工程师建议跟进升级，验证首字延迟与显存占用是否改善；关注 inkling2 与草稿提议对长多轮对话的实际收益。</div>
+  </div>
+
+  <!-- ============ 卡片 2：vllm（示意，展示另一个形态） ============ -->
+  <div class="card">
+    <div class="card-head">
+      <span class="repo-name"><a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a></span>
+      <span class="tag">大模型 / 生产推理</span>
+      <span class="tag">监控中</span>
+    </div>
+    <div class="metrics">
+      <div class="metric"><div class="label">Stars</div><div class="value">45,200</div></div>
+      <div class="metric"><div class="label">语言</div><div class="value">Python</div></div>
+      <div class="metric"><div class="label">License</div><div class="value">Apache-2.0</div></div>
+      <div class="metric"><div class="label">今日动态</div><div class="value" style="color:var(--muted)">无新发布</div></div>
+    </div>
+
+    <div class="field"><span class="key">定位：</span>面向生产环境的高吞吐、低延迟 LLM 推理引擎，PagedAttention 技术的发源地。</div>
+    <div class="field"><span class="key">技术解读：</span>vLLM 通过 PagedAttention 将 KV Cache 分页管理，大幅降低显存碎片、提升并发吞吐；支持连续批处理（continuous batching）、量化（FP8/AWQ/GPTQ）、多模态与 speculative decoding。是大多数企业自建大模型服务的首选推理底座。</div>
+
+    <div class="flow-title">技术架构（推理请求处理链路）</div>
+    <div class="mermaid-box">
+      <pre class="mermaid">
+flowchart TB
+  A[OpenAI 兼容 API] --> B[Scheduler]
+  B --> C[Continuous Batching]
+  C --> D[PagedAttention<br/>KV Cache 分页]
+  D --> E[GPU Kernel]
+  E --> F[量化引擎<br/>FP8 / AWQ]
+  F --> G[流式输出]
+      </pre>
+    </div>
+
+    <div class="action-box"><strong>建议动作：</strong>作为生产推理底座候选持续跟踪；关注其多模态与长上下文能力的进展。</div>
+  </div>
+
+  <h2 class="section-title">关于「技术解读 + 流程图」的实现说明</h2>
+  <div class="card" style="background:var(--surface);border:none;">
+    <p style="margin:0;font-size:13px;color:var(--muted);">
+      每条动态的「技术解读」由 LLM 拆成四段——<b>解决什么问题 / 核心机制 / 与竞品的关系 / 值不值得跟进</b>，
+      让人一眼看清「它是什么、解决了什么、和我已有方案比如何、要不要跟进」。
+      流程图同样由 LLM 按项目自动生成一段 Mermaid 代码（描述技术架构或关键数据流），日报直接渲染，
+      这样每条动态就有了「文字解读 + 可视化架构」两层信息。
+    </p>
+  </div>
+</div>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { curve: 'basis' } });
+</script>
+</body>
+</html>

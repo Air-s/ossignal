@@ -31,7 +31,16 @@ PROMPT = """你是技术雷达分析师，读者是做技术预研的工程师�
 - category: 技术分类，从以下选择（只允许这 7 个值之一）: AI基础设施 / 大模型 / 数据库 / DevOps / 前端 / 安全 / 其他
 - highlights: 亮点（<=80字）：技术上有什么值得注意的点
 - recommendation: 推荐理由（<=50字）：为什么今天值得关注
-- interpretation: 技术解读（150~250字）：解决什么问题、怎么用、与已有方案/竞品的关系、值不值得跟进
+- interpretation: 技术解读，是一段连贯的中文小作文（250~400字），必须包含以下内容且用「【】」小标题分段：
+  【解决什么问题】它要解决的痛点 / 使用场景
+  【核心机制】关键技术点、实现原理、本次更新的具体改动
+  【与竞品的关系】和同领域已有方案（如相关主流项目）的差异与定位
+  【值不值得跟进】适合谁跟进、落地成本、潜在风险
+- diagram: 一段 Mermaid 代码（flowchart 类型，用 flowchart LR 或 TB，8~15 个节点），
+  描述该项目的核心技术架构或关键数据流，节点文字用中文，只输出 mermaid 代码本身（不含 ``` 围栏）
+
+要求：interpretation 不要写成要点列表，要连成有信息量的段落；diagram 必须语法正确、节点不宜过多；
+信息不足时基于领域常识合理推断，但不要编造具体版本号或精确数字。
 
 事件列表：
 {events}
@@ -48,6 +57,7 @@ class Analysis:
     highlights: str
     recommendation: str
     interpretation: str = ""
+    diagram: str = ""               # LLM 生成的 Mermaid 代码（描述技术架构/数据流）
     degraded: bool = False          # True 表示本条为降级产物（LLM 分析失败）
 
 
@@ -90,6 +100,22 @@ def _strip_code_fence(text: str) -> str:
     return text.strip()
 
 
+def _strip_mermaid_fence(text: str) -> str:
+    """去除 diagram 字段可能带上的 ```mermaid / ``` 围栏，只保留 mermaid 源码。"""
+    if not text:
+        return ""
+    text = text.strip()
+    if text.startswith("```"):
+        first_newline = text.find("\n")
+        text = text[first_newline + 1:] if first_newline != -1 else text[3:]
+        # 若第一行是 "mermaid"，去掉它
+        if text.lstrip().lower().startswith("mermaid"):
+            text = text.lstrip()[len("mermaid"):].lstrip()
+    if text.endswith("```"):
+        text = text[:-3]
+    return text.strip()
+
+
 def _parse_analyses(raw: str, events: list[Event]) -> list[Analysis]:
     """解析 LLM 返回的 JSON 数组，逐条校验；无法解析时抛异常交由调用方降级。"""
     text = _strip_code_fence(raw)
@@ -119,6 +145,7 @@ def _parse_analyses(raw: str, events: list[Event]) -> list[Analysis]:
             highlights=str(item.get("highlights", "")).strip(),
             recommendation=str(item.get("recommendation", "")).strip(),
             interpretation=str(item.get("interpretation", "")).strip(),
+            diagram=_strip_mermaid_fence(str(item.get("diagram", "")).strip()),
         ))
     return result
 
